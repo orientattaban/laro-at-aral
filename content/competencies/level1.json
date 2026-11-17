@@ -1,0 +1,68 @@
+{
+  "note": "Topic competencies are 'verified' because the subtheme is printed in LRP 1. Skill competencies are 'needs-review' because the list of competencies (LRP 2) is not in /curriculum. The learning area given to each one is our own reading of the six domains on LRP 1 pages 5 to 6.",
+  "competencies": [
+    {
+      "id": "l1.ako.damdamin",
+      "level": 1, "theme": "ako", "area": "social-emotional",
+      "title": "comp.l1.ako.damdamin",
+      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, Tell About Yourself: I Have Feelings" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.ako.gamit",
+      "level": 1, "theme": "ako", "area": "language",
+      "title": "comp.l1.ako.gamit",
+      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, Tell About Yourself: This Is What I Wear; I Have Things I Use for Sleeping and Playing" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.pamilya.kasapi",
+      "level": 1, "theme": "pamilya", "area": "language",
+      "title": "comp.l1.pamilya.kasapi",
+      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: Father, Mother, Brother, Sister; Grandmother, Grandfather" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.pamilya.pagkain",
+      "level": 1, "theme": "pamilya", "area": "language",
+      "title": "comp.l1.pamilya.pagkain",
+      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: What do I Eat" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.pamilya.gamit",
+      "level": 1, "theme": "pamilya", "area": "language",
+      "title": "comp.l1.pamilya.gamit",
+      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: I Have Things I Use in Eating; I Have Things I Use When I Clean Myself" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.kasanayan.pagpapares",
+      "level": 1, "theme": "kasanayan", "area": "cognitive",
+      "title": "comp.l1.kasanayan.pagpapares",
+      "source": { "doc": "eccd-standards", "page": 27, "ref": "Area V, guideline 9: experiences for mathematical and scientific concepts. No specific competency found; LRP 2 is needed." },
+      "status": "needs-review"
+    },
+    {
+      "id": "l1.kasanayan.laki",
+      "level": 1, "theme": "kasanayan", "area": "cognitive",
+      "title": "comp.l1.kasanayan.laki",
+      "source": { "doc": "eccd-standards", "page": 27, "ref": "Area V, guideline 9: experiences for mathematical and scientific concepts. No specific competency found; LRP 2 is needed." },
+      "status": "needs-review"
+    },
+    {
+      "id": "l1.kasanayan.kulay",
+      "level": 1, "theme": "kasanayan", "area": "cognitive",
+      "title": "comp.l1.kasanayan.kulay",
+      "source": { "doc": "eccd-standards", "page": 27, "ref": "Area V, guideline 9: experiences for mathematical and scientific concepts. No specific competency found; LRP 2 is needed." },
+      "status": "needs-review"
+    },
+    {
+      "id": "l1.kasanayan.pangkat",
+      "level": 1, "theme": "kasanayan", "area": "cognitive",
+      "title": "comp.l1.kasanayan.pangkat",
+      "source": { "doc": "eccd-standards", "page": 27, "ref": "Area V, guideline 9: experiences for mathematical and scientific concepts. No specific competency found; LRP 2 is needed." },
+      "status": "needs-review"
+    }
+  ]
+}

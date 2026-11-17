@@ -1,0 +1,32 @@
+# Tools and build output
+node_modules/
+dist/
+dev-dist/
+test-results/
+playwright-report/
+*.log
+
+# Secrets: never commit these
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+keystore.properties
+signing/
+
+# Kept on the laptop only (see PLAN.md, section 8)
+curriculum/*.pdf
+Gemini generated images/
+
+# Local editor and Claude settings
+.claude/settings.local.json
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Not uploaded until the owner decides (PLAN.md section 8, public repository question)
+raw-assets/**/*.jpg
+raw-assets/**/*.png
+START-HERE.md
+prompts/

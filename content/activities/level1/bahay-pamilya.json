@@ -1,0 +1,130 @@
+{
+  "note": "Bahay, theme Pamilya. 'stage' is the earliest stage that may play it: A = age 2 (tapping only), B = age 3.",
+  "activities": [
+    {
+      "id": "l1.bahay.pamilya.kasapi.tap",
+      "engine": "tap-and-hear",
+      "level": 1, "stage": "A", "place": "bahay", "theme": "pamilya",
+      "competencies": ["l1.pamilya.kasapi"],
+      "instruction": "instr.tap-and-hear",
+      "tile": "pamilya.nanay",
+      "items": ["pamilya.nanay", "pamilya.tatay", "pamilya.ate", "pamilya.kuya", "pamilya.lola", "pamilya.lolo", "pamilya.baby", "pamilya.pamilya"],
+      "faith": false,
+      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: Father, Mother, Brother, Sister; Grandmother, Grandfather" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.bahay.pamilya.kasapi.find",
+      "engine": "find-it",
+      "level": 1, "stage": "A", "place": "bahay", "theme": "pamilya",
+      "competencies": ["l1.pamilya.kasapi"],
+      "instruction": "instr.find-it",
+      "tile": "pamilya.lola",
+      "items": ["pamilya.nanay", "pamilya.tatay", "pamilya.ate", "pamilya.kuya", "pamilya.lola", "pamilya.lolo", "pamilya.baby"],
+      "faith": false,
+      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: Father, Mother, Brother, Sister; Grandmother, Grandfather" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.bahay.pamilya.pagkain.tap",
+      "engine": "tap-and-hear",
+      "level": 1, "stage": "A", "place": "bahay", "theme": "pamilya",
+      "competencies": ["l1.pamilya.pagkain"],
+      "instruction": "instr.tap-and-hear",
+      "tile": "pagkain.saging",
+      "items": ["pagkain.kanin", "pagkain.saging", "pagkain.mangga", "pagkain.mais", "pagkain.papaya", "pagkain.niyog", "pagkain.kamatis", "pagkain.talong", "pagkain.kalabasa", "pamilya.kainan"],
+      "faith": false,
+      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: What do I Eat" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.bahay.pamilya.pagkain.find",
+      "engine": "find-it",
+      "level": 1, "stage": "A", "place": "bahay", "theme": "pamilya",
+      "competencies": ["l1.pamilya.pagkain"],
+      "instruction": "instr.find-it",
+      "tile": "pagkain.mangga",
+      "items": ["pagkain.kanin", "pagkain.saging", "pagkain.mangga", "pagkain.mais", "pagkain.papaya", "pagkain.niyog", "pagkain.kamatis", "pagkain.talong", "pagkain.kalabasa"],
+      "faith": false,
+      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: What do I Eat" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.bahay.pamilya.gamit.tap",
+      "engine": "tap-and-hear",
+      "level": 1, "stage": "A", "place": "bahay", "theme": "pamilya",
+      "competencies": ["l1.pamilya.gamit"],
+      "instruction": "instr.tap-and-hear",
+      "tile": "gamit.sabon",
+      "items": ["gamit.plato", "gamit.baso", "gamit.sipilyo", "gamit.sabon", "gamit.tuwalya", "gamit.suklay"],
+      "faith": false,
+      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: I Have Things I Use in Eating; I Have Things I Use When I Clean Myself" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.bahay.pamilya.gamit.find",
+      "engine": "find-it",
+      "level": 1, "stage": "A", "place": "bahay", "theme": "pamilya",
+      "competencies": ["l1.pamilya.gamit"],
+      "instruction": "instr.find-it",
+      "tile": "gamit.sipilyo",
+      "items": ["gamit.plato", "gamit.baso", "gamit.sipilyo", "gamit.sabon", "gamit.tuwalya", "gamit.suklay"],
+      "faith": false,
+      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: I Have Things I Use in Eating; I Have Things I Use When I Clean Myself" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.bahay.pamilya.kasapi.match",
+      "engine": "match-pairs",
+      "level": 1, "stage": "B", "place": "bahay", "theme": "pamilya",
+      "competencies": ["l1.kasanayan.pagpapares", "l1.pamilya.kasapi"],
+      "instruction": "instr.match-pairs",
+      "tile": "pamilya.kuya",
+      "items": ["pamilya.nanay", "pamilya.tatay", "pamilya.ate", "pamilya.kuya", "pamilya.lola", "pamilya.lolo"],
+      "faith": false,
+      "source": { "doc": "lrp1", "page": 12, "ref": "Topic: Pre-K1, My Family and Me. The matching skill itself has no competency in the PDFs; LRP 2 is needed." },
+      "status": "needs-review"
+    },
+    {
+      "id": "l1.bahay.pamilya.pagkain.match",
+      "engine": "match-pairs",
+      "level": 1, "stage": "B", "place": "bahay", "theme": "pamilya",
+      "competencies": ["l1.kasanayan.pagpapares", "l1.pamilya.pagkain"],
+      "instruction": "instr.match-pairs",
+      "tile": "pagkain.mais",
+      "items": ["pagkain.kanin", "pagkain.saging", "pagkain.mangga", "pagkain.mais", "pagkain.papaya", "pagkain.niyog"],
+      "faith": false,
+      "source": { "doc": "lrp1", "page": 12, "ref": "Topic: Pre-K1, My Family and Me: What do I Eat. The matching skill itself has no competency in the PDFs; LRP 2 is needed." },
+      "status": "needs-review"
+    },
+    {
+      "id": "l1.bahay.pamilya.gamit.sort",
+      "engine": "sort",
+      "level": 1, "stage": "B", "place": "bahay", "theme": "pamilya",
+      "competencies": ["l1.kasanayan.pangkat", "l1.pamilya.gamit"],
+      "instruction": "instr.sort.gamit",
+      "tile": "gamit.plato",
+      "rounds": [
+        {
+          "rule": "pangkat",
+          "instruction": "instr.sort.gamit",
+          "baskets": [
+            { "id": "pangkain", "label": "sort.pangkain", "cue": { "kind": "item", "item": "pagkain.kanin" } },
+            { "id": "panlinis", "label": "sort.panlinis", "cue": { "kind": "draw", "image": "draw:tubig" } }
+          ],
+          "entries": [
+            { "item": "gamit.plato", "basket": "pangkain" },
+            { "item": "gamit.sabon", "basket": "panlinis" },
+            { "item": "gamit.baso", "basket": "pangkain" },
+            { "item": "gamit.sipilyo", "basket": "panlinis" },
+            { "item": "gamit.tuwalya", "basket": "panlinis" },
+            { "item": "gamit.suklay", "basket": "panlinis" }
+          ]
+        }
+      ],
+      "faith": false,
+      "source": { "doc": "lrp1", "page": 12, "ref": "Topic: Pre-K1, My Family and Me: Things I Use in Eating; Things I Use When I Clean Myself. The sorting skill itself has no competency in the PDFs; LRP 2 is needed." },
+      "status": "needs-review"
+    }
+  ]
+}

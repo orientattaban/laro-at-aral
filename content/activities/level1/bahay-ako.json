@@ -1,0 +1,100 @@
+{
+  "note": "Bahay, theme Ako. 'stage' is the earliest stage that may play it: A = age 2 (tapping only), B = age 3.",
+  "activities": [
+    {
+      "id": "l1.bahay.ako.damdamin.tap",
+      "engine": "tap-and-hear",
+      "level": 1, "stage": "A", "place": "bahay", "theme": "ako",
+      "competencies": ["l1.ako.damdamin"],
+      "instruction": "instr.tap-and-hear",
+      "tile": "damdamin.masaya",
+      "items": ["damdamin.masaya", "damdamin.malungkot", "damdamin.galit", "damdamin.takot", "damdamin.gulat", "damdamin.inaantok", "damdamin.nahihiya"],
+      "faith": false,
+      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, Tell About Yourself: I Have Feelings" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.bahay.ako.damdamin.find",
+      "engine": "find-it",
+      "level": 1, "stage": "A", "place": "bahay", "theme": "ako",
+      "competencies": ["l1.ako.damdamin"],
+      "instruction": "instr.find-it",
+      "tile": "damdamin.gulat",
+      "items": ["damdamin.masaya", "damdamin.malungkot", "damdamin.galit", "damdamin.takot", "damdamin.gulat", "damdamin.inaantok", "damdamin.nahihiya"],
+      "faith": false,
+      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, Tell About Yourself: I Have Feelings" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.bahay.ako.gamit.tap",
+      "engine": "tap-and-hear",
+      "level": 1, "stage": "A", "place": "bahay", "theme": "ako",
+      "competencies": ["l1.ako.gamit"],
+      "instruction": "instr.tap-and-hear",
+      "tile": "gamit.tsinelas",
+      "items": ["gamit.tsinelas", "gamit.banig"],
+      "faith": false,
+      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, Tell About Yourself: This Is What I Wear; I Have Things I Use for Sleeping and Playing" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.bahay.ako.damdamin.match",
+      "engine": "match-pairs",
+      "level": 1, "stage": "B", "place": "bahay", "theme": "ako",
+      "competencies": ["l1.kasanayan.pagpapares", "l1.ako.damdamin"],
+      "instruction": "instr.match-pairs",
+      "tile": "damdamin.malungkot",
+      "items": ["damdamin.masaya", "damdamin.malungkot", "damdamin.galit", "damdamin.takot", "damdamin.gulat", "damdamin.inaantok"],
+      "faith": false,
+      "source": { "doc": "lrp1", "page": 12, "ref": "Topic: Pre-K1, Tell About Yourself: I Have Feelings. The matching skill itself has no competency in the PDFs; LRP 2 is needed." },
+      "status": "needs-review"
+    },
+    {
+      "id": "l1.bahay.ako.laki-kulay.sort",
+      "engine": "sort",
+      "level": 1, "stage": "B", "place": "bahay", "theme": "ako",
+      "competencies": ["l1.kasanayan.laki", "l1.kasanayan.kulay"],
+      "instruction": "instr.sort.laki",
+      "tile": "damit.kamiseta-pula",
+      "rounds": [
+        {
+          "rule": "laki",
+          "competency": "l1.kasanayan.laki",
+          "instruction": "instr.sort.laki",
+          "baskets": [
+            { "id": "malaki", "label": "sort.malaki", "cue": { "kind": "size", "value": "malaki" } },
+            { "id": "maliit", "label": "sort.maliit", "cue": { "kind": "size", "value": "maliit" } }
+          ],
+          "entries": [
+            { "item": "gamit.tsinelas", "variant": "malaki", "basket": "malaki" },
+            { "item": "gamit.tsinelas", "variant": "maliit", "basket": "maliit" },
+            { "item": "gamit.banig", "variant": "maliit", "basket": "maliit" },
+            { "item": "gamit.banig", "variant": "malaki", "basket": "malaki" },
+            { "item": "damit.kamiseta-dilaw", "variant": "malaki", "basket": "malaki" },
+            { "item": "damit.kamiseta-dilaw", "variant": "maliit", "basket": "maliit" }
+          ]
+        },
+        {
+          "rule": "kulay",
+          "competency": "l1.kasanayan.kulay",
+          "instruction": "instr.sort.kulay",
+          "baskets": [
+            { "id": "pula", "label": "sort.pula", "cue": { "kind": "colour", "value": "pula" } },
+            { "id": "iba", "label": "sort.iba", "cue": { "kind": "other-colours", "value": "pula" } }
+          ],
+          "entries": [
+            { "item": "damit.kamiseta-pula", "basket": "pula" },
+            { "item": "damit.kamiseta-asul", "basket": "iba" },
+            { "item": "damit.kamiseta-pula", "basket": "pula" },
+            { "item": "damit.kamiseta-dilaw", "basket": "iba" },
+            { "item": "damit.kamiseta-berde", "basket": "iba" },
+            { "item": "damit.kamiseta-pula", "basket": "pula" }
+          ]
+        }
+      ],
+      "faith": false,
+      "source": { "doc": "lrp1", "page": 12, "ref": "Topic: Pre-K1, Tell About Yourself: This Is What I Wear. Sorting by size and by colour have no competency in the PDFs; LRP 2 is needed." },
+      "status": "needs-review"
+    }
+  ]
+}

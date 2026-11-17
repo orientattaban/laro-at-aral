@@ -1,0 +1,25 @@
+{
+  "sources": {
+    "lrp1": {
+      "title": "Learning Resource Package No. 1: Implementing the National Early Learning Curriculum",
+      "publisher": "Early Childhood Care and Development (ECCD) Council",
+      "file": "LRP-1-28-pages-in-all.pdf",
+      "inCurriculumFolder": true,
+      "pageNote": "Page numbers are the ones printed on the page (LRP 1 | Page N). Add 8 to get the page of the PDF file."
+    },
+    "eccd-standards": {
+      "title": "Standards and Guidelines for Center-Based Early Childhood Programs for 0 to 4 Years Old Filipino Children",
+      "publisher": "Early Childhood Care and Development (ECCD) Council",
+      "file": "STANDARDS-AND-GUIDELINES-for-CENTER-BASED-FOR-ECCD-PROGRAMS-1.pdf",
+      "inCurriculumFolder": true,
+      "pageNote": "Page numbers are the ones printed on the page. Add 5 to get the page of the PDF file."
+    },
+    "who-2019": {
+      "title": "Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age (2019)",
+      "publisher": "World Health Organization",
+      "file": null,
+      "inCurriculumFolder": false,
+      "pageNote": "Not in the curriculum folder. Used only for the screen-time limits, not for lessons."
+    }
+  }
+}
