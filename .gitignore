@@ -30,3 +30,7 @@ raw-assets/**/*.jpg
 raw-assets/**/*.png
 START-HERE.md
 prompts/
+
+# Pictures processed for later levels (made again by: npm run assets)
+assets-later/
+assets-contact-sheet.png

@@ -19,7 +19,8 @@
     "check:content": "vitest run tests/unit/content.test.ts",
     "icons": "node scripts/make-icons.mjs",
     "size": "node scripts/report-size.mjs",
-    "lang:sync": "node scripts/sync-ilokano.mjs"
+    "lang:sync": "node scripts/sync-ilokano.mjs",
+    "assets": "node scripts/process-assets.mjs"
   },
   "dependencies": {
     "@fontsource/andika": "^5.3.0",
