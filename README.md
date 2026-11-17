@@ -1,6 +1,6 @@
 # Laro at Aral
 
-An offline learning game for a young child, in Filipino and English. This is Phase 1: the skeleton, four mini-games and the Bahay place, with placeholder pictures and no voices yet.
+An offline learning game for a young child, in Filipino and English. Today it has the town map, the Bahay place and four mini-games, with the real pictures and spoken narration.
 
 Nothing in this folder contains the child's name, photo or birthday. Her name is typed in the Parent Corner and stays on the phone.
 
@@ -16,7 +16,9 @@ Nothing in this folder contains the child's name, photo or birthday. Her name is
 | Play-time limit with Butil's goodbye and a Gawin natin card | Done |
 | Progress saved on the device, export, import, reset | Done |
 | Works with no internet after the first opening | Done, tested automatically |
-| Real pictures, voices | Phase 2 |
+| Real pictures from /raw-assets | Done |
+| Narration in Filipino and English (Butil and Teacher Liza) | Done, waiting for your listening review |
+| Splash screen and app icon from the real characters, Filipino and Ilokano spreadsheet | Phase 2, not done yet |
 | Other places and games, Android app | Phase 3 |
 
 ## How to run it on the laptop
@@ -74,7 +76,7 @@ The Terminal prints a line like `Network: http://192.168.1.23:4173/`. Type that 
 - The round button with two people at the top right is for parents. Hold it for three seconds, then answer the sum.
 - In the Parent Corner, switch between "Yugto A" (age 2) and "Yugto B" (age 3) to see the different games.
 - To see the goodbye screen quickly, set "Haba ng isang laro" to 1 minute.
-- The speaker button repeats Butil's instruction. For now it is silent and shows the words, because the voices are made in Phase 2.
+- The speaker button under Butil repeats his instruction.
 
 ## How to build it and see the size
 
@@ -82,7 +84,7 @@ The Terminal prints a line like `Network: http://192.168.1.23:4173/`. Type that 
 npm run build
 ```
 
-The last lines are the size report. Phase 1 is about 0.4 MB. The limit is 150 MB.
+The last lines are the size report. The limit is 150 MB.
 
 ## How to run the tests
 
@@ -123,7 +125,41 @@ The engines you can use today are `tap-and-hear`, `find-it`, `match-pairs` and `
 
 ## How to add a narration clip
 
-This arrives in Phase 2. The plan: every spoken line is a row in `narration.csv`. You correct the wording, I generate only the new or changed rows on this laptop, and you listen to each clip on a review page and mark it approved or redo. Until then, this command lists every clip the game is waiting for:
+Every spoken line is a row in `narration.csv`. The voices are made on this laptop with Google's Gemini speech model (free tier) and saved as small MP3 files inside the game. The game itself never contacts Google.
+
+**Your key** lives in the file `.env` in this folder, on the line `GEMINI_API_KEY=`. That file is never uploaded.
+
+**When you add or change a word** in `content/lang/fil.json` or `en.json`:
+
+1. Update the script. New lines are added as "new"; lines whose text changed go back to "new"; your notes are kept:
+
+```bash
+npm run narration:csv
+```
+
+2. Make only the new and changed clips (a few seconds each, paced for the free limits):
+
+```bash
+npm run narration
+```
+
+3. Listen and approve. This opens a page at http://localhost:4300:
+
+```bash
+npm run narration:review
+```
+
+On that page, press **Play**, then **Approve**, or write what is wrong and press **Redo**. To fix how a word is said, write a respelling such as `say: SA-ging`. Then run `npm run narration` again: only the redo clips are made again.
+
+**To change a character's voice**, choose another one at the top of the review page (to hear new candidates first, run `npm run narration:audition`), then mark all that character's clips to be made again:
+
+```bash
+npm run narration -- --redo-speaker "Butil"
+```
+
+If Google's free daily limit is reached, the run stops by itself, keeps what it made, and continues where it stopped the next time you run it.
+
+Ilokano has no voices until an Ilokano speaker has written the words. To see every clip the game is still missing:
 
 ```bash
 npm run check:assets

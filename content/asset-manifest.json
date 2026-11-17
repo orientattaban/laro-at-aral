@@ -104,5 +104,8 @@
     "ui-sticker-sampaguita": "assets/img/ui-sticker-sampaguita.webp",
     "ui-sticker-saranggola": "assets/img/ui-sticker-saranggola.webp"
   },
-  "audio": {}
+  "audio": {
+    "fil/instr.find-it": "assets/audio/fil/instr.find-it.mp3",
+    "fil/instr.tap-and-hear": "assets/audio/fil/instr.tap-and-hear.mp3"
+  }
 }

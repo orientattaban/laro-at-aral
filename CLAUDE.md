@@ -52,7 +52,7 @@ Read this first in every session. The full plan is in PLAN.md. Open questions ab
 - Stage A (age 2): tapping only, two pictures, 5-minute sessions. Stage B (age 3): adds Match pairs, Sort, Count to 5, puzzles; 10-minute sessions. Daily cap 30 minutes. A parent switches stages.
 - Characters: Ading (player), Butil (corn-kernel mascot, always with his leaf), Kiko, Ila, Lola Auring, Teacher Liza.
 - Phase 1 (done): skeleton, offline PWA, parent gate, session timer, engines 1 to 4, Bahay, themes Ako and Pamilya, placeholders.
-- Phase 2 (next): asset pipeline from `/raw-assets`, ASSETS.md, splash and icon, narration.csv, Gemini TTS at build time, review page, Filipino and Ilokano spreadsheet.
+- Phase 2 (in progress): DONE asset pipeline (`npm run assets`), ASSETS.md, narration.csv (wording approved by the owner), voices chosen (Butil: Achird, Teacher Liza: Erinome, Lola Auring: Vindemiatrix), generator (`npm run narration`), review page (`npm run narration:review`). NOT DONE: owner's listening review of the clips, splash and icon from the character pictures, Filipino and Ilokano spreadsheet, the Bulaklak badge cut badly (Level 4, fix later).
 - Phase 3: CDC and Bukid, engines Count, Puzzle, Sing and move, Gawin natin, hide-and-find, themes Komunidad and Mundo, full Parent Corner, Android APK.
 
 ## Narration (Phase 2)

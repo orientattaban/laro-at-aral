@@ -37,3 +37,6 @@ assets-contact-sheet.png
 
 # Voice audition samples (made again by: npm run narration:audition)
 narration-audition/
+
+# Made by: npm run lang:sheet (the family edits a copy and sends it back)
+language-review.xlsx

@@ -1,11 +1,14 @@
 {
   "note": "Which Gemini voice speaks for each character, and how. 'style' tells the speech model how to speak; it is never read aloud. Change a voice here after listening to the audition, then re-run the generator for that speaker with: npm run narration -- --redo-speaker \"Butil\"",
   "model": "gemini-3.8-flash-tts",
-  "languageCodes": { "Filipino": "fil", "English": "en" },
+  "languageCodes": {
+    "Filipino": "fil",
+    "English": "en"
+  },
   "pacing": {
-    "note": "Google does not publish free-tier numbers for this model; they are shown in your own AI Studio account. These defaults stay well below the usual free limits. A run stops by itself if the daily limit is reached and continues where it left off next time.",
+    "note": "Google free tier for gemini-3.8-flash-tts: 10 requests per day (Google error message, 17 November 2026). A run stops by itself at the limit and continues where it left off next time. Google shows current limits at https://ai.dev/rate-limit (sign in).",
     "secondsBetweenRequests": 8,
-    "maxRequestsPerRun": 90
+    "maxRequestsPerRun": 200
   },
   "speakers": {
     "Butil": {
@@ -22,8 +25,21 @@
     }
   },
   "audition": {
-    "Butil": ["Achird", "Sulafat", "Leda", "Puck"],
-    "Teacher Liza": ["Erinome", "Iapetus", "Kore"],
-    "Lola Auring": ["Vindemiatrix", "Gacrux", "Achernar"]
+    "Butil": [
+      "Achird",
+      "Sulafat",
+      "Leda",
+      "Puck"
+    ],
+    "Teacher Liza": [
+      "Erinome",
+      "Iapetus",
+      "Kore"
+    ],
+    "Lola Auring": [
+      "Vindemiatrix",
+      "Gacrux",
+      "Achernar"
+    ]
   }
 }

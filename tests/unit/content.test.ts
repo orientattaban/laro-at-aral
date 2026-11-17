@@ -1,3 +1,5 @@
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { content } from '../../src/content';
 import { validateContent } from '../../src/content/validate';
@@ -37,6 +39,16 @@ describe('content files', () => {
     const everything = JSON.stringify(content).toLowerCase();
     expect(everything).not.toContain('scarecrow');
     expect(everything).not.toMatch(/https?:\/\//);
+  });
+
+  it('every picture and voice clip the game lists really exists', () => {
+    const missing = [...Object.values(content.assets.images), ...Object.values(content.assets.audio)]
+      .filter((path) => !existsSync(join('public', path)));
+    expect(missing).toEqual([]);
+  });
+
+  it('voice clips exist only for Filipino and English (no Ilokano until a speaker writes it)', () => {
+    for (const key of Object.keys(content.assets.audio)) expect(['fil', 'en']).toContain(key.split('/')[0]);
   });
 
   it('only build Level 1', () => {
