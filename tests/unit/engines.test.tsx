@@ -107,6 +107,20 @@ describe('Tap and hear', () => {
 });
 
 describe('Find it', { timeout: 30_000 }, () => {
+  it('never writes the word under the choices, even with words switched on', () => {
+    const h = harness();
+    const { container } = render(
+      <FindIt {...h.props} captions activity={findActivity} stage="B" step={2} maxChoices={4} itemOrder={findActivity.items} />,
+    );
+    expect(container.querySelectorAll('.card-caption').length).toBe(0);
+    for (const card of screen.getAllByTestId('choice')) {
+      const word = card.getAttribute('aria-label')!;
+      // The only text on a card is the placeholder label (until a real picture exists).
+      expect(card.querySelector('.card-caption')).toBeNull();
+      expect(word.length).toBeGreaterThan(0);
+    }
+  });
+
   it('speaks the instruction, then asks for a picture', async () => {
     const h = harness();
     render(<FindIt {...h.props} activity={findActivity} stage="A" step={0} maxChoices={2} itemOrder={findActivity.items} />);

@@ -35,7 +35,7 @@ export function buildFindItTrials(
 }
 
 export function FindIt({
-  activity, lang, step, maxChoices, captions, itemOrder, reviewExtras, speak, report, finish,
+  activity, lang, step, maxChoices, itemOrder, reviewExtras, speak, report, finish,
 }: EngineProps<ItemActivity>) {
   const trials = useMemo(() => {
     const count = findItChoiceCount(activity.level, maxChoices, step, activity.items.length);
@@ -110,7 +110,8 @@ export function FindIt({
             key={`${index}-${id}`}
             itemId={id}
             lang={lang}
-            caption={captions}
+            // Never write the word under the choices: it would give the answer away.
+            caption={false}
             state={stateOf(id)}
             onTap={() => void tap(id)}
             testId="choice"
