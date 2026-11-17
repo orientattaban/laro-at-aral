@@ -17,6 +17,18 @@ describe('cutting a group recording into one clip per line', () => {
     expect(result.pieces[1].from).toBeCloseTo(3.0);
   });
 
+  it('a comma pause almost as long as the real gaps is not mistaken for a gap', () => {
+    const texts = [
+      'Ilagay ang malaki sa malaking basket, at ang maliit sa maliit na basket.',
+      'Magaling!',
+      'Pumili ng laro.',
+    ];
+    const silences = [s(2.2, 2.9), s(5.0, 5.9), s(6.7, 7.55)];
+    const result = chooseCuts(silences, 9.0, texts);
+    expect(result.error).toBeUndefined();
+    expect(result.pieces.map((p) => +p.to.toFixed(2))).toEqual([5.45, 7.13, 9]);
+  });
+
   it('refuses when there are fewer gaps than lines', () => {
     expect(chooseCuts([s(1.2, 2.2)], 5, ['a.', 'b.', 'c.']).error).toMatch(/expected 3/);
   });

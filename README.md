@@ -157,7 +157,9 @@ On that page, press **Play**, then **Approve**, or write what is wrong and press
 npm run narration -- --redo-speaker "Butil"
 ```
 
-If Google's free daily limit is reached, the run stops by itself, keeps what it made, and continues where it stopped the next time you run it.
+If Google's free daily limit is reached, the run stops by itself, keeps what it made, and continues where it stopped the next time you run it. The free tier allows 10 requests a day, so up to 10 lines of one character go in one request and are cut apart afterwards; a recording that cannot be cut safely is not used, and those lines are tried again in smaller groups.
+
+**The daily run.** A Windows scheduled task called "Laro at Aral narration" runs `npm run narration` every day at 12:30 pm (or as soon as the laptop is on, if it was off). A black window may show for a few minutes while it works. What happened is written to `narration-log.txt` in this folder. When every clip is made, the task deletes itself. To stop it earlier, open Task Scheduler from the Start menu, find "Laro at Aral narration", right-click and choose Delete.
 
 Ilokano has no voices until an Ilokano speaker has written the words. To see every clip the game is still missing:
 

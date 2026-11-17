@@ -40,3 +40,6 @@ narration-audition/
 
 # Made by: npm run lang:sheet (the family edits a copy and sends it back)
 language-review.xlsx
+
+# Written by the daily narration task
+narration-log.txt

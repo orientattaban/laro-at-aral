@@ -11,7 +11,7 @@
 //
 // A redo note can contain a respelling. Write it as:  say: sang-gol
 // The respelling is spoken instead of the text, but the game still shows the real text.
-import { existsSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
+import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -175,6 +175,12 @@ async function main() {
             const half = Math.ceil(group.length / 2);
             queue.unshift(group.slice(0, half), group.slice(half));
             log(`   could not cut a group of ${group.length} cleanly (${result.error}); trying again in smaller groups`);
+            // Keep the refused recording so it can be listened to and the cutter improved.
+            const keep = join(root, 'narration-audition', '_refused');
+            mkdirSync(keep, { recursive: true });
+            const stamp = new Date().toISOString().replace(/[:.]/g, '-');
+            copyFileSync(work, join(keep, `${stamp}.wav`));
+            writeFileSync(join(keep, `${stamp}.json`), JSON.stringify({ error: result.error, lines: group.map((r) => r.file), silences, total }, null, 2));
           } else {
             result.pieces.forEach((piece, i) => {
               const out = join(AUDIO_DIR, group[i].file);

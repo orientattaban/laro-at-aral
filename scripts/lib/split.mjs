@@ -45,15 +45,53 @@ export function chooseCuts(silences, total, texts) {
   // Ignore silence at the very start and end.
   const inner = silences.filter((s) => s.start > 0.05 && s.end < total - 0.05);
   if (inner.length < n - 1) return { error: `found ${inner.length + 1} parts, expected ${n}` };
-  const longest = [...inner].sort((a, b) => (b.end - b.start) - (a.end - a.start)).slice(0, n - 1)
-    .sort((a, b) => a.start - b.start);
-  // A real gap between lines must be clearly longer than the pauses inside a line.
-  const shortestCut = Math.min(...longest.map((s) => s.end - s.start));
-  const nextBest = [...inner].sort((a, b) => (b.end - b.start) - (a.end - a.start))[n - 1];
-  if (shortestCut < 0.45) return { error: `a gap between lines is only ${shortestCut.toFixed(2)} s` };
-  if (nextBest && (nextBest.end - nextBest.start) > shortestCut * 0.8) {
-    return { error: 'pauses inside a line are almost as long as the gaps between lines' };
+
+  // Choose the n-1 pauses that (1) are long and (2) split the speech into pieces
+  // whose lengths match the lengths of the texts. Pauses after commas inside a
+  // sentence lose on (2), because cutting there makes pieces of the wrong length.
+  const leadIn = silences.find((s) => s.start <= 0.05)?.end ?? 0;
+  const tail = silences.find((s) => s.end >= total - 0.05)?.start ?? total;
+  const chars = texts.map((t) => Math.max(1, speechLength(t)));
+  const totalChars = chars.reduce((a, b) => a + b, 0);
+  const m = inner.length;
+  const len = (s) => s.end - s.start;
+  // Fixed cost per letter would favour long sentences; allow a base time per line.
+  const base = 0.35;
+  const secondsPerChar = Math.max(0.01, (tail - leadIn - inner.reduce((a, s) => a + len(s), 0) * 0.5 - base * n) / totalChars);
+  const expected = chars.map((c) => base + c * secondsPerChar);
+  const segCost = (from, to, i) => {
+    const d = Math.max(0.05, to - from);
+    return Math.log(d / expected[i]) ** 2;
+  };
+  const gapBonus = (s) => 0.6 * Math.log(Math.max(0.05, len(s)));
+  // best[k][j]: lowest cost with the k-th cut placed at pause j.
+  const best = Array.from({ length: n - 1 }, () => new Array(m).fill(Infinity));
+  const from = Array.from({ length: n - 1 }, () => new Array(m).fill(-1));
+  for (let j = 0; j < m; j++) best[0][j] = segCost(leadIn, inner[j].start, 0) - gapBonus(inner[j]);
+  for (let k = 1; k < n - 1; k++) {
+    for (let j = k; j < m; j++) {
+      for (let p = k - 1; p < j; p++) {
+        const c = best[k - 1][p] + segCost(inner[p].end, inner[j].start, k) - gapBonus(inner[j]);
+        if (c < best[k][j]) { best[k][j] = c; from[k][j] = p; }
+      }
+    }
   }
+  let end = -1;
+  let endCost = Infinity;
+  for (let j = n - 2; j < m; j++) {
+    const c = best[n - 2][j] + segCost(inner[j].end, tail, n - 1);
+    if (c < endCost) { endCost = c; end = j; }
+  }
+  if (end < 0) return { error: 'could not find a sensible way to cut' };
+  const picks = [end];
+  for (let k = n - 2; k > 0; k--) picks.unshift(from[k][picks[0]]);
+  const longest = picks.map((j) => inner[j]);
+
+  const shortestCut = Math.min(...longest.map(len));
+  if (shortestCut < 0.35) return { error: `a gap between lines is only ${shortestCut.toFixed(2)} s` };
+  // A pause left inside a piece must not be much longer than the gaps we cut at.
+  const leftover = inner.filter((s) => !longest.includes(s)).reduce((a, s) => Math.max(a, len(s)), 0);
+  if (leftover > shortestCut * 1.6) return { error: 'a pause inside a line is longer than the gaps between lines' };
   const bounds = [0, ...longest.map((s) => (s.start + s.end) / 2), total];
   const pieces = texts.map((_, i) => ({ from: bounds[i], to: bounds[i + 1] }));
 
