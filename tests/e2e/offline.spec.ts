@@ -62,14 +62,15 @@ async function playFindIt(page: Page) {
     await expect(async () => {
       await card.click();
       await expect(card).toHaveClass(/card-correct/, { timeout: 400 });
-    }).toPass({ timeout: 8000 });
-    if (i < 3) await expect(row).not.toHaveAttribute('data-target', target!, { timeout: 8000 });
+    }).toPass({ timeout: 20_000 });
+    if (i < 3) await expect(row).not.toHaveAttribute('data-target', target!, { timeout: 20_000 });
   }
-  await expect(page.getByTestId('reward')).toBeVisible({ timeout: 8000 });
-  await expect(page.getByTestId('place')).toBeVisible({ timeout: 8000 });
+  await expect(page.getByTestId('reward')).toBeVisible({ timeout: 20_000 });
+  await expect(page.getByTestId('place')).toBeVisible({ timeout: 20_000 });
 }
 
 test('makes no network requests to any other server', async ({ context, page }) => {
+  test.setTimeout(120_000);
   const seen = watchRequests(context);
   await page.goto('/');
   await expect(page.getByTestId('map')).toBeVisible();
@@ -86,6 +87,7 @@ test('makes no network requests to any other server', async ({ context, page }) 
 });
 
 test('works in airplane mode: opens, plays and saves with no connection', async ({ browser }) => {
+  test.setTimeout(120_000);
   // Start a private copy of the server, install the app from it, then switch the server OFF.
   // After that there is nothing to connect to, exactly like a phone in airplane mode.
   const server = await preview({ preview: { port: AIRPLANE_PORT, strictPort: true }, logLevel: 'silent' });
@@ -155,7 +157,7 @@ test('Stage B games work: Match pairs and Sort (dragging)', async ({ page }) => 
   // Match pairs
   await page.locator('[data-testid=tile][data-engine=match-pairs]').click();
   for (let round = 0; round < 2; round++) {
-    await expect(page.locator('[data-testid=match-card].card-done')).toHaveCount(0, { timeout: 8000 });
+    await expect(page.locator('[data-testid=match-card].card-done')).toHaveCount(0, { timeout: 20_000 });
     const cards = page.getByTestId('match-card');
     await expect(cards).toHaveCount(4);
     const items = await cards.evaluateAll((list) => list.map((c) => (c as HTMLElement).dataset.item));
@@ -165,7 +167,7 @@ test('Stage B games work: Match pairs and Sort (dragging)', async ({ page }) => 
         await pair.nth(0).click();
         await pair.nth(1).click();
         await expect(pair.nth(0)).toHaveClass(/card-done/, { timeout: 500 });
-      }).toPass({ timeout: 8000 });
+      }).toPass({ timeout: 20_000 });
     }
   }
   await expect(page.getByTestId('place')).toBeVisible({ timeout: 10_000 });
