@@ -1,0 +1,29 @@
+{
+  "note": "Which Gemini voice speaks for each character, and how. 'style' tells the speech model how to speak; it is never read aloud. Change a voice here after listening to the audition, then re-run the generator for that speaker with: npm run narration -- --redo-speaker \"Butil\"",
+  "model": "gemini-3.8-flash-tts",
+  "languageCodes": { "Filipino": "fil", "English": "en" },
+  "pacing": {
+    "note": "Google does not publish free-tier numbers for this model; they are shown in your own AI Studio account. These defaults stay well below the usual free limits. A run stops by itself if the daily limit is reached and continues where it left off next time.",
+    "secondsBetweenRequests": 8,
+    "maxRequestsPerRun": 90
+  },
+  "speakers": {
+    "Butil": {
+      "voice": "Achird",
+      "style": "warm, cheerful and gentle, speaking slowly and very clearly to a three-year-old child, with small pauses between phrases"
+    },
+    "Teacher Liza": {
+      "voice": "Erinome",
+      "style": "a kind teacher speaking slowly and very clearly to a three-year-old child, saying the word once with a friendly tone"
+    },
+    "Lola Auring": {
+      "voice": "Vindemiatrix",
+      "style": "an older, gentle grandmother telling a story slowly and softly to a small child"
+    }
+  },
+  "audition": {
+    "Butil": ["Achird", "Sulafat", "Leda", "Puck"],
+    "Teacher Liza": ["Erinome", "Iapetus", "Kore"],
+    "Lola Auring": ["Vindemiatrix", "Gacrux", "Achernar"]
+  }
+}

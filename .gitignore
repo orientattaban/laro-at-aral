@@ -34,3 +34,6 @@ prompts/
 # Pictures processed for later levels (made again by: npm run assets)
 assets-later/
 assets-contact-sheet.png
+
+# Voice audition samples (made again by: npm run narration:audition)
+narration-audition/

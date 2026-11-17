@@ -8,8 +8,9 @@
 //   - nothing is ever sent to a speech service by this script
 // Ilokano has no rows until an Ilokano speaker has written the text.
 // Run: npm run narration:csv
-import { readFileSync, readdirSync, writeFileSync, existsSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
+import { readNarration, writeNarration } from './lib/csv.mjs';
 import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
@@ -85,47 +86,12 @@ function noteFor(code, text, group) {
   return parts.join(' ');
 }
 
-// ---- CSV helpers (Excel-friendly) ----
-const HEADER = ['file name', 'language', 'speaker', 'exact text', 'pronunciation note', 'status'];
 const LANG_NAME = { fil: 'Filipino', en: 'English', ilo: 'Ilokano' };
-const escape = (v) => (/[",\n]/.test(v) ? `"${v.replaceAll('"', '""')}"` : v);
-
-function parseCsv(text) {
-  const rows = [];
-  let row = [];
-  let cell = '';
-  let quoted = false;
-  text = text.replace(/^﻿/, '');
-  for (let i = 0; i < text.length; i++) {
-    const c = text[i];
-    if (quoted) {
-      if (c === '"' && text[i + 1] === '"') { cell += '"'; i++; }
-      else if (c === '"') quoted = false;
-      else cell += c;
-    } else if (c === '"') quoted = true;
-    else if (c === ',') { row.push(cell); cell = ''; }
-    else if (c === '\n' || c === '\r') {
-      if (c === '\r' && text[i + 1] === '\n') i++;
-      row.push(cell); rows.push(row); row = []; cell = '';
-    } else cell += c;
-  }
-  if (cell !== '' || row.length) { row.push(cell); rows.push(row); }
-  return rows.filter((r) => r.some((v) => v.trim() !== ''));
-}
 
 // Rows already in the file, by file name.
-const previous = new Map();
-if (existsSync(CSV)) {
-  const [head, ...rest] = parseCsv(readFileSync(CSV, 'utf8'));
-  const col = (name) => head.indexOf(name);
-  for (const r of rest) {
-    previous.set(r[col('file name')], {
-      text: r[col('exact text')], note: r[col('pronunciation note')], status: r[col('status')],
-    });
-  }
-}
+const previous = new Map(readNarration(CSV).map((r) => [r.file, r]));
 
-const out = [HEADER];
+const out = [];
 const counts = { new: 0, changed: 0, kept: 0 };
 for (const code of ['fil', 'en', 'ilo']) {
   for (const line of lines) {
@@ -140,15 +106,14 @@ for (const code of ['fil', 'en', 'ilo']) {
       if (before.text === text) { status = before.status || 'new'; counts.kept++; }
       else { status = 'new'; counts.changed++; }
     } else counts.new++;
-    out.push([file, LANG_NAME[code], line.speaker, text, note, status]);
+    out.push({ file, language: LANG_NAME[code], speaker: line.speaker, text, note, status });
   }
 }
 
-// ﻿ lets Excel show ñ and other letters correctly.
-writeFileSync(CSV, '﻿' + out.map((r) => r.map(escape).join(',')).join('\r\n') + '\r\n');
-const rows = out.length - 1;
+writeNarration(CSV, out);
+const rows = out.length;
 const bySpeaker = {};
-for (const r of out.slice(1)) bySpeaker[`${r[1]} / ${r[2]}`] = (bySpeaker[`${r[1]} / ${r[2]}`] ?? 0) + 1;
+for (const r of out) bySpeaker[`${r.language} / ${r.speaker}`] = (bySpeaker[`${r.language} / ${r.speaker}`] ?? 0) + 1;
 console.log(`narration.csv: ${rows} lines (${counts.new} new, ${counts.changed} changed text, ${counts.kept} unchanged).`);
 for (const [k, v] of Object.entries(bySpeaker)) console.log(`  ${k}: ${v}`);
 console.log('Ilokano: no lines until an Ilokano speaker has written the text.');
