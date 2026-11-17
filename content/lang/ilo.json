@@ -201,5 +201,7 @@
   "parent.reset.no": "",
   "parent.reset.done": "",
   "parent.version": "",
+  "parent.offline.ready": "",
+  "parent.offline.not-yet": "",
   "parent.missing-audio": ""
 }

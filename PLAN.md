@@ -1,6 +1,8 @@
 # PLAN: Laro at Aral, Level 1 (Binhi)
 
-Written 17 November 2026. Nothing has been built yet. This plan waits for your approval.
+Written 17 November 2026. Approved the same day.
+
+**Status: Phase 1 is built and tested.** Phases 2 and 3 are not started. See README.md for how to run it.
 
 ## 1. The plan in plain words
 

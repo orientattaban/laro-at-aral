@@ -9,7 +9,7 @@ import type { BasketCue, Lang, SortActivity, SortEntry, SortRound } from '../con
 import { Picture } from '../components/Picture';
 import { sfx } from '../core/audio';
 import { t } from '../core/i18n';
-import { wait } from '../core/util';
+import { capturePointer, wait } from '../core/util';
 import { Arrow, Basket, Drawn, OtherSwatches, Swatch } from '../draw/Drawn';
 import { useAlive } from './Card';
 import type { EngineProps } from './types';
@@ -118,7 +118,7 @@ export function Sort({ activity, lang, step, captions, speak, report, finish }: 
 
   const onPointerDown = (e: ReactPointerEvent<HTMLDivElement>) => {
     if (busy.current) return;
-    e.currentTarget.setPointerCapture?.(e.pointerId);
+    capturePointer(e.currentTarget, e.pointerId);
     dragStart.current = { x: e.clientX, y: e.clientY };
     setDrag({ x: 0, y: 0 });
     sfx.tap();

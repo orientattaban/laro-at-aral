@@ -178,6 +178,9 @@ img { -webkit-user-drag: none; }
 .bubble-empty { visibility: hidden; }
 .bubble-picture, .bubble-sound { flex: none; width: clamp(40px, 12vh, 68px); height: clamp(40px, 12vh, 68px); }
 .bubble-sound svg { width: 100%; height: 100%; }
+.bubble-picture .pic-placeholder { padding: 2px; border-width: 2px; border-radius: 10px; }
+.bubble-picture .pic-placeholder svg { display: none; }
+.bubble-picture .ph-label { font-size: clamp(9px, 2.6vh, 13px); }
 .bubble-text { margin: 0; font-weight: 700; font-size: clamp(15px, 4.4vh, 28px); line-height: 1.15; }
 
 .play-area {

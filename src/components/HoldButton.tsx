@@ -3,6 +3,8 @@
 import { useEffect, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
 
+import { capturePointer } from '../core/util';
+
 export const HOLD_SECONDS = 3;
 
 export function HoldButton({
@@ -42,7 +44,7 @@ export function HoldButton({
       aria-label={label}
       title={label}
       style={{ ['--hold-seconds' as string]: `${seconds}s` }}
-      onPointerDown={(e) => { e.currentTarget.setPointerCapture?.(e.pointerId); start(); }}
+      onPointerDown={(e) => { capturePointer(e.currentTarget, e.pointerId); start(); }}
       onPointerUp={stop}
       onPointerCancel={stop}
       onPointerLeave={stop}

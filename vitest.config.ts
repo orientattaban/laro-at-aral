@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [react()],
   define: {
     __APP_VERSION__: JSON.stringify('test'),
+    __ANDROID_BUILD__: 'false',
   },
   test: {
     environment: 'jsdom',

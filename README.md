@@ -1,0 +1,170 @@
+# Laro at Aral
+
+An offline learning game for a young child, in Filipino and English. This is Phase 1: the skeleton, four mini-games and the Bahay place, with placeholder pictures and no voices yet.
+
+Nothing in this folder contains the child's name, photo or birthday. Her name is typed in the Parent Corner and stays on the phone.
+
+## What works today
+
+| Part | Status |
+| --- | --- |
+| Town map with Bahay open (the other two places say "Malapit na") | Done |
+| Tap and hear, Find it (Stage A, age 2) | Done |
+| Match pairs, Sort (Stage B, age 3) | Done |
+| Themes Ako and Pamilya, with the source of every lesson | Done |
+| Parent gate: hold 3 seconds, then a sum | Done |
+| Play-time limit with Butil's goodbye and a Gawin natin card | Done |
+| Progress saved on the device, export, import, reset | Done |
+| Works with no internet after the first opening | Done, tested automatically |
+| Real pictures, voices | Phase 2 |
+| Other places and games, Android app | Phase 3 |
+
+## How to run it on the laptop
+
+Each command goes in the Terminal, inside this folder.
+
+To try the game while it is being worked on:
+
+```bash
+npm run dev
+```
+
+Then open http://localhost:5173 in Chrome or Edge. Make the window wide, like a phone held sideways.
+
+## How to test it in airplane mode on the laptop
+
+1. Build the real app:
+
+```bash
+npm run build
+```
+
+2. Start it:
+
+```bash
+npm run preview
+```
+
+3. Open http://localhost:4173 in Chrome or Edge. Wait about ten seconds.
+4. Go back to the Terminal and press Ctrl+C to stop it. You can also switch the laptop's Wi-Fi off.
+5. Reload the page in the browser. The game still opens and plays, because it now lives in the browser's own storage.
+
+The Parent Corner also tells you: open it, choose "Progreso at bersyon", and look for "Handa na itong gamitin kahit walang internet."
+
+## How to open it on your phone
+
+There are two ways. Only the second one allows airplane mode.
+
+**Quick look, same Wi-Fi, needs the laptop running.** Good for seeing the size of the buttons on a real phone.
+
+```bash
+npm run preview -- --host
+```
+
+The Terminal prints a line like `Network: http://192.168.1.23:4173/`. Type that address into Chrome on the phone. If Windows asks whether to allow Node.js on the network, choose "Allow" for private networks. This way cannot work in airplane mode: phones only let a website store itself for offline use when it comes from a secure "https" address.
+
+**Proper install, works in airplane mode.** This needs the web version published to GitHub Pages, which gives it an https address. It has not been published yet because it needs two decisions from you (see PLAN.md, section 8): a free GitHub account, and whether a public repository is acceptable. Once published:
+
+1. Open the address in Chrome on the phone and wait ten seconds.
+2. Tap the three dots, then "Add to Home screen" or "Install app".
+3. Open the game from its icon, turn on airplane mode, and play.
+
+## How to play-test as a grown-up
+
+- The round button with two people at the top right is for parents. Hold it for three seconds, then answer the sum.
+- In the Parent Corner, switch between "Yugto A" (age 2) and "Yugto B" (age 3) to see the different games.
+- To see the goodbye screen quickly, set "Haba ng isang laro" to 1 minute.
+- The speaker button repeats Butil's instruction. For now it is silent and shows the words, because the voices are made in Phase 2.
+
+## How to build it and see the size
+
+```bash
+npm run build
+```
+
+The last lines are the size report. Phase 1 is about 0.4 MB. The limit is 150 MB.
+
+## How to run the tests
+
+```bash
+npm test
+```
+
+This checks the lesson files against the project rules, and the logic for difficulty, progress, review, time limits, saving and the four games.
+
+```bash
+npm run test:offline
+```
+
+This opens the built app in a real browser, switches the server off, and proves the game still opens, plays and saves, and that it never contacts another server. Run `npm run build` first. One of these tests waits a real minute for the play-time limit, so the whole run takes about two minutes.
+
+## How to add a lesson
+
+Lessons are text files in the `content` folder. No code is needed.
+
+1. **Add the word**, if it is new, to `content/items/level1.json`. Copy a line and change it:
+   - `id`: a short name of your own, like `pagkain.bayabas`
+   - `image`: the picture name
+   - `text`: the key for its word
+   - `source` and `status`: where it comes from. Use `"verified"` only if you found it in a PDF in the `curriculum` folder. Otherwise write `"needs-review"`.
+2. **Add its text** to `content/lang/fil.json` and `content/lang/en.json`. Each word needs two lines: the word itself, and the Find-it question at the same key plus `.find`.
+3. **Add it to a game** in `content/activities/level1/`: put the item's `id` in the `items` list of an activity, or copy a whole activity block and change its `id`, `engine`, `items` and `source`.
+4. Run these two commands. The first adds the new key to the Ilokano file, left empty. The second checks your work and explains any mistake in plain words.
+
+```bash
+npm run lang:sync
+```
+
+```bash
+npm test
+```
+
+The engines you can use today are `tap-and-hear`, `find-it`, `match-pairs` and `sort`.
+
+## How to add a narration clip
+
+This arrives in Phase 2. The plan: every spoken line is a row in `narration.csv`. You correct the wording, I generate only the new or changed rows on this laptop, and you listen to each clip on a review page and mark it approved or redo. Until then, this command lists every clip the game is waiting for:
+
+```bash
+npm run check:assets
+```
+
+## How to publish an update
+
+Also not switched on yet, for the same reason as the phone install. The file `.github/workflows/deploy.yml` is ready: once the project is on GitHub, every push to the `main` branch runs all the tests and, only if they pass, publishes the web version. The Android app file comes in Phase 3.
+
+## What the app remembers, and where
+
+- Everything is saved on the device, in the browser's own storage. Nothing is sent anywhere.
+- "I-save ang progreso sa isang file" in the Parent Corner makes a backup file. "Ibalik ang progreso mula sa file" loads it, for example on a new phone.
+- The backup file contains the child's name if you typed one. Keep it private.
+
+## Choices I made that you can change
+
+| Choice | Why | Where to change it |
+| --- | --- | --- |
+| A place shows at most four games, the ones played least recently | A small child never sees more than four choices | `src/core/scheduler.ts` |
+| Step up after three right in a row, down after two misses in a row | From your brief | `src/core/difficulty.ts` |
+| Words come back for review after 1, 2, 4, 7 and 14 days | A simple, well-known spacing | `src/core/review.ts` |
+| Progress labels are words (Nagsisimula, Umuunlad, Kaya na), not scores | LRP 1 page 16: ratings for young children should be descriptive | `src/core/mastery.ts` |
+| After goodbye, only a parent can allow more play that day | So the limit means something | `src/core/session.ts` |
+| When time runs out mid-game, the child finishes the current question first | Standards and Guidelines page 28: children are not rushed to stop | `src/screens/ActivityScreen.tsx` |
+| Faith content is off until a parent switches it on | From your brief | Parent Corner |
+
+## One honest limit
+
+A website or app cannot block the phone's own Home button. On Android, "app pinning" does that: Settings, Security, App pinning. Instructions for your brother's phone come with the Android app in Phase 3.
+
+## Where things are
+
+| Folder or file | What it holds |
+| --- | --- |
+| `content/` | Lessons, words, sources. The part you can edit |
+| `src/` | The program |
+| `scripts/` | Small helper programs (size report, missing-asset list, Ilokano sync, icons) |
+| `tests/` | The automatic checks |
+| `raw-assets/` | Your original pictures. Never changed by any script |
+| `curriculum/` | The official PDFs. Kept on this laptop, not uploaded |
+| `PLAN.md` | The plan you approved |
+| `CONTENT_GAPS.md` | What I could not confirm from an official source |
+| `CLAUDE.md` | The project rules, so later sessions follow them |

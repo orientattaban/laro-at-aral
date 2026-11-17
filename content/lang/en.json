@@ -201,5 +201,7 @@
   "parent.reset.no": "No",
   "parent.reset.done": "Progress erased.",
   "parent.version": "Version",
+  "parent.offline.ready": "Ready to use with no internet.",
+  "parent.offline.not-yet": "The app has not finished getting ready for use without internet. Stay connected for a few seconds, then open the game again.",
   "parent.missing-audio": "Voice clips not made yet: {count}"
 }

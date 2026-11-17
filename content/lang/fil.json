@@ -201,5 +201,7 @@
   "parent.reset.no": "Huwag",
   "parent.reset.done": "Nabura na ang progreso.",
   "parent.version": "Bersyon",
+  "parent.offline.ready": "Handa na itong gamitin kahit walang internet.",
+  "parent.offline.not-yet": "Hindi pa tapos ang paghahanda para sa paggamit nang walang internet. Manatiling konektado nang ilang segundo, tapos buksan ulit ang laro.",
   "parent.missing-audio": "Mga boses na wala pa: {count}"
 }

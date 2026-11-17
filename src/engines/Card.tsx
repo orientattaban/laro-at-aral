@@ -1,7 +1,7 @@
 // A big picture card that can be tapped. Used by several engines.
 import { getItem } from '../content';
 import type { Lang } from '../content/types';
-import { Picture } from '../components/Picture';
+import { Picture, hasRealImage } from '../components/Picture';
 import { t } from '../core/i18n';
 import { Arrow, Check } from '../draw/Drawn';
 
@@ -34,7 +34,8 @@ export function Card({
       ) : (
         <>
           <Picture image={item.image} label={name} />
-          {caption && <span className="card-caption">{name}</span>}
+          {/* A placeholder already shows the word, so the caption would repeat it. */}
+          {caption && hasRealImage(item.image) && <span className="card-caption">{name}</span>}
         </>
       )}
       {state === 'correct' || state === 'done' ? <span className="card-badge"><Check /></span> : null}

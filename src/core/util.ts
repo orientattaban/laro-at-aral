@@ -15,7 +15,19 @@ export function chunk<T>(list: readonly T[], size: number): T[][] {
   return out;
 }
 
-export const wait = (ms: number) => new Promise<void>((resolve) => setTimeout(resolve, ms));
+/**
+ * Keep receiving a finger's movement even if it slides off the element.
+ * Some older phones refuse this; the game still works without it.
+ */
+export function capturePointer(element: Element, pointerId: number): void {
+  try {
+    element.setPointerCapture(pointerId);
+  } catch {
+    /* not supported for this pointer: carry on */
+  }
+}
+
+export const wait =(ms: number) => new Promise<void>((resolve) => setTimeout(resolve, ms));
 
 /** A small number from a text, used to give each placeholder its own soft colour. */
 export function hashHue(text: string): number {

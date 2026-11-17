@@ -1,7 +1,7 @@
 {
   "mapImage": "place-map",
   "places": [
-    { "id": "bahay", "level": 1, "name": "place.bahay", "image": "place-bahay", "icon": "draw:lugar:bahay", "mapSpot": { "x": 24, "y": 58 } },
+    { "id": "bahay", "level": 1, "name": "place.bahay", "image": "place-bahay", "icon": "draw:lugar:bahay", "mapSpot": { "x": 24, "y": 44 } },
     { "id": "cdc", "level": 1, "name": "place.cdc", "image": "place-cdc", "icon": "draw:lugar:cdc", "mapSpot": { "x": 52, "y": 36 } },
     { "id": "bukid", "level": 1, "name": "place.bukid", "image": "place-bukid", "icon": "draw:lugar:bukid", "mapSpot": { "x": 78, "y": 62 } }
   ]

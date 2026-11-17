@@ -1,6 +1,6 @@
 // Parent Corner. Reached only through the parent gate.
 // This is the one part of the app that needs reading; it is for grown-ups.
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { content, getCompetency, getStage, languageReady } from '../content';
 import type { Activity, AreaId, Lang, StageId } from '../content/types';
 import { missingClips } from '../core/audio';
@@ -16,6 +16,7 @@ import { makeExport, parseImport } from '../core/storage';
 import { store, useSave } from '../core/store';
 
 declare const __APP_VERSION__: string;
+declare const __ANDROID_BUILD__: boolean;
 
 type Tab = 'settings' | 'progress' | 'sources' | 'data';
 const TABS: Tab[] = ['settings', 'progress', 'sources', 'data'];
@@ -262,6 +263,25 @@ function DataTab({ lang }: { lang: Lang }) {
   const [confirming, setConfirming] = useState(false);
   const fileInput = useRef<HTMLInputElement>(null);
   const missing = missingClips().length;
+  const [offlineReady, setOfflineReady] = useState<boolean | null>(null);
+
+  // Has the app finished storing all its files on this device?
+  useEffect(() => {
+    // Inside the Android app every file is already on the phone.
+    if (__ANDROID_BUILD__) {
+      setOfflineReady(true);
+      return;
+    }
+    if (!('serviceWorker' in navigator)) {
+      setOfflineReady(false);
+      return;
+    }
+    let cancelled = false;
+    void navigator.serviceWorker.getRegistration().then((registration) => {
+      if (!cancelled) setOfflineReady(!!registration?.active);
+    });
+    return () => { cancelled = true; };
+  }, []);
 
   const exportFile = () => {
     const text = makeExport(store.get(), __APP_VERSION__);
@@ -322,6 +342,11 @@ function DataTab({ lang }: { lang: Lang }) {
       )}
       <p className="note" role="status" data-testid="data-message">{message}</p>
       <p className="note">{t(lang, 'parent.version')}: {__APP_VERSION__}</p>
+      {offlineReady !== null && (
+        <p className="note" data-testid="offline-status" data-ready={offlineReady}>
+          {t(lang, offlineReady ? 'parent.offline.ready' : 'parent.offline.not-yet')}
+        </p>
+      )}
       {missing > 0 && <p className="note">{t(lang, 'parent.missing-audio', { count: missing })}</p>}
     </div>
   );

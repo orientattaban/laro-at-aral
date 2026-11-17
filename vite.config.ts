@@ -17,6 +17,7 @@ export default defineConfig({
   base: './',
   define: {
     __APP_VERSION__: JSON.stringify(pkg.version),
+    __ANDROID_BUILD__: JSON.stringify(isAndroid),
   },
   build: {
     target: 'es2020',
