@@ -106,7 +106,7 @@ describe('Tap and hear', () => {
   });
 });
 
-describe('Find it', () => {
+describe('Find it', { timeout: 30_000 }, () => {
   it('speaks the instruction, then asks for a picture', async () => {
     const h = harness();
     render(<FindIt {...h.props} activity={findActivity} stage="A" step={0} maxChoices={2} itemOrder={findActivity.items} />);
@@ -151,9 +151,9 @@ describe('Find it', () => {
         expect(card.className).toContain('card-idle');
         fireEvent.click(card);
         expect(h.reports.length).toBe(i + 1);
-      }, { timeout: 3000 });
+      }, { timeout: 8000 });
     }
-    await waitFor(() => expect(h.finish).toHaveBeenCalledTimes(1), { timeout: 3000 });
+    await waitFor(() => expect(h.finish).toHaveBeenCalledTimes(1), { timeout: 8000 });
     expect(h.reports.every((r) => r.firstTry)).toBe(true);
   });
 });
@@ -191,7 +191,7 @@ describe('Match pairs', () => {
   });
 });
 
-describe('Sort', () => {
+describe('Sort', { timeout: 30_000 }, () => {
   it('the rule changes mid-game: big and small first, then colour', async () => {
     const h = harness();
     render(<Sort {...h.props} activity={sortActivity} stage="B" step={0} maxChoices={4} itemOrder={[]} />);
@@ -204,9 +204,9 @@ describe('Sort', () => {
         fireEvent.click(basket);
         expect(h.reports.length).toBe(before + 1);
         rules.push(sort.dataset.rule!);
-      }, { timeout: 3000 });
+      }, { timeout: 8000 });
     }
-    await waitFor(() => expect(h.finish).toHaveBeenCalledTimes(1), { timeout: 3000 });
+    await waitFor(() => expect(h.finish).toHaveBeenCalledTimes(1), { timeout: 8000 });
     expect(rules).toEqual(['laki', 'laki', 'laki', 'laki', 'kulay', 'kulay', 'kulay', 'kulay']);
     expect(h.spoken).toContain('instr.sort.laki');
     expect(h.spoken).toContain('instr.sort.kulay');

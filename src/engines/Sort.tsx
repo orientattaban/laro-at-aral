@@ -66,6 +66,11 @@ export function Sort({ activity, lang, step, captions, speak, report, finish }: 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [roundIndex]);
 
+  // A new thing to sort is on screen: taps count again.
+  useEffect(() => {
+    busy.current = false;
+  }, [roundIndex, entryIndex]);
+
   const place = async (basketId: string) => {
     if (busy.current) return;
     busy.current = true;
@@ -95,7 +100,8 @@ export function Sort({ activity, lang, step, captions, speak, report, finish }: 
           return;
         }
       }
-      busy.current = false;
+      // Stay locked until the next thing is on screen (released by the effect below),
+      // so a quick second tap cannot count twice for the thing just placed.
     } else {
       const nextTries = tries + 1;
       sfx.tryAgain();

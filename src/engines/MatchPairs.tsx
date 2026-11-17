@@ -54,6 +54,11 @@ export function MatchPairs({ activity, lang, step, captions, itemOrder, speak, r
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // New cards are on screen: taps count again.
+  useEffect(() => {
+    busy.current = false;
+  }, [round]);
+
   const tap = async (i: number) => {
     if (busy.current || picked.includes(i) || matched.has(cards[i].itemId)) return;
     sfx.flip();
@@ -88,10 +93,11 @@ export function MatchPairs({ activity, lang, step, captions, itemOrder, speak, r
           setMatched(new Set());
           setMismatches(0);
           missedItems.current = new Set();
-        } else {
-          finish();
+          // Stay locked until the new cards are on screen (released by the effect below).
           return;
         }
+        finish();
+        return;
       }
       busy.current = false;
     } else {

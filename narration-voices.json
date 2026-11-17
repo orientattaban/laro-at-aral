@@ -6,9 +6,10 @@
     "English": "en"
   },
   "pacing": {
-    "note": "Google free tier for gemini-3.8-flash-tts: 10 requests per day (Google error message, 17 November 2026). A run stops by itself at the limit and continues where it left off next time. Google shows current limits at https://ai.dev/rate-limit (sign in).",
+    "note": "Google free tier for gemini-3.8-flash-tts: 10 requests per day (Google error message, 17 November 2026). A run stops by itself at the limit and continues where it left off next time. Google shows current limits at https://ai.dev/rate-limit (sign in). To fit the limit, up to 10 lines of one speaker go in one request and are cut apart afterwards (linesPerRequest).",
     "secondsBetweenRequests": 8,
-    "maxRequestsPerRun": 200
+    "maxRequestsPerRun": 200,
+    "linesPerRequest": 10
   },
   "speakers": {
     "Butil": {

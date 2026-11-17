@@ -101,6 +101,15 @@ export async function speakPatiently(client, line, log) {
 export function wavToMp3(wav, outPath) {
   const work = join(tmpdir(), `laro-tts-${process.pid}-${Date.now()}.wav`);
   writeFileSync(work, wav);
+  try {
+    pieceToMp3(work, null, outPath);
+  } finally {
+    rmSync(work, { force: true });
+  }
+}
+
+/** Same as wavToMp3, for the part of a recording between `range.from` and `range.to` seconds. */
+export function pieceToMp3(inputPath, range, outPath) {
   mkdirSync(dirname(outPath), { recursive: true });
   const filters = [
     'silenceremove=start_periods=1:start_threshold=-48dB:start_silence=0.06',
@@ -109,11 +118,11 @@ export function wavToMp3(wav, outPath) {
     'areverse',
     'loudnorm=I=-18:TP=-2:LRA=11',
   ].join(',');
+  const cut = range ? ['-ss', range.from.toFixed(3), '-to', range.to.toFixed(3)] : [];
   const result = spawnSync(ffmpegPath, [
-    '-hide_banner', '-loglevel', 'error', '-y', '-i', work,
+    '-hide_banner', '-loglevel', 'error', '-y', ...cut, '-i', inputPath,
     '-af', filters, '-ac', '1', '-ar', '24000', '-codec:a', 'libmp3lame', '-b:a', '48k', outPath,
   ], { encoding: 'utf8' });
-  rmSync(work, { force: true });
   if (result.status !== 0) throw new Error(`Sound conversion failed: ${result.stderr || result.error}`);
 }
 
