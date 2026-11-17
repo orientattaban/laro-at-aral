@@ -6,7 +6,7 @@ Written 17 November 2026. Approved the same day.
 
 ## 1. The plan in plain words
 
-- I build one small website that is also a game. The same website is wrapped into an Android app for your brother's phone. One set of files, two ways to open it.
+- I build one small website that is also a game. The same website is wrapped into an Android app for the father's phone. One set of files, two ways to open it.
 - After it is installed, it never uses the internet. Pictures, voices, fonts and sounds all travel inside the app.
 - The game itself is a set of "engines" (Tap and hear, Find it, and so on). Lessons are plain text files that tell an engine what to show and say. Adding a lesson later means adding lines to a text file, not writing code.
 - Every lesson line says where it comes from in the official curriculum, and whether I really found it in your PDFs ("verified") or not ("needs-review").
@@ -119,7 +119,7 @@ Fallback if Filipino pronunciation is poor: Azure AI Speech Filipino voices, as 
 - **Young-child rules built into the engines, not left to each lesson:** 72-pixel minimum targets, at most four choices, no timers or failure screens, wobble and "try again", highlight after two tries, spoken instruction with replay, shape or picture cues alongside colour.
 - **Missing narration.** The picture cue shows silently and the clip is added to a missing list.
 
-One honest limit: an app cannot block the phone's own Home button. The README will show your brother how to turn on Android's "app pinning", which does.
+One honest limit: an app cannot block the phone's own Home button. The README will show the father how to turn on Android's "app pinning", which does.
 
 ## 6. Content file format
 
@@ -216,4 +216,4 @@ I will keep the curriculum PDFs and the unused scarecrow picture on your laptop 
 1. LRP 2 is not available yet, so skill items are marked needs-review.
 2. Narration uses Gemini `gemini-3.8-flash-tts` on the free tier.
 3. The GitHub repository will be public.
-4. Your brother's phone runs Android 7 or newer.
+4. The father's phone runs Android 7 or newer.

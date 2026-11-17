@@ -5,7 +5,7 @@ Read this first in every session. The full plan is in PLAN.md. Open questions ab
 ## Who this is for
 
 - An offline learning game for one child in Isabela, Philippines, from age 2 to about age 8 (Grade 3).
-- The owner is the child's aunt. She is an accountant, not a developer. **Explain choices in plain language and ask before anything that cannot be undone** (publishing, the app ID, signing keys, deleting files, rewriting Git history).
+- The owner is not a developer. **Explain choices in plain language and ask before anything that cannot be undone** (publishing, the app ID, signing keys, deleting files, rewriting Git history).
 - The child's father installs the Android app and uses the Parent Corner.
 - Free accounts only. Flag anything that costs money or needs a large download.
 

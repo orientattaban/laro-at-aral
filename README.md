@@ -153,7 +153,7 @@ Also not switched on yet, for the same reason as the phone install. The file `.g
 
 ## One honest limit
 
-A website or app cannot block the phone's own Home button. On Android, "app pinning" does that: Settings, Security, App pinning. Instructions for your brother's phone come with the Android app in Phase 3.
+A website or app cannot block the phone's own Home button. On Android, "app pinning" does that: Settings, Security, App pinning. Instructions for the father's phone come with the Android app in Phase 3.
 
 ## Where things are
 
