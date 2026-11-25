@@ -57,6 +57,10 @@ for (const item of items.filter((i) => used.has(i.id))) {
 for (const key of Object.keys(lang.fil)) if (key.startsWith('sort.')) add(key, 'Teacher Liza', 'word');
 for (const key of Object.keys(lang.fil)) if (key.startsWith('fb.')) add(key, 'Butil', 'feedback');
 for (const key of ['bye.session', 'bye.daily']) add(key, 'Butil', 'goodbye');
+for (const key of Object.keys(lang.fil)) if (key.startsWith('num.')) add(key, 'Teacher Liza', 'word');
+for (const key of Object.keys(lang.fil)) if (key.startsWith('hide.')) add(key, 'Butil', 'feedback');
+for (const key of Object.keys(lang.fil)) if (key.startsWith('chant.')) add(key, 'Butil', 'chant');
+for (const key of Object.keys(lang.fil)) if (key.startsWith('sing.')) add(key, 'Butil', 'instruction');
 
 // ---- Pronunciation notes I am fairly sure of (stressed syllable in capitals). Please check. ----
 // The speech service reads these notes as guidance, never aloud.
@@ -70,10 +74,15 @@ const STRESS = {
   niyog: 'ni-YOG', kamatis: 'ka-MA-tis', talong: 'ta-LONG', kalabasa: 'ka-la-BA-sa',
   malaki: 'ma-la-KI', maliit: 'ma-li-IT', pula: 'pu-LA', kamiseta: 'ka-mi-SE-ta',
   kumakain: 'ku-MA-ka-in', basket: 'BAS-ket', magaling: 'ma-ga-LING',
+  aso: 'A-so', pusa: 'PU-sa', manok: 'MA-nok', bibe: 'BI-be', kambing: 'KAM-bing', baka: 'BA-ka',
+  kalabaw: 'ka-LA-baw', kabayo: 'ka-BA-yo', mata: 'ma-TA', bibig: 'bi-BIG', kamay: 'ka-MAY', paa: 'pa-A',
+  maulap: 'ma-U-lap', maulan: 'ma-U-lan', mabagyo: 'ma-BAG-yo',
+  isa: 'i-SA', dalawa: 'da-la-WA', tatlo: 'tat-LO', apat: 'A-pat', lima: 'li-MA',
+  palakpak: 'pa-lak-PAK', padyak: 'pad-YAK', tapik: 'ta-PIK', tuhod: 'TU-hod', ikot: 'I-kot', tigil: 'TI-gil',
 };
 
 function noteFor(code, text, group) {
-  if (code !== 'fil') return group === 'word' ? 'Say the word once, clearly.' : '';
+  if (code !== 'fil') return group === 'word' ? 'Say the word once, clearly.' : group === 'chant' ? 'A rhythmic chant, spoken in time to a slow beat; equal stress on each count.' : '';
   const found = [];
   for (const word of text.replace(/[.,!?]/g, '').split(/\s+/)) {
     const bare = word.replace(/^(ang|si|ng|na)$/i, '');
@@ -82,6 +91,7 @@ function noteFor(code, text, group) {
   }
   const parts = [];
   if (group === 'word') parts.push('Say the word once, clearly.');
+  if (group === 'chant') parts.push('A rhythmic chant, spoken in time to a slow beat; equal stress on each count.');
   if (found.length) parts.push(`Stress: ${found.join('; ')}.`);
   return parts.join(' ');
 }

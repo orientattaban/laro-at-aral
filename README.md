@@ -8,19 +8,19 @@ Nothing in this folder contains the child's name, photo or birthday. Her name is
 
 | Part | Status |
 | --- | --- |
-| Town map with Bahay open (the other two places say "Malapit na") | Done |
-| Tap and hear, Find it (Stage A, age 2) | Done |
-| Match pairs, Sort (Stage B, age 3) | Done |
-| Themes Ako and Pamilya, with the source of every lesson | Done |
+| Town map with Bahay, Child Development Center and Bukid | Done |
+| Tap and hear, Find it, hide-and-find with Butil, Sing and move (Stage A, age 2) | Done |
+| Match pairs, Sort, Count to 5, Puzzle of 2 to 4 pieces (Stage B, age 3) | Done |
+| All four Pre-K1 themes (Ako, Pamilya, Komunidad, Mundo), every lesson cited to LRP 1 or LRP 2 | Done |
 | Parent gate: hold 3 seconds, then a sum | Done |
 | Play-time limit with Butil's goodbye and a Gawin natin card | Done |
 | Progress saved on the device, export, import, reset | Done |
 | Works with no internet after the first opening | Done, tested automatically |
 | Real pictures from /raw-assets | Done |
-| Narration in Filipino and English (Butil and Teacher Liza) | Done, waiting for your listening review |
+| Narration in Filipino and English (Butil and Teacher Liza) | 194 clips approved; 112 new lines waiting for your wording check |
 | Start screen and app icon with the real Ading and Butil | Done |
 | Filipino and Ilokano spreadsheet for the family (`npm run lang:sheet`) | Ready; waiting for the family |
-| Other places and games, Android app | Phase 3 |
+| Gawin natin as a game, the rest of the Parent Corner, Android app | Phase 3, part 2 |
 
 ## How to run it on the laptop
 
@@ -122,7 +122,7 @@ npm run lang:sync
 npm test
 ```
 
-The engines you can use today are `tap-and-hear`, `find-it`, `match-pairs` and `sort`.
+The engines you can use today are `tap-and-hear`, `find-it`, `match-pairs`, `sort`, `count`, `puzzle`, `hide-and-find` and `sing-and-move`. Look at `content/activities/level1/cdc.json` and `bukid.json` for an example of each.
 
 ## How to add a narration clip
 

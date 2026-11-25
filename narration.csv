@@ -7,6 +7,11 @@ fil/instr.sort.kulay.mp3,Filipino,Butil,"Ngayon naman, kulay! Ilagay ang pula sa
 fil/instr.sort.gamit.mp3,Filipino,Butil,Alin ang gamit sa pagkain? Alin ang gamit sa paglilinis ng katawan?,,approved
 fil/instr.map.mp3,Filipino,Butil,Saan tayo pupunta? Pindutin ang isang lugar.,,approved
 fil/instr.place.mp3,Filipino,Butil,Pumili ng laro.,,approved
+fil/instr.count.mp3,Filipino,Butil,Bilangin natin! Pindutin ang bawat isa.,Stress: isa: i-SA.,new
+fil/instr.count.ask.mp3,Filipino,Butil,Ilan lahat?,,new
+fil/instr.puzzle.mp3,Filipino,Butil,Buuin natin ang larawan!,,new
+fil/instr.hide.mp3,Filipino,Butil,Magtatago ako. Hanapin mo ako!,,new
+fil/instr.sing.mp3,Filipino,Butil,Sabay tayong gumalaw! Gayahin mo ako.,,new
 fil/item.pamilya.nanay.mp3,Filipino,Teacher Liza,Nanay,"Say the word once, clearly. Stress: Nanay: NA-nay.",approved
 fil/item.pamilya.nanay.find.mp3,Filipino,Butil,Nasaan si Nanay?,Stress: Nanay: NA-nay.,approved
 fil/item.pamilya.tatay.mp3,Filipino,Teacher Liza,Tatay,"Say the word once, clearly. Stress: Tatay: TA-tay.",approved
@@ -81,6 +86,44 @@ fil/item.damit.kamiseta-dilaw.mp3,Filipino,Teacher Liza,dilaw na kamiseta,"Say t
 fil/item.damit.kamiseta-dilaw.find.mp3,Filipino,Butil,Nasaan ang dilaw na kamiseta?,Stress: kamiseta: ka-mi-SE-ta.,approved
 fil/item.damit.kamiseta-berde.mp3,Filipino,Teacher Liza,berdeng kamiseta,"Say the word once, clearly. Stress: kamiseta: ka-mi-SE-ta.",approved
 fil/item.damit.kamiseta-berde.find.mp3,Filipino,Butil,Nasaan ang berdeng kamiseta?,Stress: kamiseta: ka-mi-SE-ta.,approved
+fil/item.komunidad.aso.mp3,Filipino,Teacher Liza,aso,"Say the word once, clearly. Stress: aso: A-so.",new
+fil/item.komunidad.aso.find.mp3,Filipino,Butil,Nasaan ang aso?,Stress: aso: A-so.,new
+fil/item.komunidad.pusa.mp3,Filipino,Teacher Liza,pusa,"Say the word once, clearly. Stress: pusa: PU-sa.",new
+fil/item.komunidad.pusa.find.mp3,Filipino,Butil,Nasaan ang pusa?,Stress: pusa: PU-sa.,new
+fil/item.komunidad.manok.mp3,Filipino,Teacher Liza,manok,"Say the word once, clearly. Stress: manok: MA-nok.",new
+fil/item.komunidad.manok.find.mp3,Filipino,Butil,Nasaan ang manok?,Stress: manok: MA-nok.,new
+fil/item.komunidad.bibe.mp3,Filipino,Teacher Liza,bibe,"Say the word once, clearly. Stress: bibe: BI-be.",new
+fil/item.komunidad.bibe.find.mp3,Filipino,Butil,Nasaan ang bibe?,Stress: bibe: BI-be.,new
+fil/item.komunidad.baboy.mp3,Filipino,Teacher Liza,baboy,"Say the word once, clearly.",new
+fil/item.komunidad.baboy.find.mp3,Filipino,Butil,Nasaan ang baboy?,,new
+fil/item.komunidad.kambing.mp3,Filipino,Teacher Liza,kambing,"Say the word once, clearly. Stress: kambing: KAM-bing.",new
+fil/item.komunidad.kambing.find.mp3,Filipino,Butil,Nasaan ang kambing?,Stress: kambing: KAM-bing.,new
+fil/item.komunidad.baka.mp3,Filipino,Teacher Liza,baka,"Say the word once, clearly. Stress: baka: BA-ka.",new
+fil/item.komunidad.baka.find.mp3,Filipino,Butil,Nasaan ang baka?,Stress: baka: BA-ka.,new
+fil/item.komunidad.kalabaw.mp3,Filipino,Teacher Liza,kalabaw,"Say the word once, clearly. Stress: kalabaw: ka-LA-baw.",new
+fil/item.komunidad.kalabaw.find.mp3,Filipino,Butil,Nasaan ang kalabaw?,Stress: kalabaw: ka-LA-baw.,new
+fil/item.komunidad.kabayo.mp3,Filipino,Teacher Liza,kabayo,"Say the word once, clearly. Stress: kabayo: ka-BA-yo.",new
+fil/item.komunidad.kabayo.find.mp3,Filipino,Butil,Nasaan ang kabayo?,Stress: kabayo: ka-BA-yo.,new
+fil/item.mundo.mata.mp3,Filipino,Teacher Liza,mata,"Say the word once, clearly. Stress: mata: ma-TA.",new
+fil/item.mundo.mata.find.mp3,Filipino,Butil,Nasaan ang mata?,Stress: mata: ma-TA.,new
+fil/item.mundo.tainga.mp3,Filipino,Teacher Liza,tainga,"Say the word once, clearly.",new
+fil/item.mundo.tainga.find.mp3,Filipino,Butil,Nasaan ang tainga?,,new
+fil/item.mundo.ilong.mp3,Filipino,Teacher Liza,ilong,"Say the word once, clearly.",new
+fil/item.mundo.ilong.find.mp3,Filipino,Butil,Nasaan ang ilong?,,new
+fil/item.mundo.bibig.mp3,Filipino,Teacher Liza,bibig,"Say the word once, clearly. Stress: bibig: bi-BIG.",new
+fil/item.mundo.bibig.find.mp3,Filipino,Butil,Nasaan ang bibig?,Stress: bibig: bi-BIG.,new
+fil/item.mundo.kamay.mp3,Filipino,Teacher Liza,kamay,"Say the word once, clearly. Stress: kamay: ka-MAY.",new
+fil/item.mundo.kamay.find.mp3,Filipino,Butil,Nasaan ang kamay?,Stress: kamay: ka-MAY.,new
+fil/item.mundo.paa.mp3,Filipino,Teacher Liza,paa,"Say the word once, clearly. Stress: paa: pa-A.",new
+fil/item.mundo.paa.find.mp3,Filipino,Butil,Nasaan ang paa?,Stress: paa: pa-A.,new
+fil/item.mundo.maaraw.mp3,Filipino,Teacher Liza,maaraw,"Say the word once, clearly.",new
+fil/item.mundo.maaraw.find.mp3,Filipino,Butil,Alin ang maaraw?,,new
+fil/item.mundo.maulap.mp3,Filipino,Teacher Liza,maulap,"Say the word once, clearly. Stress: maulap: ma-U-lap.",new
+fil/item.mundo.maulap.find.mp3,Filipino,Butil,Alin ang maulap?,Stress: maulap: ma-U-lap.,new
+fil/item.mundo.maulan.mp3,Filipino,Teacher Liza,maulan,"Say the word once, clearly. Stress: maulan: ma-U-lan.",new
+fil/item.mundo.maulan.find.mp3,Filipino,Butil,Alin ang maulan?,Stress: maulan: ma-U-lan.,new
+fil/item.mundo.mabagyo.mp3,Filipino,Teacher Liza,mabagyo,"Say the word once, clearly. Stress: mabagyo: ma-BAG-yo.",new
+fil/item.mundo.mabagyo.find.mp3,Filipino,Butil,Alin ang mabagyo?,Stress: mabagyo: ma-BAG-yo.,new
 fil/sort.malaki.mp3,Filipino,Teacher Liza,malaki,"Say the word once, clearly. Stress: malaki: ma-la-KI.",approved
 fil/sort.maliit.mp3,Filipino,Teacher Liza,maliit,"Say the word once, clearly. Stress: maliit: ma-li-IT.",approved
 fil/sort.pula.mp3,Filipino,Teacher Liza,pula,"Say the word once, clearly. Stress: pula: pu-LA.",approved
@@ -96,6 +139,19 @@ fil/fb.effort.mp3,Filipino,Butil,"Sinubukan mo ulit, at nakuha mo!",,approved
 fil/fb.done.mp3,Filipino,Butil,Tapos na! Salamat sa paglalaro.,,approved
 fil/bye.session.mp3,Filipino,Butil,Tapos na ang laro ngayon. Paalam! Maglaro naman tayo nang walang gadyet.,,approved
 fil/bye.daily.mp3,Filipino,Butil,Sapat na ang laro ngayong araw. Bukas ulit!,,approved
+fil/num.1.mp3,Filipino,Teacher Liza,isa,"Say the word once, clearly. Stress: isa: i-SA.",new
+fil/num.2.mp3,Filipino,Teacher Liza,dalawa,"Say the word once, clearly. Stress: dalawa: da-la-WA.",new
+fil/num.3.mp3,Filipino,Teacher Liza,tatlo,"Say the word once, clearly. Stress: tatlo: tat-LO.",new
+fil/num.4.mp3,Filipino,Teacher Liza,apat,"Say the word once, clearly. Stress: apat: A-pat.",new
+fil/num.5.mp3,Filipino,Teacher Liza,lima,"Say the word once, clearly. Stress: lima: li-MA.",new
+fil/hide.found.mp3,Filipino,Butil,Nandito ako!,,new
+fil/hide.not-here.mp3,Filipino,Butil,Wala ako riyan.,,new
+fil/chant.palakpak.mp3,Filipino,Butil,"Palakpak, palakpak, isa, dalawa, tatlo!","A rhythmic chant, spoken in time to a slow beat; equal stress on each count. Stress: palakpak: pa-lak-PAK; isa: i-SA; dalawa: da-la-WA; tatlo: tat-LO.",new
+fil/chant.padyak.mp3,Filipino,Butil,"Padyak, padyak, isa, dalawa, tatlo!","A rhythmic chant, spoken in time to a slow beat; equal stress on each count. Stress: padyak: pad-YAK; isa: i-SA; dalawa: da-la-WA; tatlo: tat-LO.",new
+fil/chant.tapik.mp3,Filipino,Butil,"Tapik, tapik sa tuhod, isa, dalawa, tatlo!","A rhythmic chant, spoken in time to a slow beat; equal stress on each count. Stress: tapik: ta-PIK; tuhod: TU-hod; isa: i-SA; dalawa: da-la-WA; tatlo: tat-LO.",new
+fil/chant.ikot.mp3,Filipino,Butil,"Ikot, ikot, umikot, isa, dalawa, tatlo!","A rhythmic chant, spoken in time to a slow beat; equal stress on each count. Stress: ikot: I-kot; isa: i-SA; dalawa: da-la-WA; tatlo: tat-LO.",new
+fil/sing.freeze.mp3,Filipino,Butil,Tigil! Huwag gagalaw!,Stress: tigil: TI-gil.,new
+fil/sing.resume.mp3,Filipino,Butil,"Sige, galaw ulit!",,new
 en/instr.tap-and-hear.mp3,English,Butil,Tap a picture and listen.,,approved
 en/instr.find-it.mp3,English,Butil,"Listen, then tap the right picture.",,approved
 en/instr.match-pairs.mp3,English,Butil,Find the two that are the same.,,approved
@@ -104,6 +160,11 @@ en/instr.sort.kulay.mp3,English,Butil,"Now, colours! Put the red ones in the red
 en/instr.sort.gamit.mp3,English,Butil,Which do we use for eating? Which do we use for washing?,,approved
 en/instr.map.mp3,English,Butil,Where shall we go? Tap a place.,,approved
 en/instr.place.mp3,English,Butil,Choose a game.,,approved
+en/instr.count.mp3,English,Butil,Let's count! Tap each one.,,new
+en/instr.count.ask.mp3,English,Butil,How many are there?,,new
+en/instr.puzzle.mp3,English,Butil,Let's put the picture together!,,new
+en/instr.hide.mp3,English,Butil,I'm going to hide. Find me!,,new
+en/instr.sing.mp3,English,Butil,Let's move together! Copy me.,,new
 en/item.pamilya.nanay.mp3,English,Teacher Liza,Mother,"Say the word once, clearly.",approved
 en/item.pamilya.nanay.find.mp3,English,Butil,Where is Mother?,,approved
 en/item.pamilya.tatay.mp3,English,Teacher Liza,Father,"Say the word once, clearly.",approved
@@ -178,6 +239,44 @@ en/item.damit.kamiseta-dilaw.mp3,English,Teacher Liza,yellow shirt,"Say the word
 en/item.damit.kamiseta-dilaw.find.mp3,English,Butil,Where is the yellow shirt?,,approved
 en/item.damit.kamiseta-berde.mp3,English,Teacher Liza,green shirt,"Say the word once, clearly.",approved
 en/item.damit.kamiseta-berde.find.mp3,English,Butil,Where is the green shirt?,,approved
+en/item.komunidad.aso.mp3,English,Teacher Liza,dog,"Say the word once, clearly.",new
+en/item.komunidad.aso.find.mp3,English,Butil,Where is the dog?,,new
+en/item.komunidad.pusa.mp3,English,Teacher Liza,cat,"Say the word once, clearly.",new
+en/item.komunidad.pusa.find.mp3,English,Butil,Where is the cat?,,new
+en/item.komunidad.manok.mp3,English,Teacher Liza,chicken,"Say the word once, clearly.",new
+en/item.komunidad.manok.find.mp3,English,Butil,Where is the chicken?,,new
+en/item.komunidad.bibe.mp3,English,Teacher Liza,duck,"Say the word once, clearly.",new
+en/item.komunidad.bibe.find.mp3,English,Butil,Where is the duck?,,new
+en/item.komunidad.baboy.mp3,English,Teacher Liza,pig,"Say the word once, clearly.",new
+en/item.komunidad.baboy.find.mp3,English,Butil,Where is the pig?,,new
+en/item.komunidad.kambing.mp3,English,Teacher Liza,goat,"Say the word once, clearly.",new
+en/item.komunidad.kambing.find.mp3,English,Butil,Where is the goat?,,new
+en/item.komunidad.baka.mp3,English,Teacher Liza,cow,"Say the word once, clearly.",new
+en/item.komunidad.baka.find.mp3,English,Butil,Where is the cow?,,new
+en/item.komunidad.kalabaw.mp3,English,Teacher Liza,carabao,"Say the word once, clearly.",new
+en/item.komunidad.kalabaw.find.mp3,English,Butil,Where is the carabao?,,new
+en/item.komunidad.kabayo.mp3,English,Teacher Liza,horse,"Say the word once, clearly.",new
+en/item.komunidad.kabayo.find.mp3,English,Butil,Where is the horse?,,new
+en/item.mundo.mata.mp3,English,Teacher Liza,eyes,"Say the word once, clearly.",new
+en/item.mundo.mata.find.mp3,English,Butil,Where are the eyes?,,new
+en/item.mundo.tainga.mp3,English,Teacher Liza,ear,"Say the word once, clearly.",new
+en/item.mundo.tainga.find.mp3,English,Butil,Where is the ear?,,new
+en/item.mundo.ilong.mp3,English,Teacher Liza,nose,"Say the word once, clearly.",new
+en/item.mundo.ilong.find.mp3,English,Butil,Where is the nose?,,new
+en/item.mundo.bibig.mp3,English,Teacher Liza,mouth,"Say the word once, clearly.",new
+en/item.mundo.bibig.find.mp3,English,Butil,Where is the mouth?,,new
+en/item.mundo.kamay.mp3,English,Teacher Liza,hand,"Say the word once, clearly.",new
+en/item.mundo.kamay.find.mp3,English,Butil,Where is the hand?,,new
+en/item.mundo.paa.mp3,English,Teacher Liza,foot,"Say the word once, clearly.",new
+en/item.mundo.paa.find.mp3,English,Butil,Where is the foot?,,new
+en/item.mundo.maaraw.mp3,English,Teacher Liza,sunny,"Say the word once, clearly.",new
+en/item.mundo.maaraw.find.mp3,English,Butil,Which one is sunny?,,new
+en/item.mundo.maulap.mp3,English,Teacher Liza,cloudy,"Say the word once, clearly.",new
+en/item.mundo.maulap.find.mp3,English,Butil,Which one is cloudy?,,new
+en/item.mundo.maulan.mp3,English,Teacher Liza,rainy,"Say the word once, clearly.",new
+en/item.mundo.maulan.find.mp3,English,Butil,Which one is rainy?,,new
+en/item.mundo.mabagyo.mp3,English,Teacher Liza,stormy,"Say the word once, clearly.",new
+en/item.mundo.mabagyo.find.mp3,English,Butil,Which one is stormy?,,new
 en/sort.malaki.mp3,English,Teacher Liza,big,"Say the word once, clearly.",approved
 en/sort.maliit.mp3,English,Teacher Liza,small,"Say the word once, clearly.",approved
 en/sort.pula.mp3,English,Teacher Liza,red,"Say the word once, clearly.",approved
@@ -193,3 +292,16 @@ en/fb.effort.mp3,English,Butil,"You tried again, and you got it!",,approved
 en/fb.done.mp3,English,Butil,All done! Thank you for playing.,,approved
 en/bye.session.mp3,English,Butil,Playtime is over for now. Goodbye! Let's play away from the screen.,,approved
 en/bye.daily.mp3,English,Butil,That is enough play for today. See you tomorrow!,,approved
+en/num.1.mp3,English,Teacher Liza,one,"Say the word once, clearly.",new
+en/num.2.mp3,English,Teacher Liza,two,"Say the word once, clearly.",new
+en/num.3.mp3,English,Teacher Liza,three,"Say the word once, clearly.",new
+en/num.4.mp3,English,Teacher Liza,four,"Say the word once, clearly.",new
+en/num.5.mp3,English,Teacher Liza,five,"Say the word once, clearly.",new
+en/hide.found.mp3,English,Butil,Here I am!,,new
+en/hide.not-here.mp3,English,Butil,I'm not there.,,new
+en/chant.palakpak.mp3,English,Butil,"Clap, clap, one, two, three!","A rhythmic chant, spoken in time to a slow beat; equal stress on each count.",new
+en/chant.padyak.mp3,English,Butil,"Stomp, stomp, one, two, three!","A rhythmic chant, spoken in time to a slow beat; equal stress on each count.",new
+en/chant.tapik.mp3,English,Butil,"Pat, pat your knees, one, two, three!","A rhythmic chant, spoken in time to a slow beat; equal stress on each count.",new
+en/chant.ikot.mp3,English,Butil,"Turn, turn, turn around, one, two, three!","A rhythmic chant, spoken in time to a slow beat; equal stress on each count.",new
+en/sing.freeze.mp3,English,Butil,Freeze! Stay still!,,new
+en/sing.resume.mp3,English,Butil,"Okay, move again!",,new

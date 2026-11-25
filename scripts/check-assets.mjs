@@ -51,7 +51,7 @@ const missingImages = [...neededImages].filter((name) => {
 
 // ---- Narration ----
 // These kinds of text are spoken. Parent Corner text and Gawin natin cards are read by the adult.
-const SPOKEN_PREFIXES = ['instr.', 'fb.', 'sort.'];
+const SPOKEN_PREFIXES = ['instr.', 'fb.', 'sort.', 'num.', 'hide.', 'chant.', 'sing.'];
 const SPOKEN_KEYS = ['bye.session', 'bye.daily'];
 const neededClips = new Set();
 for (const key of Object.keys(fil)) {
