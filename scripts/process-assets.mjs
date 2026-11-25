@@ -16,6 +16,7 @@ const RAW = join(root, 'raw-assets');
 const OUT_GAME = join(root, 'public', 'assets', 'img'); // bundled with the game
 const OUT_LATER = join(root, 'assets-later', 'img'); // processed now, used by later levels
 const USED_UP_TO_LEVEL = 1;
+const HI_RES = join(root, 'resources', 'cutouts');
 
 // Names follow raw-assets/README.md: left to right, top to bottom.
 const SHEETS = [
@@ -42,8 +43,8 @@ const SHEETS = [
   { file: 'characters/char-kiko-poses.jpg', prefix: 'char-kiko', level: 1, rows: 1, cols: 3, names: ['cheer', 'think', 'wave'], size: 640 },
   { file: 'characters/char-liza-poses.jpg', prefix: 'char-liza', level: 1, rows: 1, cols: 3, names: ['cheer', 'think', 'wave'], size: 640 },
   { file: 'characters/char-ila-poses.jpg', prefix: 'char-ila', level: 3, rows: 1, cols: 3, names: ['cheer', 'think', 'wave'], size: 640 },
-  { file: 'characters/char-butil-stand.jpg', prefix: 'char-butil', level: 1, rows: 1, cols: 1, names: ['stand'], size: 640 },
-  { file: 'characters/char-ading-age3-stand.jpg', prefix: 'char-ading-age3', level: 1, rows: 1, cols: 1, names: ['stand'], size: 640 },
+  { file: 'characters/char-butil-stand.jpg', prefix: 'char-butil', level: 1, rows: 1, cols: 1, names: ['stand'], size: 640, hiRes: true },
+  { file: 'characters/char-ading-age3-stand.jpg', prefix: 'char-ading-age3', level: 1, rows: 1, cols: 1, names: ['stand'], size: 640, hiRes: true },
   { file: 'characters/char-ading-age5-stand.jpg', prefix: 'char-ading-age5', level: 3, rows: 1, cols: 1, names: ['stand'], size: 640 },
   { file: 'characters/char-ading-age8-stand.jpg', prefix: 'char-ading-age8', level: 5, rows: 1, cols: 1, names: ['stand'], size: 640 },
   { file: 'characters/char-lola-stand.jpg', prefix: 'char-lola', level: 1, rows: 1, cols: 1, names: ['stand'], size: 640 },
@@ -217,7 +218,7 @@ async function findPieces(path, sheet) {
 }
 
 /** Cut one picture out of its sheet with a transparent background. */
-async function cutPiece(path, piece, info, size) {
+async function cutPiece(path, piece, info, size, format = 'webp') {
   const pad = 6;
   const grow = piece.rect ? 0 : info.radius;
   const left = Math.max(0, (piece.x0 - grow) * SCALE - pad);
@@ -281,7 +282,7 @@ async function cutPiece(path, piece, info, size) {
   return sharp(data, { raw: { width: cw, height: ch, channels: 4 } })
     .trim({ threshold: 1 })
     .resize(size, size, { fit: 'inside', withoutEnlargement: true })
-    .webp({ quality: 84, alphaQuality: 90, effort: 5 })
+    [format](format === 'png' ? { compressionLevel: 9 } : { quality: 84, alphaQuality: 90, effort: 5 })
     .toBuffer();
 }
 
@@ -344,6 +345,11 @@ for (const sheet of SHEETS) {
       const dir = sheet.level <= USED_UP_TO_LEVEL ? OUT_GAME : OUT_LATER;
       writeFileSync(join(dir, `${id}.webp`), buffer);
       made.push({ id, level: sheet.level, bytes: buffer.length, source: sheet.file, dir });
+      if (sheet.hiRes) {
+        // Full-size copy for the splash screen and app icon (scripts/make-splash-icon.mjs). Not bundled.
+        mkdirSync(HI_RES, { recursive: true });
+        writeFileSync(join(HI_RES, `${id}.png`), await cutPiece(path, info.pieces[i], info, 2048, 'png'));
+      }
     }
     report.push({ file: sheet.file, level: sheet.level, expected: sheet.names.length, found: info.found, names: sheet.names.map((n) => `${sheet.prefix}-${n}`) });
     console.log(`ok  ${sheet.file}: ${sheet.names.length} pictures (found by ${info.method}, joining distance ${info.radius})`);
@@ -367,9 +373,12 @@ for (const place of PLACES) {
 // ---- The list the game reads ----
 const manifestPath = join(root, 'content', 'asset-manifest.json');
 const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
-manifest.images = Object.fromEntries(
-  made.filter((m) => m.dir === OUT_GAME).sort((a, b) => a.id.localeCompare(b.id)).map((m) => [m.id, `assets/img/${m.id}.webp`]),
-);
+// Pictures made by other scripts (the splash, by npm run icons) are kept.
+const others = Object.entries(manifest.images ?? {}).filter(([, path]) => !path.startsWith('assets/img/'));
+manifest.images = Object.fromEntries([
+  ...made.filter((m) => m.dir === OUT_GAME).map((m) => [m.id, `assets/img/${m.id}.webp`]),
+  ...others,
+].sort(([x], [y]) => x.localeCompare(y)));
 writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
 
 // ---- ASSETS.md ----

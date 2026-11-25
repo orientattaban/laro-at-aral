@@ -14,8 +14,10 @@ import { ByeScreen } from './screens/ByeScreen';
 import { MapScreen } from './screens/MapScreen';
 import { ParentCorner, sessionLimitSeconds } from './screens/ParentCorner';
 import { PlaceScreen } from './screens/PlaceScreen';
+import { SplashScreen } from './screens/SplashScreen';
 
 type Screen =
+  | { name: 'splash' }
   | { name: 'map' }
   | { name: 'place'; placeId: string }
   | { name: 'activity'; placeId: string; activityId: string; run: number }
@@ -43,7 +45,7 @@ function RotateHint({ text }: { text: string }) {
 
 export function App() {
   const [ready, setReady] = useState(store.ready);
-  const [screen, setScreen] = useState<Screen>({ name: 'map' });
+  const [screen, setScreen] = useState<Screen>({ name: 'splash' });
   const [gateOpen, setGateOpen] = useState(false);
   const settings = useSave((d) => d.settings);
   const today = dayKey();
@@ -65,7 +67,6 @@ export function App() {
     let cancelled = false;
     void store.init().then(() => {
       if (cancelled) return;
-      if (currentTimeState() !== 'ok') setScreen({ name: 'bye' });
       setReady(true);
     });
     return () => { cancelled = true; };
@@ -139,6 +140,13 @@ export function App() {
 
   return (
     <>
+      {screen.name === 'splash' && (
+        <SplashScreen
+          lang={lang}
+          // If play time is already used up, go straight to the goodbye screen.
+          onStart={() => setScreen(currentTimeState() === 'ok' ? { name: 'map' } : { name: 'bye' })}
+        />
+      )}
       {screen.name === 'map' && (
         <MapScreen
           onOpenPlace={(placeId) => setScreen({ name: 'place', placeId })}

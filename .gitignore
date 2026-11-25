@@ -43,3 +43,8 @@ language-review.xlsx
 
 # Written by the daily narration task
 narration-log.txt
+
+# Made again by: npm run assets / npm run icons
+resources/cutouts/
+resources/preview.png
+resources/splash-2732.png

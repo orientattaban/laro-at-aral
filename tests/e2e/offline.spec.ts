@@ -34,6 +34,12 @@ function watchRequests(context: BrowserContext, ownOrigin: string = OWN_ORIGIN) 
   return { outside, failed };
 }
 
+/** The start screen needs one tap (this is also what allows sound on phones). */
+async function tapStart(page: Page) {
+  // The button gently grows and shrinks, so it never "stands still" for the test robot.
+  await page.getByTestId('splash-start').click({ force: true });
+}
+
 async function openParentCorner(page: Page) {
   const button = page.locator('.parent-button');
   const box = (await button.boundingBox())!;
@@ -73,6 +79,7 @@ test('makes no network requests to any other server', async ({ context, page }) 
   test.setTimeout(120_000);
   const seen = watchRequests(context);
   await page.goto('/');
+  await tapStart(page);
   await expect(page.getByTestId('map')).toBeVisible();
   await waitUntilInstalled(page);
 
@@ -96,6 +103,7 @@ test('works in airplane mode: opens, plays and saves with no connection', async 
   const seen = watchRequests(context, AIRPLANE_ORIGIN);
   try {
     await page.goto(AIRPLANE_ORIGIN + '/');
+    await tapStart(page);
     await expect(page.getByTestId('map')).toBeVisible();
     await waitUntilInstalled(page);
   } finally {
@@ -111,6 +119,7 @@ test('works in airplane mode: opens, plays and saves with no connection', async 
 
   // Open the app again with no server and no connection.
   await page.reload();
+  await tapStart(page);
   await expect(page.getByTestId('map')).toBeVisible();
 
   // The font must come from the phone, not the network.
@@ -133,6 +142,7 @@ test('works in airplane mode: opens, plays and saves with no connection', async 
 
   // Close and open again, still with no connection: everything is still there.
   await page.reload();
+  await tapStart(page);
   await expect(page.getByTestId('map')).toBeVisible();
   await expect(page.locator('.map-hello')).toContainText('Pangalang Pagsubok');
   await page.getByTestId('place-bahay').click();
@@ -148,6 +158,7 @@ test('works in airplane mode: opens, plays and saves with no connection', async 
 
 test('Stage B games work: Match pairs and Sort (dragging)', async ({ page }) => {
   await page.goto('/');
+  await tapStart(page);
   await expect(page.getByTestId('map')).toBeVisible();
   await openParentCorner(page);
   await page.getByTestId('stage-B').check();
@@ -193,6 +204,7 @@ test('when play time is up, Butil says goodbye and only a parent can continue', 
   // This test really waits one minute of play, so it is allowed more time.
   test.setTimeout(150_000);
   await page.goto('/');
+  await tapStart(page);
   await expect(page.getByTestId('map')).toBeVisible();
   await openParentCorner(page);
   await page.getByTestId('session-minutes').fill('1');
@@ -205,6 +217,7 @@ test('when play time is up, Butil says goodbye and only a parent can continue', 
 
   // Reopening the app does not get around it.
   await page.reload();
+  await tapStart(page);
   await expect(page.getByTestId('bye')).toBeVisible();
 
   // A parent allows one more session.
@@ -214,9 +227,21 @@ test('when play time is up, Butil says goodbye and only a parent can continue', 
   await expect(page.getByTestId('map')).toBeVisible();
 });
 
+test('the start screen shows the real Ading and Butil picture and a big start button', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.getByTestId('splash')).toBeVisible();
+  const loaded = await page.locator('.splash-art').evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0);
+  expect(loaded).toBe(true);
+  const box = (await page.getByTestId('splash-start').boundingBox())!;
+  expect(box.width).toBeGreaterThanOrEqual(72);
+  await tapStart(page);
+  await expect(page.getByTestId('map')).toBeVisible();
+});
+
 test('touch targets are at least 72 pixels on a small phone screen', async ({ page }) => {
   await page.setViewportSize({ width: 640, height: 360 });
   await page.goto('/');
+  await tapStart(page);
   await expect(page.getByTestId('map')).toBeVisible();
   const tooSmall = async () =>
     page.evaluate(() =>

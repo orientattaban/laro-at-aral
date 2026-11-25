@@ -18,7 +18,8 @@ Nothing in this folder contains the child's name, photo or birthday. Her name is
 | Works with no internet after the first opening | Done, tested automatically |
 | Real pictures from /raw-assets | Done |
 | Narration in Filipino and English (Butil and Teacher Liza) | Done, waiting for your listening review |
-| Splash screen and app icon from the real characters, Filipino and Ilokano spreadsheet | Phase 2, not done yet |
+| Start screen and app icon with the real Ading and Butil | Done |
+| Filipino and Ilokano spreadsheet for the family (`npm run lang:sheet`) | Ready; waiting for the family |
 | Other places and games, Android app | Phase 3 |
 
 ## How to run it on the laptop
