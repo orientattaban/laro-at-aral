@@ -1,0 +1,85 @@
+{
+  "note": "Child Development Center: theme Mundo (the body and the senses), plus counting, puzzles and moving to a beat, as at a real centre's circle time and manipulatives corner (LRP 1 pp.6-7). 'stage' is the earliest stage that may play it: A = age 2 (tapping only), B = age 3.",
+  "activities": [
+    {
+      "id": "l1.cdc.mundo.katawan.tap",
+      "engine": "tap-and-hear",
+      "level": 1, "stage": "A", "place": "cdc", "theme": "mundo",
+      "competencies": ["l1.mundo.katawan"],
+      "instruction": "instr.tap-and-hear",
+      "tile": "mundo.mata",
+      "items": ["mundo.mata", "mundo.tainga", "mundo.ilong", "mundo.bibig", "mundo.kamay", "mundo.paa"],
+      "faith": false,
+      "source": { "doc": "lrp2", "page": 8, "ref": "2 years old, Cognitive indicator 15: point to and name some body parts. Topic: LRP 1 pp.12-13, I Have My Two Eyes to See, Ears to Hear, Nose to Smell" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.cdc.mundo.katawan.find",
+      "engine": "find-it",
+      "level": 1, "stage": "A", "place": "cdc", "theme": "mundo",
+      "competencies": ["l1.mundo.katawan"],
+      "instruction": "instr.find-it",
+      "tile": "mundo.tainga",
+      "items": ["mundo.mata", "mundo.tainga", "mundo.ilong", "mundo.bibig", "mundo.kamay", "mundo.paa"],
+      "faith": false,
+      "source": { "doc": "lrp2", "page": 7, "ref": "1 year old, Cognitive indicator 3: point to at least three parts of the body when asked; 2 years old p.8, indicator 15" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.cdc.galaw.sing",
+      "engine": "sing-and-move",
+      "level": 1, "stage": "A", "place": "cdc", "theme": "kasanayan",
+      "competencies": ["l1.kasanayan.galaw"],
+      "instruction": "instr.sing",
+      "tile": "draw:engine:sing-and-move",
+      "bpm": 92,
+      "verses": [
+        { "line": "chant.palakpak", "action": "clap" },
+        { "line": "chant.padyak", "action": "stomp" },
+        { "line": "chant.tapik", "action": "pat" },
+        { "line": "chant.ikot", "action": "turn" }
+      ],
+      "freezeAfter": [1, 3],
+      "faith": false,
+      "source": { "doc": "lrp2", "page": 10, "ref": "2 years old, Music 3 and 4: clap, bounce and begin to dance to music; repeat an action at adult prompting. 3 years old p.26, Language 5: repeat sound patterns such as clapping, stomping, patting. The chant words are our own, not from LRP 7." },
+      "status": "verified"
+    },
+    {
+      "id": "l1.cdc.mundo.katawan.match",
+      "engine": "match-pairs",
+      "level": 1, "stage": "B", "place": "cdc", "theme": "mundo",
+      "competencies": ["l1.kasanayan.pagpapares", "l1.mundo.katawan"],
+      "instruction": "instr.match-pairs",
+      "tile": "mundo.ilong",
+      "items": ["mundo.mata", "mundo.tainga", "mundo.ilong", "mundo.bibig", "mundo.kamay", "mundo.paa"],
+      "faith": false,
+      "source": { "doc": "lrp2", "page": 23, "ref": "3 years old, Cognitive 4.4: know that certain things are the same. Topic: LRP 1 pp.12-13, the senses" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.cdc.bilang.count",
+      "engine": "count",
+      "level": 1, "stage": "B", "place": "cdc", "theme": "kasanayan",
+      "competencies": ["l1.kasanayan.bilang"],
+      "instruction": "instr.count",
+      "tile": "pagkain.mangga",
+      "items": ["pagkain.mangga", "pagkain.saging", "pagkain.kamatis", "gamit.baso", "gamit.suklay"],
+      "max": 5,
+      "faith": false,
+      "source": { "doc": "lrp2", "page": 22, "ref": "3 years old, Cognitive 2.5: understand the concept of number-quantity relations; p.24, 8.5: count 1 to 10. Level 1 stops at 5." },
+      "status": "verified"
+    },
+    {
+      "id": "l1.cdc.puzzle",
+      "engine": "puzzle",
+      "level": 1, "stage": "B", "place": "cdc", "theme": "kasanayan",
+      "competencies": ["l1.kasanayan.puzzle"],
+      "instruction": "instr.puzzle",
+      "tile": "komunidad.pusa",
+      "items": ["komunidad.aso", "komunidad.pusa", "pagkain.mangga", "gamit.tsinelas"],
+      "faith": false,
+      "source": { "doc": "lrp2", "page": 15, "ref": "3 years old, Fine Motor Skills 2 and 3: eye-hand coordination; activity using manipulative tools. Puzzles of 2 to 4 pieces." },
+      "status": "verified"
+    }
+  ]
+}

@@ -391,6 +391,162 @@ img { -webkit-user-drag: none; }
 .basket-landed { animation: bounce 0.4s ease-out 1; }
 .basket-hint .basket-art { filter: drop-shadow(0 0 10px rgba(90, 158, 75, 0.9)); }
 
+/* ---------- Count ---------- */
+
+.count { justify-content: space-around; }
+.count-objects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(10px, 2vw, 22px);
+  max-width: 100%;
+}
+.count-object {
+  position: relative;
+  width: clamp(72px, 24vh, 118px);
+  height: clamp(72px, 24vh, 118px);
+  padding: 6px;
+  background: var(--paper);
+  border: 4px solid var(--ink);
+  border-radius: 20px;
+  box-shadow: 0 6px 0 var(--shadow);
+  animation: bob 3s ease-in-out infinite;
+}
+.count-object .pic { width: 100%; height: 100%; }
+.count-object.counted { animation: none; border-color: var(--leaf-dark); border-width: 6px; }
+.count-badge {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--leaf);
+  border: 3px solid var(--leaf-dark);
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+}
+.count-choices { display: flex; justify-content: center; gap: var(--gap); visibility: hidden; }
+.count-choices.ready { visibility: visible; }
+.count-choice {
+  min-width: clamp(80px, 26vh, 120px);
+  height: clamp(80px, 26vh, 120px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background: var(--paper);
+  border: 4px solid var(--ink);
+  border-radius: 22px;
+  box-shadow: 0 6px 0 var(--shadow);
+}
+.count-numeral { font-size: clamp(32px, 12vh, 56px); font-weight: 700; line-height: 1; }
+.count-dots { display: flex; gap: 4px; flex-wrap: wrap; justify-content: center; max-width: 80%; }
+.count-dots i { width: 10px; height: 10px; border-radius: 50%; background: var(--clay); }
+
+/* ---------- Puzzle ---------- */
+
+.puzzle { flex-direction: row; justify-content: center; gap: clamp(16px, 4vw, 48px); }
+.puzzle-board {
+  position: relative;
+  display: grid;
+  width: min(70vh, 42vw);
+  aspect-ratio: 1;
+  background: var(--paper);
+  border: 4px solid var(--ink);
+  border-radius: 18px;
+  overflow: hidden;
+  flex: none;
+}
+.puzzle-ghost { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; opacity: 0.22; filter: grayscale(0.6); pointer-events: none; }
+.puzzle-slot { position: relative; border: 2px dashed rgba(91, 58, 34, 0.45); overflow: hidden; }
+.puzzle-slot.hint { box-shadow: inset 0 0 0 6px rgba(90, 158, 75, 0.6); animation: glow 1.6s ease-in-out infinite; }
+.puzzle-slot.filled { border-color: transparent; }
+.puzzle-tray { display: flex; flex-wrap: wrap; align-content: center; justify-content: center; gap: 14px; max-width: 36vw; }
+.puzzle-piece {
+  position: relative;
+  width: clamp(80px, 18vw, 150px);
+  min-height: 72px;
+  padding: 0;
+  background: var(--paper);
+  border: 4px solid var(--ink);
+  border-radius: 10px;
+  box-shadow: 0 5px 0 var(--shadow);
+  touch-action: none;
+  overflow: hidden;
+}
+.puzzle-tray.n-2 .puzzle-piece { width: clamp(80px, 14vw, 130px); }
+.puzzle-tray.n-4 .puzzle-piece { width: clamp(90px, 15vw, 140px); }
+.puzzle-piece.selected { border-color: var(--leaf-dark); border-width: 6px; transform: translateY(-6px); }
+/* clip-path makes sure the picture never paints over the piece's border */
+.puzzle-piece-art { position: absolute; inset: 0; overflow: hidden; display: block; clip-path: inset(0 round 6px); }
+.puzzle-art { position: absolute; object-fit: contain; max-width: none; pointer-events: none; }
+
+/* ---------- Hide and find ---------- */
+
+.hide-stage { position: relative; width: 100%; height: 100%; }
+.hide-butil {
+  position: absolute;
+  z-index: 1;
+  width: clamp(90px, 34vh, 170px);
+  transform: translateX(-50%);
+  transition: left 1.1s ease-in-out, top 1.1s ease-in-out, opacity 0.3s ease 1s;
+}
+.hide-butil .butil { width: 100%; height: auto; }
+.hide-butil.behind { opacity: 0; }
+.hide-spots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 62%;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.hide-spot {
+  position: relative;
+  width: min(30vw, 58vh);
+  height: 100%;
+  padding: 8px;
+  background: var(--paper);
+  border: 4px solid var(--ink);
+  border-radius: 24px;
+  box-shadow: 0 7px 0 var(--shadow);
+}
+.hide-spots.count-3 .hide-spot { width: min(22vw, 48vh); }
+.hide-spot .pic { width: 100%; height: 100%; }
+.hide-leaf { position: absolute; left: 50%; top: -34px; width: 70px; transform: translateX(-50%); animation: nudge 1.3s ease-in-out infinite; }
+.hide-leaf svg { width: 100%; height: auto; }
+
+/* ---------- Sing and move ---------- */
+
+.sing-stage { display: flex; align-items: center; justify-content: center; gap: clamp(20px, 6vw, 70px); width: 100%; height: 100%; }
+.sing-butil .butil { height: min(60vh, 260px); }
+.sing-butil.move-clap { animation: hop calc(var(--beat) * 2) ease-out infinite; }
+.sing-butil.move-stomp { animation: stomp var(--beat) ease-in-out infinite; }
+.sing-butil.move-pat { animation: tilt calc(var(--beat) * 2) ease-in-out infinite; }
+.sing-butil.move-turn { animation: spin calc(var(--beat) * 4) linear infinite; }
+@keyframes stomp { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5%); } }
+@keyframes spin { from { transform: rotateY(0deg); } to { transform: rotateY(360deg); } }
+.sing-action {
+  width: min(48vh, 34vw);
+  aspect-ratio: 6 / 5;
+  padding: 14px;
+  background: var(--paper);
+  border: 4px solid var(--ink);
+  border-radius: 28px;
+  box-shadow: 0 7px 0 var(--shadow);
+}
+.sing-action svg { width: 100%; height: 100%; }
+.sing.frozen .sing-butil .butil { animation: none; filter: saturate(0.7); }
+
 /* ---------- Reward: under two seconds, calm ---------- */
 
 .reward { display: flex; align-items: center; justify-content: center; gap: 6vw; }

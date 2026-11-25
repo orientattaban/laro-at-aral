@@ -59,6 +59,7 @@ export function ActivityScreen({
     }
     return {
       Engine: engine.component,
+      ownButil: engine.ownButil === true,
       stage,
       maxStep,
       primary,
@@ -102,7 +103,7 @@ export function ActivityScreen({
         <button type="button" className="round-button" aria-label={t(lang, 'ui.back')} data-testid="back" onClick={() => leave('back', 0)}>
           <Arrow direction="left" />
         </button>
-        <GuideButil line={line} lang={lang} onReplay={replay} />
+        <GuideButil line={line} lang={lang} onReplay={replay} showButil={!setup.ownButil} />
       </aside>
       <section className="play">
         <Bubble line={line} lang={lang} captions={settings.captions} />

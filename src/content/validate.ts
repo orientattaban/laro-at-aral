@@ -1,10 +1,13 @@
 // Checks the content files against the project rules. The test suite fails if
 // this returns any problem, so a mistake in a lesson file never reaches the child.
-import { ALL_ENGINES } from './types';
-import type { ContentBundle, Sourced, SortActivity } from './types';
+import { ALL_ENGINES, MOVE_ACTIONS } from './types';
+import type { ContentBundle, CountActivity, SingActivity, Sourced, SortActivity } from './types';
 
 /** Engines that have code today. Content may only use these. */
-export const BUILT_ENGINES = ['tap-and-hear', 'find-it', 'match-pairs', 'sort'];
+export const BUILT_ENGINES = ['tap-and-hear', 'find-it', 'match-pairs', 'sort', 'count', 'puzzle', 'hide-and-find', 'sing-and-move'];
+
+/** Engines that need dragging, which a 2-year-old (Stage A) does not do. */
+const DRAG_ENGINES = ['sort', 'puzzle'];
 
 /** Only these may be called "pambansa" or "national" (officially declared symbols). */
 const OFFICIAL_SYMBOL_WORDS = [
@@ -133,12 +136,12 @@ export function validateContent(c: ContentBundle): string[] {
       if (!competencyIds.has(id)) problems.push(`${where}: unknown competency "${id}"`);
     }
     needText(act.instruction, where);
-    if (!itemIds.has(act.tile)) problems.push(`${where}: unknown tile item "${act.tile}"`);
+    if (!itemIds.has(act.tile) && !act.tile.startsWith('draw:')) problems.push(`${where}: unknown tile item "${act.tile}"`);
+    if (DRAG_ENGINES.includes(act.engine) && act.stage === 'A') problems.push(`${where}: ${act.engine} needs dragging, so it cannot be Stage A`);
     if (typeof act.faith !== 'boolean') problems.push(`${where}: "faith" must be true or false`);
 
     if (act.engine === 'sort') {
       const sort = act as SortActivity;
-      if (act.stage === 'A') problems.push(`${where}: sorting needs dragging, so it cannot be Stage A`);
       if (!sort.rounds || sort.rounds.length === 0) problems.push(`${where}: has no rounds`);
       for (const [i, round] of (sort.rounds ?? []).entries()) {
         const rw = `${where} round ${i + 1}`;
@@ -160,8 +163,32 @@ export function validateContent(c: ContentBundle): string[] {
           if (!basketIds.has(entry.basket)) problems.push(`${rw}: unknown basket "${entry.basket}"`);
         }
       }
+    } else if (act.engine === 'sing-and-move') {
+      const sing = act as SingActivity;
+      if (!sing.verses || sing.verses.length === 0) problems.push(`${where}: has no verses`);
+      for (const verse of sing.verses ?? []) {
+        needText(verse.line, where);
+        if (!MOVE_ACTIONS.includes(verse.action)) problems.push(`${where}: unknown action "${verse.action}"`);
+      }
+      for (const n of sing.freezeAfter ?? []) {
+        if (!Number.isInteger(n) || n < 0 || n >= (sing.verses ?? []).length) problems.push(`${where}: freezeAfter ${n} is not a verse`);
+      }
+      if (!(sing.bpm >= 60 && sing.bpm <= 140)) problems.push(`${where}: bpm must be between 60 and 140`);
+      needText('sing.freeze', where);
+      needText('sing.resume', where);
     } else {
       const items = (act as { items?: string[] }).items ?? [];
+      if (act.engine === 'count') {
+        const max = (act as CountActivity).max;
+        if (!Number.isInteger(max) || max < 2 || max > (act.level === 1 ? 5 : 20)) problems.push(`${where}: max must be 2 to 5 at Level 1`);
+        for (let n = 1; n <= Math.min(max || 0, 20); n++) needText(`num.${n}`, where);
+      }
+      if (act.engine === 'puzzle') {
+        for (const id of items) {
+          const item = c.items.find((i) => i.id === id);
+          if (item && item.image.startsWith('draw:')) problems.push(`${where}: puzzle pictures must be real pictures, not "${item.image}"`);
+        }
+      }
       if (items.length < 2) problems.push(`${where}: needs at least 2 items`);
       for (const id of items) {
         if (!itemIds.has(id)) problems.push(`${where}: unknown item "${id}"`);

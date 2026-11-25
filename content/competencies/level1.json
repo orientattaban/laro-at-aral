@@ -1,68 +1,124 @@
 {
-  "note": "Topic competencies are 'verified' because the subtheme is printed in LRP 1. Skill competencies are 'needs-review' because the list of competencies (LRP 2) is not in /curriculum. The learning area given to each one is our own reading of the six domains on LRP 1 pages 5 to 6.",
+  "note": "Level 1 competencies. Topics come from LRP 1 (Pre-K1 themes, pages 11 to 13). Skills and learning areas come from LRP 2: pages 2 to 12 for 2-year-olds (Stage A), pages 13 to 35 for 3-year-olds (Stage B). Each 'area' is the LRP 2 domain the indicator is listed under.",
   "competencies": [
     {
       "id": "l1.ako.damdamin",
       "level": 1, "theme": "ako", "area": "social-emotional",
       "title": "comp.l1.ako.damdamin",
-      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, Tell About Yourself: I Have Feelings" },
+      "source": { "doc": "lrp2", "page": 17, "ref": "3 years old, Self-Awareness 4: identify and express basic emotions such as happy, sad, afraid, angry, ashamed (2 years old: p.5, indicator 1). Topic: LRP 1 p.12, I Have Feelings" },
       "status": "verified"
     },
     {
       "id": "l1.ako.gamit",
-      "level": 1, "theme": "ako", "area": "language",
+      "level": 1, "theme": "ako", "area": "physical",
       "title": "comp.l1.ako.gamit",
-      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, Tell About Yourself: This Is What I Wear; I Have Things I Use for Sleeping and Playing" },
+      "source": { "doc": "lrp2", "page": 13, "ref": "3 years old, Health, Safety and Self-Care 2: dressing up, wearing slippers and shoes. Topic: LRP 1 p.12, This Is What I Wear; I Have Things I Use for Sleeping and Playing" },
       "status": "verified"
     },
     {
       "id": "l1.pamilya.kasapi",
-      "level": 1, "theme": "pamilya", "area": "language",
+      "level": 1, "theme": "pamilya", "area": "social-emotional",
       "title": "comp.l1.pamilya.kasapi",
-      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: Father, Mother, Brother, Sister; Grandmother, Grandfather" },
+      "source": { "doc": "lrp2", "page": 21, "ref": "3 years old, Relationship with Familiar Adults 1.1: identify each one by name and his/her relations (2 years old: p.7, indicators 2 and 3). Topic: LRP 1 p.12, Father, Mother, Brother, Sister; Grandmother, Grandfather" },
       "status": "verified"
     },
     {
       "id": "l1.pamilya.pagkain",
-      "level": 1, "theme": "pamilya", "area": "language",
+      "level": 1, "theme": "pamilya", "area": "physical",
       "title": "comp.l1.pamilya.pagkain",
-      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: What do I Eat" },
+      "source": { "doc": "lrp2", "page": 13, "ref": "3 years old, Health, Safety and Self-Care 6: identify and practice eating nutritious foods such as fruits and vegetables. Topic: LRP 1 p.12, What do I Eat" },
       "status": "verified"
     },
     {
       "id": "l1.pamilya.gamit",
-      "level": 1, "theme": "pamilya", "area": "language",
+      "level": 1, "theme": "pamilya", "area": "physical",
       "title": "comp.l1.pamilya.gamit",
-      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: I Have Things I Use in Eating; I Have Things I Use When I Clean Myself" },
+      "source": { "doc": "lrp2", "page": 13, "ref": "3 years old, Health, Safety and Self-Care 1: identify personal cleaning tools such as toothbrush, face towel (spoon and fork: p.16, Fine Motor 7). Topic: LRP 1 p.12, Things I Use in Eating; Things I Use When I Clean Myself" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.komunidad.hayop",
+      "level": 1, "theme": "komunidad", "area": "language",
+      "title": "comp.l1.komunidad.hayop",
+      "source": { "doc": "lrp2", "page": 25, "ref": "3 years old, Receptive and Expressive Language 1.1: imitate the sounds of different animals (2 years old: p.7, indicator 3, names of pets). Topic: LRP 1 p.12, There Are Wonderful Animals Around Us" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.komunidad.produkto",
+      "level": 1, "theme": "komunidad", "area": "language",
+      "title": "comp.l1.komunidad.produkto",
+      "source": { "doc": "lrp2", "page": 26, "ref": "3 years old, Receptive and Expressive Language 8.2: name familiar things found inside and outside the home. Topic: LRP 1 p.12, Products in Our Community" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.mundo.katawan",
+      "level": 1, "theme": "mundo", "area": "cognitive",
+      "title": "comp.l1.mundo.katawan",
+      "source": { "doc": "lrp2", "page": 8, "ref": "2 years old, Cognitive indicator 15: point to and name some body parts. Topic: LRP 1 pp.12-13, I Have My Two Eyes to See, Ears to Hear, Nose to Smell, Tongue to Taste" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.mundo.panahon",
+      "level": 1, "theme": "mundo", "area": "cognitive",
+      "title": "comp.l1.mundo.panahon",
+      "source": { "doc": "lrp1", "page": 13, "ref": "Pre-K1, God Created a Beautiful World for Us: What is the Weather? Is it Sunny or Rainy?; How do You Feel When It's Sunny, Cloudy or Rainy?; What do We do on a Stormy Weather?" },
       "status": "verified"
     },
     {
       "id": "l1.kasanayan.pagpapares",
       "level": 1, "theme": "kasanayan", "area": "cognitive",
       "title": "comp.l1.kasanayan.pagpapares",
-      "source": { "doc": "eccd-standards", "page": 27, "ref": "Area V, guideline 9: experiences for mathematical and scientific concepts. No specific competency found; LRP 2 is needed." },
-      "status": "needs-review"
+      "source": { "doc": "lrp2", "page": 23, "ref": "3 years old, Cognitive 4.4: know that certain things are the same and can be substituted for each other" },
+      "status": "verified"
     },
     {
       "id": "l1.kasanayan.laki",
       "level": 1, "theme": "kasanayan", "area": "cognitive",
       "title": "comp.l1.kasanayan.laki",
-      "source": { "doc": "eccd-standards", "page": 27, "ref": "Area V, guideline 9: experiences for mathematical and scientific concepts. No specific competency found; LRP 2 is needed." },
-      "status": "needs-review"
+      "source": { "doc": "lrp2", "page": 23, "ref": "3 years old, Cognitive 4.5: state opposite relationships (big and small)" },
+      "status": "verified"
     },
     {
       "id": "l1.kasanayan.kulay",
       "level": 1, "theme": "kasanayan", "area": "cognitive",
       "title": "comp.l1.kasanayan.kulay",
-      "source": { "doc": "eccd-standards", "page": 27, "ref": "Area V, guideline 9: experiences for mathematical and scientific concepts. No specific competency found; LRP 2 is needed." },
-      "status": "needs-review"
+      "source": { "doc": "lrp2", "page": 8, "ref": "2 years old, Cognitive indicators 8 and 9: arrange objects according to colour; recognize and tell the colour" },
+      "status": "verified"
     },
     {
       "id": "l1.kasanayan.pangkat",
       "level": 1, "theme": "kasanayan", "area": "cognitive",
       "title": "comp.l1.kasanayan.pangkat",
-      "source": { "doc": "eccd-standards", "page": 27, "ref": "Area V, guideline 9: experiences for mathematical and scientific concepts. No specific competency found; LRP 2 is needed." },
-      "status": "needs-review"
+      "source": { "doc": "lrp2", "page": 22, "ref": "3 years old, Cognitive 2.2: group picture objects according to category (2 years old: p.8, indicator 8, according to function)" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.kasanayan.bilang",
+      "level": 1, "theme": "kasanayan", "area": "cognitive",
+      "title": "comp.l1.kasanayan.bilang",
+      "source": { "doc": "lrp2", "page": 22, "ref": "3 years old, Cognitive 2.5: understand the concept of number-quantity relations for 1-10 (p.24, 8.5: count 1 to 10; 2 years old p.8, indicator 9: number of one to three objects)" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.kasanayan.puzzle",
+      "level": 1, "theme": "kasanayan", "area": "physical",
+      "title": "comp.l1.kasanayan.puzzle",
+      "source": { "doc": "lrp2", "page": 15, "ref": "3 years old, Fine Motor Skills 2 and 3: eye-hand coordination; individual activity using manipulative tools. Puzzle play is a listed quiet activity in the ECCD Standards, p.28, 23" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.kasanayan.hanap",
+      "level": 1, "theme": "kasanayan", "area": "cognitive",
+      "title": "comp.l1.kasanayan.hanap",
+      "source": { "doc": "lrp2", "page": 8, "ref": "Cognitive indicator 8 (listed for 1 year old, continuing at 2): enjoy hide and seek or a game of searching for a toy (object permanence)" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.kasanayan.galaw",
+      "level": 1, "theme": "kasanayan", "area": "creative",
+      "title": "comp.l1.kasanayan.galaw",
+      "source": { "doc": "lrp2", "page": 26, "ref": "3 years old, Language 5: recognize sound patterns and repeat them such as clapping, stomping, patting (p.33, Creative 2.2: body movements with music; 2 years old p.10, Music 3 and 4: clap, bounce and dance; repeat an action at adult prompting)" },
+      "status": "verified"
     }
   ]
 }

@@ -162,6 +162,42 @@ function EngineBadge({ engine }: { engine: string }) {
           <circle cx="72" cy="50" r="8" fill={PALETTE.clay} />
         </Svg>
       );
+    case 'count':
+      return (
+        <Svg>
+          <rect x="8" y="8" width="84" height="84" rx="16" fill={PALETTE.white} stroke={ink} strokeWidth="5" />
+          <circle cx="30" cy="30" r="9" fill={PALETTE.clay} /><circle cx="70" cy="30" r="9" fill={PALETTE.clay} />
+          <circle cx="50" cy="50" r="9" fill={PALETTE.clay} />
+          <circle cx="30" cy="70" r="9" fill={PALETTE.clay} /><circle cx="70" cy="70" r="9" fill={PALETTE.clay} />
+        </Svg>
+      );
+    case 'puzzle':
+      return (
+        <Svg>
+          <path d="M14 14 H44 Q40 4 50 4 Q60 4 56 14 H86 V44 Q96 40 96 50 Q96 60 86 56 V86 H14 Z"
+            fill={PALETTE.sky} stroke={ink} strokeWidth="5" strokeLinejoin="round" />
+          <path d="M14 50 H50 V86" fill="none" stroke={ink} strokeWidth="4" strokeDasharray="6 5" />
+        </Svg>
+      );
+    case 'hide-and-find':
+      return (
+        <Svg>
+          <path d="M50 38 Q34 30 34 12 Q46 16 50 34 Z M50 38 Q66 30 66 12 Q54 16 50 34 Z M50 40 Q42 22 50 6 Q58 22 50 40 Z"
+            fill={PALETTE.leaf} stroke={PALETTE.leafDark} strokeWidth="3" strokeLinejoin="round" />
+          <ellipse cx="50" cy="52" rx="20" ry="14" fill={PALETTE.corn} stroke={PALETTE.cornDark} strokeWidth="4" />
+          <circle cx="43" cy="50" r="3.5" fill={ink} /><circle cx="57" cy="50" r="3.5" fill={ink} />
+          <path d="M8 92 Q12 54 50 58 Q88 54 92 92 Z" fill={PALETTE.leaf} stroke={PALETTE.leafDark} strokeWidth="5" strokeLinejoin="round" />
+        </Svg>
+      );
+    case 'sing-and-move':
+      return (
+        <Svg>
+          <path d="M40 76 V20 L84 10 V64" fill="none" stroke={ink} strokeWidth="7" strokeLinejoin="round" />
+          <ellipse cx="30" cy="76" rx="13" ry="10" fill={PALETTE.clay} stroke={ink} strokeWidth="4" />
+          <ellipse cx="74" cy="66" rx="13" ry="10" fill={PALETTE.clay} stroke={ink} strokeWidth="4" />
+          <path d="M40 32 L84 22" stroke={ink} strokeWidth="7" />
+        </Svg>
+      );
     default:
       return (
         <Svg>

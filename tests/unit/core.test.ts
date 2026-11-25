@@ -227,6 +227,14 @@ describe('which games a place offers', () => {
     expect(new Set(tiles.map((a) => a.engine)).size).toBe(4);
   });
 
+  it('a 3-year-old first meets the games made for Stage B', () => {
+    const tiles = pickTiles(eligibleActivities(content.activities, settingsB, 'cdc'), {}, 4, 'B');
+    const engines = tiles.map((a) => a.engine);
+    expect(engines).toContain('count');
+    expect(engines).toContain('puzzle');
+    expect(new Set(engines).size).toBe(4);
+  });
+
   it('rotates: a game just played moves to the back of the queue', () => {
     const eligible = eligibleActivities(content.activities, settingsA, 'bahay');
     const first = pickTiles(eligible, {});
@@ -236,9 +244,27 @@ describe('which games a place offers', () => {
     expect(second.some((a) => !first.includes(a))).toBe(true);
   });
 
-  it('places with no games yet stay closed', () => {
-    expect(eligibleActivities(content.activities, settingsB, 'cdc')).toEqual([]);
-    expect(eligibleActivities(content.activities, settingsB, 'bukid')).toEqual([]);
+  it('all three Level 1 places are open, with only tapping games at Stage A', () => {
+    for (const place of ['bahay', 'cdc', 'bukid']) {
+      const a = eligibleActivities(content.activities, settingsA, place);
+      expect(a.length, place).toBeGreaterThan(0);
+      for (const act of a) expect(['sort', 'puzzle', 'match-pairs', 'count'], act.id).not.toContain(act.engine);
+    }
+  });
+
+  it('Stage A has hide-and-find and sing-and-move; Stage B adds Count and Puzzle', () => {
+    const engines = (s: typeof settingsA) => new Set(content.activities
+      .filter((a) => eligibleActivities(content.activities, s).includes(a)).map((a) => a.engine));
+    const a = engines(settingsA);
+    expect(a.has('hide-and-find')).toBe(true);
+    expect(a.has('sing-and-move')).toBe(true);
+    const b = engines(settingsB);
+    for (const e of ['count', 'puzzle', 'match-pairs', 'sort']) expect(b.has(e as never), e).toBe(true);
+  });
+
+  it('every theme of Pre-K1 has games: Ako, Pamilya, Komunidad, Mundo', () => {
+    const themes = new Set(content.activities.map((a) => a.theme));
+    for (const t of ['ako', 'pamilya', 'komunidad', 'mundo']) expect(themes.has(t), t).toBe(true);
   });
 });
 

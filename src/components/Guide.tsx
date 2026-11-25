@@ -26,10 +26,10 @@ export function Bubble({ line, lang, captions }: { line: Line | null; lang: Lang
   );
 }
 
-export function GuideButil({ line, lang, onReplay }: { line: Line | null; lang: Lang; onReplay: () => void }) {
+export function GuideButil({ line, lang, onReplay, showButil = true }: { line: Line | null; lang: Lang; onReplay: () => void; showButil?: boolean }) {
   return (
     <div className="guide-butil">
-      <Butil pose={line?.pose ?? 'idle'} />
+      {showButil && <Butil pose={line?.pose ?? 'idle'} />}
       <button type="button" className="round-button replay" aria-label={t(lang, 'ui.replay')} data-testid="replay" onClick={onReplay}>
         <Speaker />
       </button>

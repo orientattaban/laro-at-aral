@@ -22,11 +22,15 @@ export function pickTiles(
   eligible: Activity[],
   played: Record<string, ActivityProgress>,
   max: number = MAX_TILES,
+  currentStage?: StageId,
 ): Activity[] {
-  // Never played first, then least recently played. Content order breaks ties.
+  // Never played first, then least recently played. Among equals, games made for
+  // the child's current stage come first (so a 3-year-old meets the Stage B games),
+  // then content order.
+  const atStage = (a: Activity) => (currentStage !== undefined && a.stage === currentStage ? 0 : 1);
   const ordered = eligible
     .map((activity, index) => ({ activity, index, order: played[activity.id]?.order ?? 0 }))
-    .sort((a, b) => a.order - b.order || a.index - b.index)
+    .sort((a, b) => a.order - b.order || atStage(a.activity) - atStage(b.activity) || a.index - b.index)
     .map((x) => x.activity);
 
   const picked: Activity[] = [];

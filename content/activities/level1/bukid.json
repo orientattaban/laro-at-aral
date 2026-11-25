@@ -1,0 +1,114 @@
+{
+  "note": "Bukid (the farm): theme Komunidad (animals and products of the community) and Mundo (the weather), plus Butil's hide-and-find game. 'stage' is the earliest stage that may play it: A = age 2 (tapping only), B = age 3.",
+  "activities": [
+    {
+      "id": "l1.bukid.hayop.tap",
+      "engine": "tap-and-hear",
+      "level": 1, "stage": "A", "place": "bukid", "theme": "komunidad",
+      "competencies": ["l1.komunidad.hayop"],
+      "instruction": "instr.tap-and-hear",
+      "tile": "komunidad.kalabaw",
+      "items": ["komunidad.kalabaw", "komunidad.baka", "komunidad.manok", "komunidad.bibe", "komunidad.baboy", "komunidad.kambing", "komunidad.kabayo", "komunidad.aso", "komunidad.pusa"],
+      "faith": false,
+      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Community: There Are Wonderful Animals Around Us; LRP 2 p.7, 2 years old, indicator 3: names of pets" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.bukid.hayop.find",
+      "engine": "find-it",
+      "level": 1, "stage": "A", "place": "bukid", "theme": "komunidad",
+      "competencies": ["l1.komunidad.hayop"],
+      "instruction": "instr.find-it",
+      "tile": "komunidad.manok",
+      "items": ["komunidad.kalabaw", "komunidad.baka", "komunidad.manok", "komunidad.bibe", "komunidad.baboy", "komunidad.kambing", "komunidad.kabayo", "komunidad.aso", "komunidad.pusa"],
+      "faith": false,
+      "source": { "doc": "lrp2", "page": 7, "ref": "1 year old, Cognitive indicator 4: point to familiar persons, things, animal/pet when asked. Topic: LRP 1 p.12, Wonderful Animals Around Us" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.bukid.hanap.hide",
+      "engine": "hide-and-find",
+      "level": 1, "stage": "A", "place": "bukid", "theme": "kasanayan",
+      "competencies": ["l1.kasanayan.hanap"],
+      "instruction": "instr.hide",
+      "tile": "draw:engine:hide-and-find",
+      "items": ["komunidad.kalabaw", "pagkain.kalabasa", "komunidad.baka", "pagkain.niyog"],
+      "faith": false,
+      "source": { "doc": "lrp2", "page": 8, "ref": "Cognitive indicator 8: enjoy hide and seek or a game of searching for a toy (object permanence)" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.bukid.panahon.tap",
+      "engine": "tap-and-hear",
+      "level": 1, "stage": "A", "place": "bukid", "theme": "mundo",
+      "competencies": ["l1.mundo.panahon"],
+      "instruction": "instr.tap-and-hear",
+      "tile": "mundo.maaraw",
+      "items": ["mundo.maaraw", "mundo.maulap", "mundo.maulan", "mundo.mabagyo"],
+      "faith": false,
+      "source": { "doc": "lrp1", "page": 13, "ref": "Pre-K1, God Created a Beautiful World for Us: What is the Weather? Is it Sunny or Rainy?; What do We do on a Stormy Weather?" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.bukid.panahon.find",
+      "engine": "find-it",
+      "level": 1, "stage": "A", "place": "bukid", "theme": "mundo",
+      "competencies": ["l1.mundo.panahon"],
+      "instruction": "instr.find-it",
+      "tile": "mundo.maulan",
+      "items": ["mundo.maaraw", "mundo.maulap", "mundo.maulan", "mundo.mabagyo"],
+      "faith": false,
+      "source": { "doc": "lrp1", "page": 13, "ref": "Pre-K1, God Created a Beautiful World for Us: How do You Feel When It's Sunny, Cloudy or Rainy?" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.bukid.produkto.tap",
+      "engine": "tap-and-hear",
+      "level": 1, "stage": "A", "place": "bukid", "theme": "komunidad",
+      "competencies": ["l1.komunidad.produkto"],
+      "instruction": "instr.tap-and-hear",
+      "tile": "pagkain.mais",
+      "items": ["pagkain.mais", "pagkain.kanin", "pagkain.saging", "pagkain.niyog", "pagkain.kalabasa", "pagkain.kamatis", "pagkain.talong", "pagkain.mangga"],
+      "faith": false,
+      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Community: Products in Our Community; LRP 2 p.26, 3 years old, Language 8.2: name familiar things found outside the home" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.bukid.hayop.match",
+      "engine": "match-pairs",
+      "level": 1, "stage": "B", "place": "bukid", "theme": "komunidad",
+      "competencies": ["l1.kasanayan.pagpapares", "l1.komunidad.hayop"],
+      "instruction": "instr.match-pairs",
+      "tile": "komunidad.bibe",
+      "items": ["komunidad.kalabaw", "komunidad.baka", "komunidad.manok", "komunidad.bibe", "komunidad.baboy", "komunidad.kambing"],
+      "faith": false,
+      "source": { "doc": "lrp2", "page": 23, "ref": "3 years old, Cognitive 4.4: know that certain things are the same. Topic: LRP 1 p.12, Wonderful Animals Around Us" },
+      "status": "verified"
+    },
+    {
+      "id": "l1.bukid.hayop.count",
+      "engine": "count",
+      "level": 1, "stage": "B", "place": "bukid", "theme": "kasanayan",
+      "competencies": ["l1.kasanayan.bilang", "l1.komunidad.hayop"],
+      "instruction": "instr.count",
+      "tile": "komunidad.baboy",
+      "items": ["komunidad.manok", "komunidad.bibe", "komunidad.baboy", "komunidad.kambing"],
+      "max": 5,
+      "faith": false,
+      "source": { "doc": "lrp2", "page": 22, "ref": "3 years old, Cognitive 2.5: understand the concept of number-quantity relations; p.24, 8.5: count 1 to 10. Level 1 stops at 5." },
+      "status": "verified"
+    },
+    {
+      "id": "l1.bukid.puzzle",
+      "engine": "puzzle",
+      "level": 1, "stage": "B", "place": "bukid", "theme": "kasanayan",
+      "competencies": ["l1.kasanayan.puzzle"],
+      "instruction": "instr.puzzle",
+      "tile": "komunidad.kabayo",
+      "items": ["komunidad.kalabaw", "komunidad.baka", "komunidad.kabayo", "komunidad.kambing"],
+      "faith": false,
+      "source": { "doc": "lrp2", "page": 15, "ref": "3 years old, Fine Motor Skills 2 and 3: eye-hand coordination; activity using manipulative tools. Puzzles of 2 to 4 pieces." },
+      "status": "verified"
+    }
+  ]
+}

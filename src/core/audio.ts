@@ -143,7 +143,60 @@ function playTones(tones: Tone[]): void {
   }
 }
 
+/** A short, soft burst of noise: a hand clap. */
+function playClap(): void {
+  const c = getCtx();
+  if (!c || c.state !== 'running') return;
+  const length = Math.floor(c.sampleRate * 0.12);
+  const buffer = c.createBuffer(1, length, c.sampleRate);
+  const data = buffer.getChannelData(0);
+  for (let i = 0; i < length; i++) data[i] = (Math.random() * 2 - 1) * (1 - i / length) ** 3;
+  const source = c.createBufferSource();
+  const filter = c.createBiquadFilter();
+  const gain = c.createGain();
+  source.buffer = buffer;
+  filter.type = 'bandpass';
+  filter.frequency.value = 1400;
+  gain.gain.value = 0.22;
+  source.connect(filter).connect(gain).connect(c.destination);
+  source.start();
+}
+
+/**
+ * A soft drum beat made in code, for Sing and move (speech services cannot sing).
+ * A low drum on beats 1 and 3, a light tick on 2 and 4. Returns a function that stops it.
+ */
+export function startBeat(bpm: number): () => void {
+  const c = getCtx();
+  if (!c) return () => {};
+  const secondsPerBeat = 60 / bpm;
+  let nextTime = c.currentTime + 0.05;
+  let beat = 0;
+  const schedule = () => {
+    while (nextTime < c.currentTime + 0.2) {
+      const osc = c.createOscillator();
+      const gain = c.createGain();
+      const strong = beat % 2 === 0;
+      osc.type = strong ? 'sine' : 'triangle';
+      osc.frequency.setValueAtTime(strong ? 110 : 660, nextTime);
+      if (strong) osc.frequency.exponentialRampToValueAtTime(45, nextTime + 0.18);
+      gain.gain.setValueAtTime(0.0001, nextTime);
+      gain.gain.linearRampToValueAtTime(strong ? 0.3 : 0.05, nextTime + 0.01);
+      gain.gain.exponentialRampToValueAtTime(0.0001, nextTime + (strong ? 0.25 : 0.06));
+      osc.connect(gain).connect(c.destination);
+      osc.start(nextTime);
+      osc.stop(nextTime + 0.3);
+      nextTime += secondsPerBeat;
+      beat += 1;
+    }
+  };
+  schedule();
+  const timer = setInterval(schedule, 50);
+  return () => clearInterval(timer);
+}
+
 export const sfx = {
+  clap: playClap,
   /** A soft "pop" when something is touched */
   tap: () => playTones([{ freq: 520, start: 0, length: 0.09, type: 'triangle', gain: 0.12 }]),
   /** Two rising notes */

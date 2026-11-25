@@ -1,46 +1,836 @@
 {
   "note": "One line per picture-and-word. 'text' is the key in content/lang/*.json: the word itself is at that key, and the Find-it question is at the same key plus '.find'. 'image' is the processed picture name (see ASSETS.md in Phase 2). An image that starts with 'draw:' is drawn by the app in code.",
   "items": [
-    { "id": "pamilya.nanay", "image": "obj-family-nanay", "text": "item.pamilya.nanay", "tags": ["pamilya", "tao"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: Father, Mother, Brother, Sister" }, "status": "verified" },
-    { "id": "pamilya.tatay", "image": "obj-family-tatay", "text": "item.pamilya.tatay", "tags": ["pamilya", "tao"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: Father, Mother, Brother, Sister" }, "status": "verified" },
-    { "id": "pamilya.ate", "image": "obj-family-ate", "text": "item.pamilya.ate", "tags": ["pamilya", "tao"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: Father, Mother, Brother, Sister" }, "status": "verified" },
-    { "id": "pamilya.kuya", "image": "obj-family-kuya", "text": "item.pamilya.kuya", "tags": ["pamilya", "tao"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: Father, Mother, Brother, Sister" }, "status": "verified" },
-    { "id": "pamilya.lola", "image": "obj-family-lola", "text": "item.pamilya.lola", "tags": ["pamilya", "tao"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: Grandmother, Grandfather" }, "status": "verified" },
-    { "id": "pamilya.lolo", "image": "obj-family-lolo", "text": "item.pamilya.lolo", "tags": ["pamilya", "tao"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: Grandmother, Grandfather" }, "status": "verified" },
-    { "id": "pamilya.baby", "image": "obj-family-baby", "text": "item.pamilya.baby", "tags": ["pamilya", "tao"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1 theme My Family and Me. A baby is not named in the subthemes." }, "status": "needs-review" },
-    { "id": "pamilya.pamilya", "image": "obj-family-yakap", "text": "item.pamilya.pamilya", "tags": ["pamilya", "eksena"], "source": { "doc": "lrp1", "page": 11, "ref": "Pre-K1, Theme 2: My Family and Me" }, "status": "verified" },
-    { "id": "pamilya.kainan", "image": "obj-family-kainan", "text": "item.pamilya.kainan", "tags": ["pamilya", "eksena"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: What do I Eat" }, "status": "verified" },
-
-    { "id": "damdamin.masaya", "image": "obj-feelings-masaya", "text": "item.damdamin.masaya", "tags": ["damdamin"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, Tell About Yourself: I Have Feelings" }, "status": "verified" },
-    { "id": "damdamin.malungkot", "image": "obj-feelings-malungkot", "text": "item.damdamin.malungkot", "tags": ["damdamin"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, Tell About Yourself: I Have Feelings" }, "status": "verified" },
-    { "id": "damdamin.galit", "image": "obj-feelings-galit", "text": "item.damdamin.galit", "tags": ["damdamin"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, Tell About Yourself: I Have Feelings" }, "status": "verified" },
-    { "id": "damdamin.takot", "image": "obj-feelings-takot", "text": "item.damdamin.takot", "tags": ["damdamin"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, Tell About Yourself: I Have Feelings" }, "status": "verified" },
-    { "id": "damdamin.gulat", "image": "obj-feelings-gulat", "text": "item.damdamin.gulat", "tags": ["damdamin"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, Tell About Yourself: I Have Feelings" }, "status": "verified" },
-    { "id": "damdamin.inaantok", "image": "obj-feelings-inaantok", "text": "item.damdamin.inaantok", "tags": ["damdamin"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, Tell About Yourself: I Have Feelings" }, "status": "verified" },
-    { "id": "damdamin.nahihiya", "image": "obj-feelings-nahihiya", "text": "item.damdamin.nahihiya", "tags": ["damdamin"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, Tell About Yourself: I Have Feelings" }, "status": "verified" },
-
-    { "id": "gamit.sipilyo", "image": "obj-things-sipilyo", "text": "item.gamit.sipilyo", "tags": ["gamit", "panlinis"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: I Have Things I Use When I Clean Myself" }, "status": "verified" },
-    { "id": "gamit.sabon", "image": "obj-things-sabon", "text": "item.gamit.sabon", "tags": ["gamit", "panlinis"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: I Have Things I Use When I Clean Myself" }, "status": "verified" },
-    { "id": "gamit.tuwalya", "image": "obj-things-tuwalya", "text": "item.gamit.tuwalya", "tags": ["gamit", "panlinis"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: I Have Things I Use When I Clean Myself" }, "status": "verified" },
-    { "id": "gamit.suklay", "image": "obj-things-suklay", "text": "item.gamit.suklay", "tags": ["gamit", "panlinis"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: I Have Things I Use When I Clean Myself" }, "status": "verified" },
-    { "id": "gamit.plato", "image": "obj-things-plato", "text": "item.gamit.plato", "tags": ["gamit", "pangkain"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: I Have Things I Use in Eating" }, "status": "verified" },
-    { "id": "gamit.baso", "image": "obj-things-baso", "text": "item.gamit.baso", "tags": ["gamit", "pangkain"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: I Have Things I Use in Eating" }, "status": "verified" },
-    { "id": "gamit.banig", "image": "obj-things-banig", "text": "item.gamit.banig", "tags": ["gamit", "pantulog"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, Tell About Yourself: I Have Things I Use for Sleeping and Playing" }, "status": "verified" },
-    { "id": "gamit.tsinelas", "image": "obj-things-tsinelas", "text": "item.gamit.tsinelas", "tags": ["gamit", "suot"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, Tell About Yourself: This Is What I Wear" }, "status": "verified" },
-
-    { "id": "pagkain.kanin", "image": "obj-food1-kanin", "text": "item.pagkain.kanin", "tags": ["pagkain"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: What do I Eat" }, "status": "verified" },
-    { "id": "pagkain.mais", "image": "obj-food1-mais", "text": "item.pagkain.mais", "tags": ["pagkain"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: What do I Eat" }, "status": "verified" },
-    { "id": "pagkain.saging", "image": "obj-food1-saging", "text": "item.pagkain.saging", "tags": ["pagkain", "prutas"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: What do I Eat" }, "status": "verified" },
-    { "id": "pagkain.mangga", "image": "obj-food1-mangga", "text": "item.pagkain.mangga", "tags": ["pagkain", "prutas"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: What do I Eat" }, "status": "verified" },
-    { "id": "pagkain.papaya", "image": "obj-food1-papaya", "text": "item.pagkain.papaya", "tags": ["pagkain", "prutas"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: What do I Eat" }, "status": "verified" },
-    { "id": "pagkain.niyog", "image": "obj-food1-niyog", "text": "item.pagkain.niyog", "tags": ["pagkain", "prutas"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: What do I Eat" }, "status": "verified" },
-    { "id": "pagkain.kamatis", "image": "obj-food1-kamatis", "text": "item.pagkain.kamatis", "tags": ["pagkain", "gulay"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: What do I Eat" }, "status": "verified" },
-    { "id": "pagkain.talong", "image": "obj-food1-talong", "text": "item.pagkain.talong", "tags": ["pagkain", "gulay"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: What do I Eat" }, "status": "verified" },
-    { "id": "pagkain.kalabasa", "image": "obj-food1-kalabasa", "text": "item.pagkain.kalabasa", "tags": ["pagkain", "gulay"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: What do I Eat" }, "status": "verified" },
-
-    { "id": "damit.kamiseta-pula", "image": "draw:kamiseta:pula", "text": "item.damit.kamiseta-pula", "tags": ["suot", "kulay"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, Tell About Yourself: This Is What I Wear. Colour names are not in the PDFs; LRP 2 is needed." }, "status": "needs-review" },
-    { "id": "damit.kamiseta-asul", "image": "draw:kamiseta:asul", "text": "item.damit.kamiseta-asul", "tags": ["suot", "kulay"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, Tell About Yourself: This Is What I Wear. Colour names are not in the PDFs; LRP 2 is needed." }, "status": "needs-review" },
-    { "id": "damit.kamiseta-dilaw", "image": "draw:kamiseta:dilaw", "text": "item.damit.kamiseta-dilaw", "tags": ["suot", "kulay"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, Tell About Yourself: This Is What I Wear. Colour names are not in the PDFs; LRP 2 is needed." }, "status": "needs-review" },
-    { "id": "damit.kamiseta-berde", "image": "draw:kamiseta:berde", "text": "item.damit.kamiseta-berde", "tags": ["suot", "kulay"], "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, Tell About Yourself: This Is What I Wear. Colour names are not in the PDFs; LRP 2 is needed." }, "status": "needs-review" }
+    {
+      "id": "pamilya.nanay",
+      "image": "obj-family-nanay",
+      "text": "item.pamilya.nanay",
+      "tags": [
+        "pamilya",
+        "tao"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: Father, Mother, Brother, Sister"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "pamilya.tatay",
+      "image": "obj-family-tatay",
+      "text": "item.pamilya.tatay",
+      "tags": [
+        "pamilya",
+        "tao"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: Father, Mother, Brother, Sister"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "pamilya.ate",
+      "image": "obj-family-ate",
+      "text": "item.pamilya.ate",
+      "tags": [
+        "pamilya",
+        "tao"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: Father, Mother, Brother, Sister"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "pamilya.kuya",
+      "image": "obj-family-kuya",
+      "text": "item.pamilya.kuya",
+      "tags": [
+        "pamilya",
+        "tao"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: Father, Mother, Brother, Sister"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "pamilya.lola",
+      "image": "obj-family-lola",
+      "text": "item.pamilya.lola",
+      "tags": [
+        "pamilya",
+        "tao"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: Grandmother, Grandfather"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "pamilya.lolo",
+      "image": "obj-family-lolo",
+      "text": "item.pamilya.lolo",
+      "tags": [
+        "pamilya",
+        "tao"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: Grandmother, Grandfather"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "pamilya.baby",
+      "image": "obj-family-baby",
+      "text": "item.pamilya.baby",
+      "tags": [
+        "pamilya",
+        "tao"
+      ],
+      "source": {
+        "doc": "lrp2",
+        "page": 7,
+        "ref": "2 years old, Cognitive indicator 3: says the names of people usually around him/her"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "pamilya.pamilya",
+      "image": "obj-family-yakap",
+      "text": "item.pamilya.pamilya",
+      "tags": [
+        "pamilya",
+        "eksena"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 11,
+        "ref": "Pre-K1, Theme 2: My Family and Me"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "pamilya.kainan",
+      "image": "obj-family-kainan",
+      "text": "item.pamilya.kainan",
+      "tags": [
+        "pamilya",
+        "eksena"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: What do I Eat"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "damdamin.masaya",
+      "image": "obj-feelings-masaya",
+      "text": "item.damdamin.masaya",
+      "tags": [
+        "damdamin"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, Tell About Yourself: I Have Feelings"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "damdamin.malungkot",
+      "image": "obj-feelings-malungkot",
+      "text": "item.damdamin.malungkot",
+      "tags": [
+        "damdamin"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, Tell About Yourself: I Have Feelings"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "damdamin.galit",
+      "image": "obj-feelings-galit",
+      "text": "item.damdamin.galit",
+      "tags": [
+        "damdamin"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, Tell About Yourself: I Have Feelings"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "damdamin.takot",
+      "image": "obj-feelings-takot",
+      "text": "item.damdamin.takot",
+      "tags": [
+        "damdamin"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, Tell About Yourself: I Have Feelings"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "damdamin.gulat",
+      "image": "obj-feelings-gulat",
+      "text": "item.damdamin.gulat",
+      "tags": [
+        "damdamin"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, Tell About Yourself: I Have Feelings"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "damdamin.inaantok",
+      "image": "obj-feelings-inaantok",
+      "text": "item.damdamin.inaantok",
+      "tags": [
+        "damdamin"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, Tell About Yourself: I Have Feelings"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "damdamin.nahihiya",
+      "image": "obj-feelings-nahihiya",
+      "text": "item.damdamin.nahihiya",
+      "tags": [
+        "damdamin"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, Tell About Yourself: I Have Feelings"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "gamit.sipilyo",
+      "image": "obj-things-sipilyo",
+      "text": "item.gamit.sipilyo",
+      "tags": [
+        "gamit",
+        "panlinis"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: I Have Things I Use When I Clean Myself"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "gamit.sabon",
+      "image": "obj-things-sabon",
+      "text": "item.gamit.sabon",
+      "tags": [
+        "gamit",
+        "panlinis"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: I Have Things I Use When I Clean Myself"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "gamit.tuwalya",
+      "image": "obj-things-tuwalya",
+      "text": "item.gamit.tuwalya",
+      "tags": [
+        "gamit",
+        "panlinis"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: I Have Things I Use When I Clean Myself"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "gamit.suklay",
+      "image": "obj-things-suklay",
+      "text": "item.gamit.suklay",
+      "tags": [
+        "gamit",
+        "panlinis"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: I Have Things I Use When I Clean Myself"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "gamit.plato",
+      "image": "obj-things-plato",
+      "text": "item.gamit.plato",
+      "tags": [
+        "gamit",
+        "pangkain"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: I Have Things I Use in Eating"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "gamit.baso",
+      "image": "obj-things-baso",
+      "text": "item.gamit.baso",
+      "tags": [
+        "gamit",
+        "pangkain"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: I Have Things I Use in Eating"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "gamit.banig",
+      "image": "obj-things-banig",
+      "text": "item.gamit.banig",
+      "tags": [
+        "gamit",
+        "pantulog"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, Tell About Yourself: I Have Things I Use for Sleeping and Playing"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "gamit.tsinelas",
+      "image": "obj-things-tsinelas",
+      "text": "item.gamit.tsinelas",
+      "tags": [
+        "gamit",
+        "suot"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, Tell About Yourself: This Is What I Wear"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "pagkain.kanin",
+      "image": "obj-food1-kanin",
+      "text": "item.pagkain.kanin",
+      "tags": [
+        "pagkain"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: What do I Eat"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "pagkain.mais",
+      "image": "obj-food1-mais",
+      "text": "item.pagkain.mais",
+      "tags": [
+        "pagkain"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: What do I Eat"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "pagkain.saging",
+      "image": "obj-food1-saging",
+      "text": "item.pagkain.saging",
+      "tags": [
+        "pagkain",
+        "prutas"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: What do I Eat"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "pagkain.mangga",
+      "image": "obj-food1-mangga",
+      "text": "item.pagkain.mangga",
+      "tags": [
+        "pagkain",
+        "prutas"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: What do I Eat"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "pagkain.papaya",
+      "image": "obj-food1-papaya",
+      "text": "item.pagkain.papaya",
+      "tags": [
+        "pagkain",
+        "prutas"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: What do I Eat"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "pagkain.niyog",
+      "image": "obj-food1-niyog",
+      "text": "item.pagkain.niyog",
+      "tags": [
+        "pagkain",
+        "prutas"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: What do I Eat"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "pagkain.kamatis",
+      "image": "obj-food1-kamatis",
+      "text": "item.pagkain.kamatis",
+      "tags": [
+        "pagkain",
+        "gulay"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: What do I Eat"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "pagkain.talong",
+      "image": "obj-food1-talong",
+      "text": "item.pagkain.talong",
+      "tags": [
+        "pagkain",
+        "gulay"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: What do I Eat"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "pagkain.kalabasa",
+      "image": "obj-food1-kalabasa",
+      "text": "item.pagkain.kalabasa",
+      "tags": [
+        "pagkain",
+        "gulay"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: What do I Eat"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "damit.kamiseta-pula",
+      "image": "draw:kamiseta:pula",
+      "text": "item.damit.kamiseta-pula",
+      "tags": [
+        "suot",
+        "kulay"
+      ],
+      "source": {
+        "doc": "lrp2",
+        "page": 8,
+        "ref": "2 years old, Cognitive indicator 9: recognizes and tells the colour of objects; topic: LRP 1 p.12, This Is What I Wear"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "damit.kamiseta-asul",
+      "image": "draw:kamiseta:asul",
+      "text": "item.damit.kamiseta-asul",
+      "tags": [
+        "suot",
+        "kulay"
+      ],
+      "source": {
+        "doc": "lrp2",
+        "page": 8,
+        "ref": "2 years old, Cognitive indicator 9: recognizes and tells the colour of objects; topic: LRP 1 p.12, This Is What I Wear"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "damit.kamiseta-dilaw",
+      "image": "draw:kamiseta:dilaw",
+      "text": "item.damit.kamiseta-dilaw",
+      "tags": [
+        "suot",
+        "kulay"
+      ],
+      "source": {
+        "doc": "lrp2",
+        "page": 8,
+        "ref": "2 years old, Cognitive indicator 9: recognizes and tells the colour of objects; topic: LRP 1 p.12, This Is What I Wear"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "damit.kamiseta-berde",
+      "image": "draw:kamiseta:berde",
+      "text": "item.damit.kamiseta-berde",
+      "tags": [
+        "suot",
+        "kulay"
+      ],
+      "source": {
+        "doc": "lrp2",
+        "page": 8,
+        "ref": "2 years old, Cognitive indicator 9: recognizes and tells the colour of objects; topic: LRP 1 p.12, This Is What I Wear"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "komunidad.aso",
+      "image": "obj-animals1-aso",
+      "text": "item.komunidad.aso",
+      "tags": [
+        "komunidad",
+        "hayop"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Community: There Are Wonderful Animals Around Us"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "komunidad.pusa",
+      "image": "obj-animals1-pusa",
+      "text": "item.komunidad.pusa",
+      "tags": [
+        "komunidad",
+        "hayop"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Community: There Are Wonderful Animals Around Us"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "komunidad.manok",
+      "image": "obj-animals1-manok",
+      "text": "item.komunidad.manok",
+      "tags": [
+        "komunidad",
+        "hayop"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Community: There Are Wonderful Animals Around Us"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "komunidad.bibe",
+      "image": "obj-animals1-bibe",
+      "text": "item.komunidad.bibe",
+      "tags": [
+        "komunidad",
+        "hayop"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Community: There Are Wonderful Animals Around Us"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "komunidad.baboy",
+      "image": "obj-animals1-baboy",
+      "text": "item.komunidad.baboy",
+      "tags": [
+        "komunidad",
+        "hayop"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Community: There Are Wonderful Animals Around Us"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "komunidad.kambing",
+      "image": "obj-animals1-kambing",
+      "text": "item.komunidad.kambing",
+      "tags": [
+        "komunidad",
+        "hayop"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Community: There Are Wonderful Animals Around Us"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "komunidad.baka",
+      "image": "obj-animals1-baka",
+      "text": "item.komunidad.baka",
+      "tags": [
+        "komunidad",
+        "hayop"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Community: There Are Wonderful Animals Around Us"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "komunidad.kalabaw",
+      "image": "obj-animals1-kalabaw",
+      "text": "item.komunidad.kalabaw",
+      "tags": [
+        "komunidad",
+        "hayop"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Community: There Are Wonderful Animals Around Us"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "komunidad.kabayo",
+      "image": "obj-animals1-kabayo",
+      "text": "item.komunidad.kabayo",
+      "tags": [
+        "komunidad",
+        "hayop"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Community: There Are Wonderful Animals Around Us"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "mundo.mata",
+      "image": "obj-body-mata",
+      "text": "item.mundo.mata",
+      "tags": [
+        "mundo",
+        "katawan"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, God Created a Beautiful World for Us: I Have My Two Eyes to See"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "mundo.tainga",
+      "image": "obj-body-tainga",
+      "text": "item.mundo.tainga",
+      "tags": [
+        "mundo",
+        "katawan"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 13,
+        "ref": "Pre-K1, God Created a Beautiful World for Us: I Have My Two Ears to Hear"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "mundo.ilong",
+      "image": "obj-body-ilong",
+      "text": "item.mundo.ilong",
+      "tags": [
+        "mundo",
+        "katawan"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 13,
+        "ref": "Pre-K1, God Created a Beautiful World for Us: I Have My Nose to Smell"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "mundo.bibig",
+      "image": "obj-body-bibig",
+      "text": "item.mundo.bibig",
+      "tags": [
+        "mundo",
+        "katawan"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 13,
+        "ref": "Pre-K1, God Created a Beautiful World for Us: I Have My Tongue to Taste the Food I Eat (the picture shows the mouth)"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "mundo.kamay",
+      "image": "obj-body-kamay",
+      "text": "item.mundo.kamay",
+      "tags": [
+        "mundo",
+        "katawan"
+      ],
+      "source": {
+        "doc": "lrp2",
+        "page": 8,
+        "ref": "2 years old, Cognitive indicator 15: point to and name some body parts (1 year old p.7, 3: head, eyes, hands)"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "mundo.paa",
+      "image": "obj-body-paa",
+      "text": "item.mundo.paa",
+      "tags": [
+        "mundo",
+        "katawan"
+      ],
+      "source": {
+        "doc": "lrp2",
+        "page": 8,
+        "ref": "2 years old, Cognitive indicator 15: point to and name some body parts"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "mundo.maaraw",
+      "image": "obj-weather-maaraw",
+      "text": "item.mundo.maaraw",
+      "tags": [
+        "mundo",
+        "panahon"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 13,
+        "ref": "Pre-K1, God Created a Beautiful World for Us: What is the Weather? Is it Sunny or Rainy?; Sunny, Cloudy or Rainy; Stormy Weather"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "mundo.maulap",
+      "image": "obj-weather-maulap",
+      "text": "item.mundo.maulap",
+      "tags": [
+        "mundo",
+        "panahon"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 13,
+        "ref": "Pre-K1, God Created a Beautiful World for Us: What is the Weather? Is it Sunny or Rainy?; Sunny, Cloudy or Rainy; Stormy Weather"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "mundo.maulan",
+      "image": "obj-weather-maulan",
+      "text": "item.mundo.maulan",
+      "tags": [
+        "mundo",
+        "panahon"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 13,
+        "ref": "Pre-K1, God Created a Beautiful World for Us: What is the Weather? Is it Sunny or Rainy?; Sunny, Cloudy or Rainy; Stormy Weather"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "mundo.mabagyo",
+      "image": "obj-weather-mabagyo",
+      "text": "item.mundo.mabagyo",
+      "tags": [
+        "mundo",
+        "panahon"
+      ],
+      "source": {
+        "doc": "lrp1",
+        "page": 13,
+        "ref": "Pre-K1, God Created a Beautiful World for Us: What is the Weather? Is it Sunny or Rainy?; Sunny, Cloudy or Rainy; Stormy Weather"
+      },
+      "status": "verified"
+    }
   ]
 }

@@ -1,4 +1,4 @@
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { content } from '../../src/content';
@@ -51,6 +51,13 @@ describe('content files', () => {
     for (const key of Object.keys(content.assets.audio)) expect(['fil', 'en']).toContain(key.split('/')[0]);
   });
 
+  it('every needs-review item is listed in CONTENT_GAPS.md', () => {
+    const gaps = readFileSync('CONTENT_GAPS.md', 'utf8');
+    const review = [...content.items, ...content.activities, ...content.competencies, ...content.cards]
+      .filter((x) => x.status === 'needs-review');
+    for (const x of review) expect(gaps, x.id).toContain(x.id);
+  });
+
   it('only build Level 1', () => {
     expect(content.levels.filter((l) => l.built).map((l) => l.id)).toEqual([1]);
     expect(content.activities.every((a) => a.level === 1)).toBe(true);
@@ -101,6 +108,29 @@ describe('the content checker catches mistakes', () => {
     expect(validateContent(c).join('\n')).toContain('more than four choices');
   });
 
+  it('a puzzle at Stage A (needs dragging)', () => {
+    const c = copy();
+    const puzzle = c.activities.find((a) => a.engine === 'puzzle')!;
+    puzzle.stage = 'A';
+    expect(validateContent(c).join(' | ')).toContain('cannot be Stage A');
+  });
+
+  it('counting beyond five at Level 1', () => {
+    const c = copy();
+    const count = c.activities.find((a) => a.engine === 'count') as { max: number };
+    count.max = 7;
+    expect(validateContent(c).join(' | ')).toContain('max must be 2 to 5');
+  });
+
+  it('a chant line with no text, or an unknown action', () => {
+    const c = copy();
+    const sing = c.activities.find((a) => a.engine === 'sing-and-move') as unknown as { verses: { line: string; action: string }[] };
+    sing.verses[0] = { line: 'chant.wala', action: 'jump' };
+    const problems = validateContent(c).join(' | ');
+    expect(problems).toContain('chant.wala');
+    expect(problems).toContain('unknown action');
+  });
+
   it('a dragging game at Stage A', () => {
     const c = copy();
     const sort = c.activities.find((a) => a.engine === 'sort')!;
@@ -110,7 +140,7 @@ describe('the content checker catches mistakes', () => {
 
   it('an engine that is not built yet', () => {
     const c = copy();
-    (c.activities[0] as { engine: string }).engine = 'puzzle';
+    (c.activities[0] as { engine: string }).engine = 'trace';
     expect(validateContent(c).join('\n')).toContain('not built yet');
   });
 });

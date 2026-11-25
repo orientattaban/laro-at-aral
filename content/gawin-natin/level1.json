@@ -2,29 +2,172 @@
   "note": "Off-screen activity cards for the adult and child. One is shown when play time is up. The wording is ours; the topic of each card comes from the source named.",
   "cards": [
     {
-      "id": "gn.pamilya.litrato", "level": 1, "theme": "pamilya", "text": "gn.pamilya.litrato", "tile": "pamilya.pamilya", "faith": false,
-      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: Father, Mother, Brother, Sister; Grandmother, Grandfather" },
+      "id": "gn.pamilya.litrato",
+      "level": 1,
+      "theme": "pamilya",
+      "text": "gn.pamilya.litrato",
+      "tile": "pamilya.pamilya",
+      "faith": false,
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: Father, Mother, Brother, Sister; Grandmother, Grandfather"
+      },
       "status": "verified"
     },
     {
-      "id": "gn.ako.damdamin", "level": 1, "theme": "ako", "text": "gn.ako.damdamin", "tile": "damdamin.masaya", "faith": false,
-      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, Tell About Yourself: I Have Feelings" },
+      "id": "gn.ako.damdamin",
+      "level": 1,
+      "theme": "ako",
+      "text": "gn.ako.damdamin",
+      "tile": "damdamin.masaya",
+      "faith": false,
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, Tell About Yourself: I Have Feelings"
+      },
       "status": "verified"
     },
     {
-      "id": "gn.pamilya.hugas", "level": 1, "theme": "pamilya", "text": "gn.pamilya.hugas", "tile": "gamit.sabon", "faith": false,
-      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: How do I Make Myself Clean; I Have Things I Use When I Clean Myself" },
+      "id": "gn.pamilya.hugas",
+      "level": 1,
+      "theme": "pamilya",
+      "text": "gn.pamilya.hugas",
+      "tile": "gamit.sabon",
+      "faith": false,
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: How do I Make Myself Clean; I Have Things I Use When I Clean Myself"
+      },
       "status": "verified"
     },
     {
-      "id": "gn.pamilya.hapag", "level": 1, "theme": "pamilya", "text": "gn.pamilya.hapag", "tile": "gamit.plato", "faith": false,
-      "source": { "doc": "lrp1", "page": 12, "ref": "Pre-K1, My Family and Me: What do I Eat; I Have Things I Use in Eating" },
+      "id": "gn.pamilya.hapag",
+      "level": 1,
+      "theme": "pamilya",
+      "text": "gn.pamilya.hapag",
+      "tile": "gamit.plato",
+      "faith": false,
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Family and Me: What do I Eat; I Have Things I Use in Eating"
+      },
       "status": "verified"
     },
     {
-      "id": "gn.ako.tsinelas", "level": 1, "theme": "ako", "text": "gn.ako.tsinelas", "tile": "gamit.tsinelas", "faith": false,
-      "source": { "doc": "lrp1", "page": 12, "ref": "Topic: Pre-K1, Tell About Yourself: This Is What I Wear. Comparing big and small has no competency in the PDFs; LRP 2 is needed." },
-      "status": "needs-review"
+      "id": "gn.ako.tsinelas",
+      "level": 1,
+      "theme": "ako",
+      "text": "gn.ako.tsinelas",
+      "tile": "gamit.tsinelas",
+      "faith": false,
+      "source": {
+        "doc": "lrp2",
+        "page": 23,
+        "ref": "3 years old, Cognitive 4.5: state opposite relationships; Health p.13, 2: wearing slippers"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "gn.komunidad.hayop",
+      "level": 1,
+      "theme": "komunidad",
+      "text": "gn.komunidad.hayop",
+      "tile": "komunidad.aso",
+      "faith": false,
+      "source": {
+        "doc": "lrp2",
+        "page": 25,
+        "ref": "3 years old, Language 1.1: imitate the sounds of different animals"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "gn.komunidad.produkto",
+      "level": 1,
+      "theme": "komunidad",
+      "text": "gn.komunidad.produkto",
+      "tile": "pagkain.mais",
+      "faith": false,
+      "source": {
+        "doc": "lrp1",
+        "page": 12,
+        "ref": "Pre-K1, My Community: Products in Our Community"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "gn.mundo.panahon",
+      "level": 1,
+      "theme": "mundo",
+      "text": "gn.mundo.panahon",
+      "tile": "mundo.maaraw",
+      "faith": false,
+      "source": {
+        "doc": "lrp1",
+        "page": 13,
+        "ref": "Pre-K1: What is the Weather? Is it Sunny or Rainy?"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "gn.mundo.katawan",
+      "level": 1,
+      "theme": "mundo",
+      "text": "gn.mundo.katawan",
+      "tile": "mundo.mata",
+      "faith": false,
+      "source": {
+        "doc": "lrp2",
+        "page": 8,
+        "ref": "2 years old, Cognitive indicator 15: point to and name some body parts"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "gn.kasanayan.bilang",
+      "level": 1,
+      "theme": "kasanayan",
+      "text": "gn.kasanayan.bilang",
+      "tile": "pagkain.mangga",
+      "faith": false,
+      "source": {
+        "doc": "lrp2",
+        "page": 24,
+        "ref": "3 years old, Cognitive 8.5: count 1 to 10"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "gn.kasanayan.hanap",
+      "level": 1,
+      "theme": "kasanayan",
+      "text": "gn.kasanayan.hanap",
+      "tile": "gamit.banig",
+      "faith": false,
+      "source": {
+        "doc": "lrp2",
+        "page": 8,
+        "ref": "Cognitive indicator 8: hide and seek, searching for a toy"
+      },
+      "status": "verified"
+    },
+    {
+      "id": "gn.kasanayan.galaw",
+      "level": 1,
+      "theme": "kasanayan",
+      "text": "gn.kasanayan.galaw",
+      "tile": "mundo.kamay",
+      "faith": false,
+      "source": {
+        "doc": "lrp2",
+        "page": 26,
+        "ref": "3 years old, Language 5: repeat sound patterns such as clapping, stomping, patting"
+      },
+      "status": "verified"
     }
   ]
 }

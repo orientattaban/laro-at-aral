@@ -26,7 +26,7 @@ export function PlaceScreen({
 
   // Chosen when the place opens, from what has been played least recently.
   const tiles = useMemo(
-    () => pickTiles(eligibleActivities(content.activities, settings, placeId), store.get().progress.activities),
+    () => pickTiles(eligibleActivities(content.activities, settings, placeId), store.get().progress.activities, undefined, settings.stage),
     [settings, placeId],
   );
   const played = store.get().progress.activities;
@@ -50,8 +50,10 @@ export function PlaceScreen({
         <div className="play-area">
           <div className={`tile-row count-${tiles.length}`}>
             {tiles.map((activity) => {
-              const item = getItem(activity.tile);
-              const name = t(lang, item.text);
+              // A tile is an item's picture, or a picture drawn in code ("draw:...").
+              const drawn = activity.tile.startsWith('draw:');
+              const name = drawn ? t(lang, `engine.${activity.engine}`) : t(lang, getItem(activity.tile).text);
+              const image = drawn ? activity.tile : getItem(activity.tile).image;
               const doneToday = played[activity.id]?.last === today;
               return (
                 <button
@@ -64,7 +66,7 @@ export function PlaceScreen({
                   data-engine={activity.engine}
                   onClick={() => { sfx.tap(); onPlay(activity.id); }}
                 >
-                  <Picture image={item.image} label={name} />
+                  <Picture image={image} label={name} />
                   <span className="tile-badge"><Drawn image={`draw:engine:${activity.engine}`} /></span>
                   {doneToday && <span className="tile-star"><Star /></span>}
                 </button>

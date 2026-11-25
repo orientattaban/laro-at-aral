@@ -4,8 +4,12 @@
 // 3. add its name to BUILT_ENGINES in src/content/validate.ts.
 import type { ComponentType } from 'react';
 import type { Activity, EngineId, StageId } from '../content/types';
+import { Count } from './Count';
 import { FindIt } from './FindIt';
+import { HideAndFind, hideSpotCount } from './HideAndFind';
 import { MatchPairs } from './MatchPairs';
+import { Puzzle } from './Puzzle';
+import { SingAndMove } from './SingAndMove';
 import { Sort } from './Sort';
 import { TapAndHear } from './TapAndHear';
 import type { EngineProps } from './types';
@@ -18,6 +22,8 @@ interface EngineEntry {
   maxStep: (maxChoices: number) => number;
   /** Can earlier items from other games be mixed in for review? */
   mixesReview: boolean;
+  /** The engine shows Butil itself, so the side column shows only the buttons */
+  ownButil?: boolean;
 }
 
 export const ENGINES: Partial<Record<EngineId, EngineEntry>> = {
@@ -25,6 +31,10 @@ export const ENGINES: Partial<Record<EngineId, EngineEntry>> = {
   'find-it': { component: FindIt, maxStep: (maxChoices) => Math.max(0, maxChoices - 2), mixesReview: true },
   'match-pairs': { component: MatchPairs, maxStep: () => 1, mixesReview: false },
   sort: { component: Sort, maxStep: () => 1, mixesReview: false },
+  count: { component: Count, maxStep: () => 1, mixesReview: false },
+  puzzle: { component: Puzzle, maxStep: () => 2, mixesReview: false },
+  'hide-and-find': { component: HideAndFind, maxStep: (maxChoices) => hideSpotCount(9, maxChoices) - 2, mixesReview: false, ownButil: true },
+  'sing-and-move': { component: SingAndMove, maxStep: () => 0, mixesReview: false, ownButil: true },
 };
 
 export function engineFor(activity: Activity): EngineEntry {

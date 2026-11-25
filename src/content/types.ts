@@ -5,7 +5,7 @@ export type Status = 'verified' | 'needs-review';
 export type Lang = 'fil' | 'en' | 'ilo';
 export type StageId = 'A' | 'B';
 
-/** All fifteen engines are named here so later levels plug in without restructuring. */
+/** The fifteen engines from the brief, plus the Stage A hide-and-find game. */
 export type EngineId =
   | 'tap-and-hear'
   | 'find-it'
@@ -21,11 +21,13 @@ export type EngineId =
   | 'number-work'
   | 'read-and-answer'
   | 'sing-and-move'
-  | 'gawin-natin';
+  | 'gawin-natin'
+  | 'hide-and-find';
 
 export const ALL_ENGINES: EngineId[] = [
   'tap-and-hear', 'find-it', 'match-pairs', 'sort', 'count', 'pattern', 'sequence', 'trace',
   'puzzle', 'story', 'word-builder', 'number-work', 'read-and-answer', 'sing-and-move', 'gawin-natin',
+  'hide-and-find',
 ];
 
 export type AreaId = 'physical' | 'social-emotional' | 'character' | 'cognitive' | 'language' | 'creative';
@@ -79,15 +81,41 @@ interface ActivityBase extends Sourced {
   competencies: string[];
   /** Language key of the spoken instruction */
   instruction: string;
-  /** Item whose picture stands for this game on the place screen */
+  /** Item whose picture stands for this game on the place screen, or a "draw:" picture */
   tile: string;
   /** true = prayer or faith content, shown only when the parent switches it on */
   faith: boolean;
 }
 
 export interface ItemActivity extends ActivityBase {
-  engine: 'tap-and-hear' | 'find-it' | 'match-pairs';
+  engine: 'tap-and-hear' | 'find-it' | 'match-pairs' | 'hide-and-find' | 'puzzle';
   items: string[];
+}
+
+export interface CountActivity extends ActivityBase {
+  engine: 'count';
+  /** The things to count; one kind is shown per question */
+  items: string[];
+  /** Highest number asked (Level 1: 5) */
+  max: number;
+}
+
+export type MoveAction = 'clap' | 'stomp' | 'pat' | 'turn';
+export const MOVE_ACTIONS: MoveAction[] = ['clap', 'stomp', 'pat', 'turn'];
+
+export interface SingVerse {
+  /** Language key of the spoken chant line */
+  line: string;
+  action: MoveAction;
+}
+
+export interface SingActivity extends ActivityBase {
+  engine: 'sing-and-move';
+  /** Speed of the drum beat made in code */
+  bpm: number;
+  verses: SingVerse[];
+  /** After which verses (counting from 0) the beat stops for the freeze game */
+  freezeAfter: number[];
 }
 
 export type BasketCue =
@@ -123,7 +151,7 @@ export interface SortActivity extends ActivityBase {
   rounds: SortRound[];
 }
 
-export type Activity = ItemActivity | SortActivity;
+export type Activity = ItemActivity | SortActivity | CountActivity | SingActivity;
 
 export interface GawinNatinCard extends Sourced {
   id: string;
