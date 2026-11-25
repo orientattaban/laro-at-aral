@@ -66,9 +66,9 @@ npm run preview -- --host
 
 The Terminal prints a line like `Network: http://192.168.1.23:4173/`. Type that address into Chrome on the phone. If Windows asks whether to allow Node.js on the network, choose "Allow" for private networks. This way cannot work in airplane mode: phones only let a website store itself for offline use when it comes from a secure "https" address.
 
-**Proper install, works in airplane mode.** This needs the web version published to GitHub Pages, which gives it an https address. It has not been published yet because it needs two decisions from you (see PLAN.md, section 8): a free GitHub account, and whether a public repository is acceptable. Once published:
+**Proper install, works in airplane mode.** The web version is published at **https://orientattaban.github.io/laro-at-aral/**
 
-1. Open the address in Chrome on the phone and wait ten seconds.
+1. Open that address in Chrome on the phone and wait ten seconds.
 2. Tap the three dots, then "Add to Home screen" or "Install app".
 3. Open the game from its icon, turn on airplane mode, and play.
 
@@ -170,7 +170,19 @@ npm run check:assets
 
 ## How to publish an update
 
-Also not switched on yet, for the same reason as the phone install. The file `.github/workflows/deploy.yml` is ready: once the project is on GitHub, every push to the `main` branch runs all the tests and, only if they pass, publishes the web version. The Android app file comes in Phase 3.
+The project lives at https://github.com/orientattaban/laro-at-aral (public). To publish the latest saved version:
+
+```bash
+git push
+```
+
+GitHub then runs every test. Only if they all pass does it replace the web version, about five minutes later. If a test fails, the old version stays online. To see how it went:
+
+```bash
+gh run list --limit 1 --web
+```
+
+A phone that already installed the game gets the new version by itself the next time it opens the game with internet; after that it works offline again. The Android app file comes in Phase 3.
 
 ## What the app remembers, and where
 

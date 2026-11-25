@@ -86,6 +86,7 @@ Read this first in every session. The full plan is in PLAN.md. Open questions ab
 
 - A phase is done only when it builds without errors, tests pass, it works in airplane mode, the no-network test passes and the size is reported.
 - Commit after each working step with a clear message. Never commit signing keys, passwords or `.env`.
-- Not uploaded without the owner's decision: `raw-assets` pictures, `prompts/`, `START-HERE.md`, curriculum PDFs (all git-ignored for now). Free GitHub Pages needs a public repository; she has not yet approved that.
-- Local Git identity is a placeholder (`noreply@laro-at-aral.invalid`). Set her GitHub noreply address before the first upload.
-- Hard-to-undo decisions still pending: public repository, app ID (proposed `ph.laroataral.app`), signing key.
+- Published (owner approved, 25 Nov 2026): public repository https://github.com/orientattaban/laro-at-aral, game at https://orientattaban.github.io/laro-at-aral/. Every push to `main` runs all tests and republishes only if they pass. Pushing is publishing: push only when the owner asks.
+- Never uploaded: `raw-assets` originals, `prompts/`, `START-HERE.md`, curriculum PDFs, `.env` (all git-ignored). Processed pictures and voice clips in `public/` are public. Do not add wording that links the owner to the child.
+- Git identity for new commits is the GitHub noreply address; older commits use a placeholder. Do not rewrite history.
+- Hard-to-undo decisions still pending: app ID (proposed `ph.laroataral.app`), signing key.
