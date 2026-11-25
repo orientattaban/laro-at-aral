@@ -104,45 +104,45 @@ en/instr.sort.kulay.mp3,English,Butil,"Now, colours! Put the red ones in the red
 en/instr.sort.gamit.mp3,English,Butil,Which do we use for eating? Which do we use for washing?,,generated
 en/instr.map.mp3,English,Butil,Where shall we go? Tap a place.,,generated
 en/instr.place.mp3,English,Butil,Choose a game.,,generated
-en/item.pamilya.nanay.mp3,English,Teacher Liza,Mother,"Say the word once, clearly.",new
+en/item.pamilya.nanay.mp3,English,Teacher Liza,Mother,"Say the word once, clearly.",generated
 en/item.pamilya.nanay.find.mp3,English,Butil,Where is Mother?,,generated
-en/item.pamilya.tatay.mp3,English,Teacher Liza,Father,"Say the word once, clearly.",new
+en/item.pamilya.tatay.mp3,English,Teacher Liza,Father,"Say the word once, clearly.",generated
 en/item.pamilya.tatay.find.mp3,English,Butil,Where is Father?,,generated
-en/item.pamilya.ate.mp3,English,Teacher Liza,big sister,"Say the word once, clearly.",new
-en/item.pamilya.ate.find.mp3,English,Butil,Where is big sister?,,new
-en/item.pamilya.kuya.mp3,English,Teacher Liza,big brother,"Say the word once, clearly.",new
-en/item.pamilya.kuya.find.mp3,English,Butil,Where is big brother?,,new
-en/item.pamilya.lola.mp3,English,Teacher Liza,Grandmother,"Say the word once, clearly.",new
-en/item.pamilya.lola.find.mp3,English,Butil,Where is Grandmother?,,new
-en/item.pamilya.lolo.mp3,English,Teacher Liza,Grandfather,"Say the word once, clearly.",new
-en/item.pamilya.lolo.find.mp3,English,Butil,Where is Grandfather?,,new
-en/item.pamilya.baby.mp3,English,Teacher Liza,baby,"Say the word once, clearly.",new
-en/item.pamilya.baby.find.mp3,English,Butil,Where is the baby?,,new
-en/item.pamilya.pamilya.mp3,English,Teacher Liza,family,"Say the word once, clearly.",new
-en/item.pamilya.pamilya.find.mp3,English,Butil,Where is the family?,,new
-en/item.pamilya.kainan.mp3,English,Teacher Liza,The family is eating.,"Say the word once, clearly.",new
-en/item.pamilya.kainan.find.mp3,English,Butil,Where is the family eating together?,,new
-en/item.damdamin.masaya.mp3,English,Teacher Liza,happy,"Say the word once, clearly.",new
-en/item.damdamin.masaya.find.mp3,English,Butil,Who is happy?,,new
-en/item.damdamin.malungkot.mp3,English,Teacher Liza,sad,"Say the word once, clearly.",new
-en/item.damdamin.malungkot.find.mp3,English,Butil,Who is sad?,,new
-en/item.damdamin.galit.mp3,English,Teacher Liza,angry,"Say the word once, clearly.",new
-en/item.damdamin.galit.find.mp3,English,Butil,Who is angry?,,new
-en/item.damdamin.takot.mp3,English,Teacher Liza,scared,"Say the word once, clearly.",new
+en/item.pamilya.ate.mp3,English,Teacher Liza,big sister,"Say the word once, clearly.",generated
+en/item.pamilya.ate.find.mp3,English,Butil,Where is big sister?,,generated
+en/item.pamilya.kuya.mp3,English,Teacher Liza,big brother,"Say the word once, clearly.",generated
+en/item.pamilya.kuya.find.mp3,English,Butil,Where is big brother?,,generated
+en/item.pamilya.lola.mp3,English,Teacher Liza,Grandmother,"Say the word once, clearly.",generated
+en/item.pamilya.lola.find.mp3,English,Butil,Where is Grandmother?,,generated
+en/item.pamilya.lolo.mp3,English,Teacher Liza,Grandfather,"Say the word once, clearly.",generated
+en/item.pamilya.lolo.find.mp3,English,Butil,Where is Grandfather?,,generated
+en/item.pamilya.baby.mp3,English,Teacher Liza,baby,"Say the word once, clearly.",generated
+en/item.pamilya.baby.find.mp3,English,Butil,Where is the baby?,,generated
+en/item.pamilya.pamilya.mp3,English,Teacher Liza,family,"Say the word once, clearly.",generated
+en/item.pamilya.pamilya.find.mp3,English,Butil,Where is the family?,,generated
+en/item.pamilya.kainan.mp3,English,Teacher Liza,The family is eating.,"Say the word once, clearly.",generated
+en/item.pamilya.kainan.find.mp3,English,Butil,Where is the family eating together?,,generated
+en/item.damdamin.masaya.mp3,English,Teacher Liza,happy,"Say the word once, clearly.",generated
+en/item.damdamin.masaya.find.mp3,English,Butil,Who is happy?,,generated
+en/item.damdamin.malungkot.mp3,English,Teacher Liza,sad,"Say the word once, clearly.",generated
+en/item.damdamin.malungkot.find.mp3,English,Butil,Who is sad?,,generated
+en/item.damdamin.galit.mp3,English,Teacher Liza,angry,"Say the word once, clearly.",generated
+en/item.damdamin.galit.find.mp3,English,Butil,Who is angry?,,generated
+en/item.damdamin.takot.mp3,English,Teacher Liza,scared,"Say the word once, clearly.",generated
 en/item.damdamin.takot.find.mp3,English,Butil,Who is scared?,,new
-en/item.damdamin.gulat.mp3,English,Teacher Liza,surprised,"Say the word once, clearly.",new
+en/item.damdamin.gulat.mp3,English,Teacher Liza,surprised,"Say the word once, clearly.",generated
 en/item.damdamin.gulat.find.mp3,English,Butil,Who is surprised?,,new
-en/item.damdamin.inaantok.mp3,English,Teacher Liza,sleepy,"Say the word once, clearly.",new
+en/item.damdamin.inaantok.mp3,English,Teacher Liza,sleepy,"Say the word once, clearly.",generated
 en/item.damdamin.inaantok.find.mp3,English,Butil,Who is sleepy?,,new
-en/item.damdamin.nahihiya.mp3,English,Teacher Liza,shy,"Say the word once, clearly.",new
+en/item.damdamin.nahihiya.mp3,English,Teacher Liza,shy,"Say the word once, clearly.",generated
 en/item.damdamin.nahihiya.find.mp3,English,Butil,Who is shy?,,new
-en/item.gamit.sipilyo.mp3,English,Teacher Liza,toothbrush,"Say the word once, clearly.",new
+en/item.gamit.sipilyo.mp3,English,Teacher Liza,toothbrush,"Say the word once, clearly.",generated
 en/item.gamit.sipilyo.find.mp3,English,Butil,Where is the toothbrush?,,new
-en/item.gamit.sabon.mp3,English,Teacher Liza,soap,"Say the word once, clearly.",new
+en/item.gamit.sabon.mp3,English,Teacher Liza,soap,"Say the word once, clearly.",generated
 en/item.gamit.sabon.find.mp3,English,Butil,Where is the soap?,,new
-en/item.gamit.tuwalya.mp3,English,Teacher Liza,towel,"Say the word once, clearly.",new
+en/item.gamit.tuwalya.mp3,English,Teacher Liza,towel,"Say the word once, clearly.",generated
 en/item.gamit.tuwalya.find.mp3,English,Butil,Where is the towel?,,new
-en/item.gamit.suklay.mp3,English,Teacher Liza,comb,"Say the word once, clearly.",new
+en/item.gamit.suklay.mp3,English,Teacher Liza,comb,"Say the word once, clearly.",generated
 en/item.gamit.suklay.find.mp3,English,Butil,Where is the comb?,,new
 en/item.gamit.plato.mp3,English,Teacher Liza,"plate, spoon and fork","Say the word once, clearly.",new
 en/item.gamit.plato.find.mp3,English,Butil,Where is the plate?,,new
