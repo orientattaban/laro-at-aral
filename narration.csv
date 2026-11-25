@@ -1,195 +1,195 @@
 ﻿file name,language,speaker,exact text,pronunciation note,status
-fil/instr.tap-and-hear.mp3,Filipino,Butil,Pindutin ang larawan at pakinggan.,,generated
-fil/instr.find-it.mp3,Filipino,Butil,"Makinig, tapos pindutin ang tamang larawan.",,generated
-fil/instr.match-pairs.mp3,Filipino,Butil,Hanapin ang dalawang magkapareho.,,generated
-fil/instr.sort.laki.mp3,Filipino,Butil,"Ilagay ang malaki sa malaking basket, at ang maliit sa maliit na basket.",Stress: malaki: ma-la-KI; basket: BAS-ket; maliit: ma-li-IT.,generated
-fil/instr.sort.kulay.mp3,Filipino,Butil,"Ngayon naman, kulay! Ilagay ang pula sa pulang basket.",Stress: pula: pu-LA; basket: BAS-ket.,generated
-fil/instr.sort.gamit.mp3,Filipino,Butil,Alin ang gamit sa pagkain? Alin ang gamit sa paglilinis ng katawan?,,generated
-fil/instr.map.mp3,Filipino,Butil,Saan tayo pupunta? Pindutin ang isang lugar.,,generated
-fil/instr.place.mp3,Filipino,Butil,Pumili ng laro.,,generated
-fil/item.pamilya.nanay.mp3,Filipino,Teacher Liza,Nanay,"Say the word once, clearly. Stress: Nanay: NA-nay.",generated
-fil/item.pamilya.nanay.find.mp3,Filipino,Butil,Nasaan si Nanay?,Stress: Nanay: NA-nay.,generated
-fil/item.pamilya.tatay.mp3,Filipino,Teacher Liza,Tatay,"Say the word once, clearly. Stress: Tatay: TA-tay.",generated
-fil/item.pamilya.tatay.find.mp3,Filipino,Butil,Nasaan si Tatay?,Stress: Tatay: TA-tay.,generated
-fil/item.pamilya.ate.mp3,Filipino,Teacher Liza,Ate,"Say the word once, clearly. Stress: Ate: A-te.",generated
-fil/item.pamilya.ate.find.mp3,Filipino,Butil,Nasaan si Ate?,Stress: Ate: A-te.,generated
-fil/item.pamilya.kuya.mp3,Filipino,Teacher Liza,Kuya,"Say the word once, clearly. Stress: Kuya: KU-ya.",generated
-fil/item.pamilya.kuya.find.mp3,Filipino,Butil,Nasaan si Kuya?,Stress: Kuya: KU-ya.,generated
-fil/item.pamilya.lola.mp3,Filipino,Teacher Liza,Lola,"Say the word once, clearly. Stress: Lola: LO-la.",generated
-fil/item.pamilya.lola.find.mp3,Filipino,Butil,Nasaan si Lola?,Stress: Lola: LO-la.,generated
-fil/item.pamilya.lolo.mp3,Filipino,Teacher Liza,Lolo,"Say the word once, clearly. Stress: Lolo: LO-lo.",generated
-fil/item.pamilya.lolo.find.mp3,Filipino,Butil,Nasaan si Lolo?,Stress: Lolo: LO-lo.,generated
-fil/item.pamilya.baby.mp3,Filipino,Teacher Liza,baby,"Say the word once, clearly.",generated
-fil/item.pamilya.baby.find.mp3,Filipino,Butil,Nasaan ang baby?,,generated
-fil/item.pamilya.pamilya.mp3,Filipino,Teacher Liza,pamilya,"Say the word once, clearly. Stress: pamilya: pa-MIL-ya.",generated
-fil/item.pamilya.pamilya.find.mp3,Filipino,Butil,Nasaan ang pamilya?,Stress: pamilya: pa-MIL-ya.,generated
-fil/item.pamilya.kainan.mp3,Filipino,Teacher Liza,Kumakain ang pamilya.,"Say the word once, clearly. Stress: kumakain: ku-MA-ka-in; pamilya: pa-MIL-ya.",generated
-fil/item.pamilya.kainan.find.mp3,Filipino,Butil,Nasaan ang pamilyang kumakain?,Stress: pamilya: pa-MIL-ya; kumakain: ku-MA-ka-in.,generated
-fil/item.damdamin.masaya.mp3,Filipino,Teacher Liza,masaya,"Say the word once, clearly. Stress: masaya: ma-sa-YA.",generated
-fil/item.damdamin.masaya.find.mp3,Filipino,Butil,Sino ang masaya?,Stress: masaya: ma-sa-YA.,generated
-fil/item.damdamin.malungkot.mp3,Filipino,Teacher Liza,malungkot,"Say the word once, clearly. Stress: malungkot: ma-lung-KOT.",generated
-fil/item.damdamin.malungkot.find.mp3,Filipino,Butil,Sino ang malungkot?,Stress: malungkot: ma-lung-KOT.,generated
-fil/item.damdamin.galit.mp3,Filipino,Teacher Liza,galit,"Say the word once, clearly. Stress: galit: ga-LIT.",generated
-fil/item.damdamin.galit.find.mp3,Filipino,Butil,Sino ang galit?,Stress: galit: ga-LIT.,generated
-fil/item.damdamin.takot.mp3,Filipino,Teacher Liza,takot,"Say the word once, clearly. Stress: takot: ta-KOT.",generated
-fil/item.damdamin.takot.find.mp3,Filipino,Butil,Sino ang takot?,Stress: takot: ta-KOT.,generated
-fil/item.damdamin.gulat.mp3,Filipino,Teacher Liza,gulat,"Say the word once, clearly. Stress: gulat: gu-LAT.",generated
-fil/item.damdamin.gulat.find.mp3,Filipino,Butil,Sino ang nagulat?,,generated
-fil/item.damdamin.inaantok.mp3,Filipino,Teacher Liza,inaantok,"Say the word once, clearly. Stress: inaantok: i-na-an-TOK.",generated
-fil/item.damdamin.inaantok.find.mp3,Filipino,Butil,Sino ang inaantok?,Stress: inaantok: i-na-an-TOK.,generated
-fil/item.damdamin.nahihiya.mp3,Filipino,Teacher Liza,nahihiya,"Say the word once, clearly. Stress: nahihiya: na-hi-HI-ya.",generated
-fil/item.damdamin.nahihiya.find.mp3,Filipino,Butil,Sino ang nahihiya?,Stress: nahihiya: na-hi-HI-ya.,generated
-fil/item.gamit.sipilyo.mp3,Filipino,Teacher Liza,sipilyo,"Say the word once, clearly. Stress: sipilyo: si-PIL-yo.",generated
-fil/item.gamit.sipilyo.find.mp3,Filipino,Butil,Nasaan ang sipilyo?,Stress: sipilyo: si-PIL-yo.,generated
-fil/item.gamit.sabon.mp3,Filipino,Teacher Liza,sabon,"Say the word once, clearly. Stress: sabon: SA-bon.",generated
-fil/item.gamit.sabon.find.mp3,Filipino,Butil,Nasaan ang sabon?,Stress: sabon: SA-bon.,generated
-fil/item.gamit.tuwalya.mp3,Filipino,Teacher Liza,tuwalya,"Say the word once, clearly. Stress: tuwalya: tu-WAL-ya.",generated
-fil/item.gamit.tuwalya.find.mp3,Filipino,Butil,Nasaan ang tuwalya?,Stress: tuwalya: tu-WAL-ya.,generated
-fil/item.gamit.suklay.mp3,Filipino,Teacher Liza,suklay,"Say the word once, clearly. Stress: suklay: SUK-lay.",generated
-fil/item.gamit.suklay.find.mp3,Filipino,Butil,Nasaan ang suklay?,Stress: suklay: SUK-lay.,generated
-fil/item.gamit.plato.mp3,Filipino,Teacher Liza,"plato, kutsara at tinidor","Say the word once, clearly.",generated
-fil/item.gamit.plato.find.mp3,Filipino,Butil,Nasaan ang plato?,,generated
-fil/item.gamit.baso.mp3,Filipino,Teacher Liza,baso,"Say the word once, clearly. Stress: baso: BA-so.",generated
-fil/item.gamit.baso.find.mp3,Filipino,Butil,Nasaan ang baso?,Stress: baso: BA-so.,generated
-fil/item.gamit.banig.mp3,Filipino,Teacher Liza,banig at unan,"Say the word once, clearly. Stress: banig: BA-nig; unan: U-nan.",generated
-fil/item.gamit.banig.find.mp3,Filipino,Butil,Nasaan ang banig at unan?,Stress: banig: BA-nig; unan: U-nan.,generated
-fil/item.gamit.tsinelas.mp3,Filipino,Teacher Liza,tsinelas,"Say the word once, clearly. Stress: tsinelas: tsi-NE-las.",generated
-fil/item.gamit.tsinelas.find.mp3,Filipino,Butil,Nasaan ang tsinelas?,Stress: tsinelas: tsi-NE-las.,generated
-fil/item.pagkain.kanin.mp3,Filipino,Teacher Liza,kanin,"Say the word once, clearly. Stress: kanin: KA-nin.",generated
-fil/item.pagkain.kanin.find.mp3,Filipino,Butil,Nasaan ang kanin?,Stress: kanin: KA-nin.,generated
-fil/item.pagkain.mais.mp3,Filipino,Teacher Liza,mais,"Say the word once, clearly. Stress: mais: ma-IS.",generated
-fil/item.pagkain.mais.find.mp3,Filipino,Butil,Nasaan ang mais?,Stress: mais: ma-IS.,generated
-fil/item.pagkain.saging.mp3,Filipino,Teacher Liza,saging,"Say the word once, clearly. Stress: saging: SA-ging.",generated
-fil/item.pagkain.saging.find.mp3,Filipino,Butil,Nasaan ang saging?,Stress: saging: SA-ging.,generated
-fil/item.pagkain.mangga.mp3,Filipino,Teacher Liza,mangga,"Say the word once, clearly. Stress: mangga: MANG-ga.",generated
-fil/item.pagkain.mangga.find.mp3,Filipino,Butil,Nasaan ang mangga?,Stress: mangga: MANG-ga.,generated
-fil/item.pagkain.papaya.mp3,Filipino,Teacher Liza,papaya,"Say the word once, clearly. Stress: papaya: pa-PA-ya.",generated
-fil/item.pagkain.papaya.find.mp3,Filipino,Butil,Nasaan ang papaya?,Stress: papaya: pa-PA-ya.,generated
-fil/item.pagkain.niyog.mp3,Filipino,Teacher Liza,niyog,"Say the word once, clearly. Stress: niyog: ni-YOG.",generated
-fil/item.pagkain.niyog.find.mp3,Filipino,Butil,Nasaan ang niyog?,Stress: niyog: ni-YOG.,generated
-fil/item.pagkain.kamatis.mp3,Filipino,Teacher Liza,kamatis,"Say the word once, clearly. Stress: kamatis: ka-MA-tis.",generated
-fil/item.pagkain.kamatis.find.mp3,Filipino,Butil,Nasaan ang kamatis?,Stress: kamatis: ka-MA-tis.,generated
-fil/item.pagkain.talong.mp3,Filipino,Teacher Liza,talong,"Say the word once, clearly. Stress: talong: ta-LONG.",generated
-fil/item.pagkain.talong.find.mp3,Filipino,Butil,Nasaan ang talong?,Stress: talong: ta-LONG.,generated
-fil/item.pagkain.kalabasa.mp3,Filipino,Teacher Liza,kalabasa,"Say the word once, clearly. Stress: kalabasa: ka-la-BA-sa.",generated
-fil/item.pagkain.kalabasa.find.mp3,Filipino,Butil,Nasaan ang kalabasa?,Stress: kalabasa: ka-la-BA-sa.,generated
-fil/item.damit.kamiseta-pula.mp3,Filipino,Teacher Liza,pulang kamiseta,"Say the word once, clearly. Stress: pula: pu-LA; kamiseta: ka-mi-SE-ta.",generated
-fil/item.damit.kamiseta-pula.find.mp3,Filipino,Butil,Nasaan ang pulang kamiseta?,Stress: pula: pu-LA; kamiseta: ka-mi-SE-ta.,generated
-fil/item.damit.kamiseta-asul.mp3,Filipino,Teacher Liza,asul na kamiseta,"Say the word once, clearly. Stress: kamiseta: ka-mi-SE-ta.",generated
-fil/item.damit.kamiseta-asul.find.mp3,Filipino,Butil,Nasaan ang asul na kamiseta?,Stress: kamiseta: ka-mi-SE-ta.,generated
-fil/item.damit.kamiseta-dilaw.mp3,Filipino,Teacher Liza,dilaw na kamiseta,"Say the word once, clearly. Stress: kamiseta: ka-mi-SE-ta.",generated
-fil/item.damit.kamiseta-dilaw.find.mp3,Filipino,Butil,Nasaan ang dilaw na kamiseta?,Stress: kamiseta: ka-mi-SE-ta.,generated
-fil/item.damit.kamiseta-berde.mp3,Filipino,Teacher Liza,berdeng kamiseta,"Say the word once, clearly. Stress: kamiseta: ka-mi-SE-ta.",generated
-fil/item.damit.kamiseta-berde.find.mp3,Filipino,Butil,Nasaan ang berdeng kamiseta?,Stress: kamiseta: ka-mi-SE-ta.,generated
-fil/sort.malaki.mp3,Filipino,Teacher Liza,malaki,"Say the word once, clearly. Stress: malaki: ma-la-KI.",generated
-fil/sort.maliit.mp3,Filipino,Teacher Liza,maliit,"Say the word once, clearly. Stress: maliit: ma-li-IT.",generated
-fil/sort.pula.mp3,Filipino,Teacher Liza,pula,"Say the word once, clearly. Stress: pula: pu-LA.",generated
-fil/sort.iba.mp3,Filipino,Teacher Liza,ibang kulay,"Say the word once, clearly.",generated
-fil/sort.pangkain.mp3,Filipino,Teacher Liza,gamit sa pagkain,"Say the word once, clearly.",generated
-fil/sort.panlinis.mp3,Filipino,Teacher Liza,gamit sa paglilinis ng katawan,"Say the word once, clearly.",generated
-fil/fb.try-again.mp3,Filipino,Butil,Subukan ulit.,,generated
-fil/fb.look-here.mp3,Filipino,Butil,"Tingnan mo, ito.",,generated
-fil/fb.praise.1.mp3,Filipino,Butil,Magaling!,Stress: magaling: ma-ga-LING.,generated
-fil/fb.praise.2.mp3,Filipino,Butil,Ang husay mo!,,generated
-fil/fb.praise.3.mp3,Filipino,Butil,Tama!,,generated
-fil/fb.effort.mp3,Filipino,Butil,"Sinubukan mo ulit, at nakuha mo!",,generated
-fil/fb.done.mp3,Filipino,Butil,Tapos na! Salamat sa paglalaro.,,generated
-fil/bye.session.mp3,Filipino,Butil,Tapos na ang laro ngayon. Paalam! Maglaro naman tayo nang walang gadyet.,,generated
-fil/bye.daily.mp3,Filipino,Butil,Sapat na ang laro ngayong araw. Bukas ulit!,,generated
-en/instr.tap-and-hear.mp3,English,Butil,Tap a picture and listen.,,generated
-en/instr.find-it.mp3,English,Butil,"Listen, then tap the right picture.",,generated
-en/instr.match-pairs.mp3,English,Butil,Find the two that are the same.,,generated
-en/instr.sort.laki.mp3,English,Butil,"Put the big ones in the big basket, and the small ones in the small basket.",,generated
-en/instr.sort.kulay.mp3,English,Butil,"Now, colours! Put the red ones in the red basket.",,generated
-en/instr.sort.gamit.mp3,English,Butil,Which do we use for eating? Which do we use for washing?,,generated
-en/instr.map.mp3,English,Butil,Where shall we go? Tap a place.,,generated
-en/instr.place.mp3,English,Butil,Choose a game.,,generated
-en/item.pamilya.nanay.mp3,English,Teacher Liza,Mother,"Say the word once, clearly.",generated
-en/item.pamilya.nanay.find.mp3,English,Butil,Where is Mother?,,generated
-en/item.pamilya.tatay.mp3,English,Teacher Liza,Father,"Say the word once, clearly.",generated
-en/item.pamilya.tatay.find.mp3,English,Butil,Where is Father?,,generated
-en/item.pamilya.ate.mp3,English,Teacher Liza,big sister,"Say the word once, clearly.",generated
-en/item.pamilya.ate.find.mp3,English,Butil,Where is big sister?,,generated
-en/item.pamilya.kuya.mp3,English,Teacher Liza,big brother,"Say the word once, clearly.",generated
-en/item.pamilya.kuya.find.mp3,English,Butil,Where is big brother?,,generated
-en/item.pamilya.lola.mp3,English,Teacher Liza,Grandmother,"Say the word once, clearly.",generated
-en/item.pamilya.lola.find.mp3,English,Butil,Where is Grandmother?,,generated
-en/item.pamilya.lolo.mp3,English,Teacher Liza,Grandfather,"Say the word once, clearly.",generated
-en/item.pamilya.lolo.find.mp3,English,Butil,Where is Grandfather?,,generated
-en/item.pamilya.baby.mp3,English,Teacher Liza,baby,"Say the word once, clearly.",generated
-en/item.pamilya.baby.find.mp3,English,Butil,Where is the baby?,,generated
-en/item.pamilya.pamilya.mp3,English,Teacher Liza,family,"Say the word once, clearly.",generated
-en/item.pamilya.pamilya.find.mp3,English,Butil,Where is the family?,,generated
-en/item.pamilya.kainan.mp3,English,Teacher Liza,The family is eating.,"Say the word once, clearly.",generated
-en/item.pamilya.kainan.find.mp3,English,Butil,Where is the family eating together?,,generated
-en/item.damdamin.masaya.mp3,English,Teacher Liza,happy,"Say the word once, clearly.",generated
-en/item.damdamin.masaya.find.mp3,English,Butil,Who is happy?,,generated
-en/item.damdamin.malungkot.mp3,English,Teacher Liza,sad,"Say the word once, clearly.",generated
-en/item.damdamin.malungkot.find.mp3,English,Butil,Who is sad?,,generated
-en/item.damdamin.galit.mp3,English,Teacher Liza,angry,"Say the word once, clearly.",generated
-en/item.damdamin.galit.find.mp3,English,Butil,Who is angry?,,generated
-en/item.damdamin.takot.mp3,English,Teacher Liza,scared,"Say the word once, clearly.",generated
-en/item.damdamin.takot.find.mp3,English,Butil,Who is scared?,,generated
-en/item.damdamin.gulat.mp3,English,Teacher Liza,surprised,"Say the word once, clearly.",generated
-en/item.damdamin.gulat.find.mp3,English,Butil,Who is surprised?,,generated
-en/item.damdamin.inaantok.mp3,English,Teacher Liza,sleepy,"Say the word once, clearly.",generated
-en/item.damdamin.inaantok.find.mp3,English,Butil,Who is sleepy?,,generated
-en/item.damdamin.nahihiya.mp3,English,Teacher Liza,shy,"Say the word once, clearly.",generated
-en/item.damdamin.nahihiya.find.mp3,English,Butil,Who is shy?,,generated
-en/item.gamit.sipilyo.mp3,English,Teacher Liza,toothbrush,"Say the word once, clearly.",generated
-en/item.gamit.sipilyo.find.mp3,English,Butil,Where is the toothbrush?,,generated
-en/item.gamit.sabon.mp3,English,Teacher Liza,soap,"Say the word once, clearly.",generated
-en/item.gamit.sabon.find.mp3,English,Butil,Where is the soap?,,generated
-en/item.gamit.tuwalya.mp3,English,Teacher Liza,towel,"Say the word once, clearly.",generated
-en/item.gamit.tuwalya.find.mp3,English,Butil,Where is the towel?,,generated
-en/item.gamit.suklay.mp3,English,Teacher Liza,comb,"Say the word once, clearly.",generated
-en/item.gamit.suklay.find.mp3,English,Butil,Where is the comb?,,generated
-en/item.gamit.plato.mp3,English,Teacher Liza,"plate, spoon and fork","Say the word once, clearly.",generated
-en/item.gamit.plato.find.mp3,English,Butil,Where is the plate?,,generated
-en/item.gamit.baso.mp3,English,Teacher Liza,glass,"Say the word once, clearly.",generated
-en/item.gamit.baso.find.mp3,English,Butil,Where is the glass?,,generated
-en/item.gamit.banig.mp3,English,Teacher Liza,sleeping mat and pillow,"Say the word once, clearly.",generated
-en/item.gamit.banig.find.mp3,English,Butil,Where are the sleeping mat and pillow?,,generated
-en/item.gamit.tsinelas.mp3,English,Teacher Liza,slippers,"Say the word once, clearly.",generated
-en/item.gamit.tsinelas.find.mp3,English,Butil,Where are the slippers?,,generated
-en/item.pagkain.kanin.mp3,English,Teacher Liza,rice,"Say the word once, clearly.",generated
-en/item.pagkain.kanin.find.mp3,English,Butil,Where is the rice?,,generated
-en/item.pagkain.mais.mp3,English,Teacher Liza,corn,"Say the word once, clearly.",generated
-en/item.pagkain.mais.find.mp3,English,Butil,Where is the corn?,,generated
-en/item.pagkain.saging.mp3,English,Teacher Liza,banana,"Say the word once, clearly.",generated
-en/item.pagkain.saging.find.mp3,English,Butil,Where is the banana?,,generated
-en/item.pagkain.mangga.mp3,English,Teacher Liza,mango,"Say the word once, clearly.",generated
-en/item.pagkain.mangga.find.mp3,English,Butil,Where is the mango?,,generated
-en/item.pagkain.papaya.mp3,English,Teacher Liza,papaya,"Say the word once, clearly.",generated
-en/item.pagkain.papaya.find.mp3,English,Butil,Where is the papaya?,,generated
-en/item.pagkain.niyog.mp3,English,Teacher Liza,coconut,"Say the word once, clearly.",generated
-en/item.pagkain.niyog.find.mp3,English,Butil,Where is the coconut?,,generated
-en/item.pagkain.kamatis.mp3,English,Teacher Liza,tomato,"Say the word once, clearly.",generated
-en/item.pagkain.kamatis.find.mp3,English,Butil,Where is the tomato?,,generated
-en/item.pagkain.talong.mp3,English,Teacher Liza,eggplant,"Say the word once, clearly.",generated
-en/item.pagkain.talong.find.mp3,English,Butil,Where is the eggplant?,,generated
-en/item.pagkain.kalabasa.mp3,English,Teacher Liza,squash,"Say the word once, clearly.",generated
-en/item.pagkain.kalabasa.find.mp3,English,Butil,Where is the squash?,,generated
-en/item.damit.kamiseta-pula.mp3,English,Teacher Liza,red shirt,"Say the word once, clearly.",generated
-en/item.damit.kamiseta-pula.find.mp3,English,Butil,Where is the red shirt?,,generated
-en/item.damit.kamiseta-asul.mp3,English,Teacher Liza,blue shirt,"Say the word once, clearly.",generated
-en/item.damit.kamiseta-asul.find.mp3,English,Butil,Where is the blue shirt?,,generated
-en/item.damit.kamiseta-dilaw.mp3,English,Teacher Liza,yellow shirt,"Say the word once, clearly.",generated
-en/item.damit.kamiseta-dilaw.find.mp3,English,Butil,Where is the yellow shirt?,,generated
-en/item.damit.kamiseta-berde.mp3,English,Teacher Liza,green shirt,"Say the word once, clearly.",generated
-en/item.damit.kamiseta-berde.find.mp3,English,Butil,Where is the green shirt?,,generated
-en/sort.malaki.mp3,English,Teacher Liza,big,"Say the word once, clearly.",generated
-en/sort.maliit.mp3,English,Teacher Liza,small,"Say the word once, clearly.",generated
-en/sort.pula.mp3,English,Teacher Liza,red,"Say the word once, clearly.",generated
-en/sort.iba.mp3,English,Teacher Liza,other colours,"Say the word once, clearly.",generated
-en/sort.pangkain.mp3,English,Teacher Liza,things for eating,"Say the word once, clearly.",generated
-en/sort.panlinis.mp3,English,Teacher Liza,things for washing,"Say the word once, clearly.",generated
-en/fb.try-again.mp3,English,Butil,Try again.,,generated
-en/fb.look-here.mp3,English,Butil,"Look, it is this one.",,generated
-en/fb.praise.1.mp3,English,Butil,Well done!,,generated
-en/fb.praise.2.mp3,English,Butil,Great job!,,generated
-en/fb.praise.3.mp3,English,Butil,That's right!,,generated
-en/fb.effort.mp3,English,Butil,"You tried again, and you got it!",,generated
-en/fb.done.mp3,English,Butil,All done! Thank you for playing.,,generated
-en/bye.session.mp3,English,Butil,Playtime is over for now. Goodbye! Let's play away from the screen.,,generated
-en/bye.daily.mp3,English,Butil,That is enough play for today. See you tomorrow!,,generated
+fil/instr.tap-and-hear.mp3,Filipino,Butil,Pindutin ang larawan at pakinggan.,,approved
+fil/instr.find-it.mp3,Filipino,Butil,"Makinig, tapos pindutin ang tamang larawan.",,approved
+fil/instr.match-pairs.mp3,Filipino,Butil,Hanapin ang dalawang magkapareho.,,approved
+fil/instr.sort.laki.mp3,Filipino,Butil,"Ilagay ang malaki sa malaking basket, at ang maliit sa maliit na basket.",Stress: malaki: ma-la-KI; basket: BAS-ket; maliit: ma-li-IT.,approved
+fil/instr.sort.kulay.mp3,Filipino,Butil,"Ngayon naman, kulay! Ilagay ang pula sa pulang basket.",Stress: pula: pu-LA; basket: BAS-ket.,approved
+fil/instr.sort.gamit.mp3,Filipino,Butil,Alin ang gamit sa pagkain? Alin ang gamit sa paglilinis ng katawan?,,approved
+fil/instr.map.mp3,Filipino,Butil,Saan tayo pupunta? Pindutin ang isang lugar.,,approved
+fil/instr.place.mp3,Filipino,Butil,Pumili ng laro.,,approved
+fil/item.pamilya.nanay.mp3,Filipino,Teacher Liza,Nanay,"Say the word once, clearly. Stress: Nanay: NA-nay.",approved
+fil/item.pamilya.nanay.find.mp3,Filipino,Butil,Nasaan si Nanay?,Stress: Nanay: NA-nay.,approved
+fil/item.pamilya.tatay.mp3,Filipino,Teacher Liza,Tatay,"Say the word once, clearly. Stress: Tatay: TA-tay.",approved
+fil/item.pamilya.tatay.find.mp3,Filipino,Butil,Nasaan si Tatay?,Stress: Tatay: TA-tay.,approved
+fil/item.pamilya.ate.mp3,Filipino,Teacher Liza,Ate,"Say the word once, clearly. Stress: Ate: A-te.",approved
+fil/item.pamilya.ate.find.mp3,Filipino,Butil,Nasaan si Ate?,Stress: Ate: A-te.,approved
+fil/item.pamilya.kuya.mp3,Filipino,Teacher Liza,Kuya,"Say the word once, clearly. Stress: Kuya: KU-ya.",approved
+fil/item.pamilya.kuya.find.mp3,Filipino,Butil,Nasaan si Kuya?,Stress: Kuya: KU-ya.,approved
+fil/item.pamilya.lola.mp3,Filipino,Teacher Liza,Lola,"Say the word once, clearly. Stress: Lola: LO-la.",approved
+fil/item.pamilya.lola.find.mp3,Filipino,Butil,Nasaan si Lola?,Stress: Lola: LO-la.,approved
+fil/item.pamilya.lolo.mp3,Filipino,Teacher Liza,Lolo,"Say the word once, clearly. Stress: Lolo: LO-lo.",approved
+fil/item.pamilya.lolo.find.mp3,Filipino,Butil,Nasaan si Lolo?,Stress: Lolo: LO-lo.,approved
+fil/item.pamilya.baby.mp3,Filipino,Teacher Liza,baby,"Say the word once, clearly.",approved
+fil/item.pamilya.baby.find.mp3,Filipino,Butil,Nasaan ang baby?,,approved
+fil/item.pamilya.pamilya.mp3,Filipino,Teacher Liza,pamilya,"Say the word once, clearly. Stress: pamilya: pa-MIL-ya.",approved
+fil/item.pamilya.pamilya.find.mp3,Filipino,Butil,Nasaan ang pamilya?,Stress: pamilya: pa-MIL-ya.,approved
+fil/item.pamilya.kainan.mp3,Filipino,Teacher Liza,Kumakain ang pamilya.,"Say the word once, clearly. Stress: kumakain: ku-MA-ka-in; pamilya: pa-MIL-ya.",approved
+fil/item.pamilya.kainan.find.mp3,Filipino,Butil,Nasaan ang pamilyang kumakain?,Stress: pamilya: pa-MIL-ya; kumakain: ku-MA-ka-in.,approved
+fil/item.damdamin.masaya.mp3,Filipino,Teacher Liza,masaya,"Say the word once, clearly. Stress: masaya: ma-sa-YA.",approved
+fil/item.damdamin.masaya.find.mp3,Filipino,Butil,Sino ang masaya?,Stress: masaya: ma-sa-YA.,approved
+fil/item.damdamin.malungkot.mp3,Filipino,Teacher Liza,malungkot,"Say the word once, clearly. Stress: malungkot: ma-lung-KOT.",approved
+fil/item.damdamin.malungkot.find.mp3,Filipino,Butil,Sino ang malungkot?,Stress: malungkot: ma-lung-KOT.,approved
+fil/item.damdamin.galit.mp3,Filipino,Teacher Liza,galit,"Say the word once, clearly. Stress: galit: ga-LIT.",approved
+fil/item.damdamin.galit.find.mp3,Filipino,Butil,Sino ang galit?,Stress: galit: ga-LIT.,approved
+fil/item.damdamin.takot.mp3,Filipino,Teacher Liza,takot,"Say the word once, clearly. Stress: takot: ta-KOT.",approved
+fil/item.damdamin.takot.find.mp3,Filipino,Butil,Sino ang takot?,Stress: takot: ta-KOT.,approved
+fil/item.damdamin.gulat.mp3,Filipino,Teacher Liza,gulat,"Say the word once, clearly. Stress: gulat: gu-LAT.",approved
+fil/item.damdamin.gulat.find.mp3,Filipino,Butil,Sino ang nagulat?,,approved
+fil/item.damdamin.inaantok.mp3,Filipino,Teacher Liza,inaantok,"Say the word once, clearly. Stress: inaantok: i-na-an-TOK.",approved
+fil/item.damdamin.inaantok.find.mp3,Filipino,Butil,Sino ang inaantok?,Stress: inaantok: i-na-an-TOK.,approved
+fil/item.damdamin.nahihiya.mp3,Filipino,Teacher Liza,nahihiya,"Say the word once, clearly. Stress: nahihiya: na-hi-HI-ya.",approved
+fil/item.damdamin.nahihiya.find.mp3,Filipino,Butil,Sino ang nahihiya?,Stress: nahihiya: na-hi-HI-ya.,approved
+fil/item.gamit.sipilyo.mp3,Filipino,Teacher Liza,sipilyo,"Say the word once, clearly. Stress: sipilyo: si-PIL-yo.",approved
+fil/item.gamit.sipilyo.find.mp3,Filipino,Butil,Nasaan ang sipilyo?,Stress: sipilyo: si-PIL-yo.,approved
+fil/item.gamit.sabon.mp3,Filipino,Teacher Liza,sabon,"Say the word once, clearly. Stress: sabon: SA-bon.",approved
+fil/item.gamit.sabon.find.mp3,Filipino,Butil,Nasaan ang sabon?,Stress: sabon: SA-bon.,approved
+fil/item.gamit.tuwalya.mp3,Filipino,Teacher Liza,tuwalya,"Say the word once, clearly. Stress: tuwalya: tu-WAL-ya.",approved
+fil/item.gamit.tuwalya.find.mp3,Filipino,Butil,Nasaan ang tuwalya?,Stress: tuwalya: tu-WAL-ya.,approved
+fil/item.gamit.suklay.mp3,Filipino,Teacher Liza,suklay,"Say the word once, clearly. Stress: suklay: SUK-lay.",approved
+fil/item.gamit.suklay.find.mp3,Filipino,Butil,Nasaan ang suklay?,Stress: suklay: SUK-lay.,approved
+fil/item.gamit.plato.mp3,Filipino,Teacher Liza,"plato, kutsara at tinidor","Say the word once, clearly.",approved
+fil/item.gamit.plato.find.mp3,Filipino,Butil,Nasaan ang plato?,,approved
+fil/item.gamit.baso.mp3,Filipino,Teacher Liza,baso,"Say the word once, clearly. Stress: baso: BA-so.",approved
+fil/item.gamit.baso.find.mp3,Filipino,Butil,Nasaan ang baso?,Stress: baso: BA-so.,approved
+fil/item.gamit.banig.mp3,Filipino,Teacher Liza,banig at unan,"Say the word once, clearly. Stress: banig: BA-nig; unan: U-nan.",approved
+fil/item.gamit.banig.find.mp3,Filipino,Butil,Nasaan ang banig at unan?,Stress: banig: BA-nig; unan: U-nan.,approved
+fil/item.gamit.tsinelas.mp3,Filipino,Teacher Liza,tsinelas,"Say the word once, clearly. Stress: tsinelas: tsi-NE-las.",approved
+fil/item.gamit.tsinelas.find.mp3,Filipino,Butil,Nasaan ang tsinelas?,Stress: tsinelas: tsi-NE-las.,approved
+fil/item.pagkain.kanin.mp3,Filipino,Teacher Liza,kanin,"Say the word once, clearly. Stress: kanin: KA-nin.",approved
+fil/item.pagkain.kanin.find.mp3,Filipino,Butil,Nasaan ang kanin?,Stress: kanin: KA-nin.,approved
+fil/item.pagkain.mais.mp3,Filipino,Teacher Liza,mais,"Say the word once, clearly. Stress: mais: ma-IS.",approved
+fil/item.pagkain.mais.find.mp3,Filipino,Butil,Nasaan ang mais?,Stress: mais: ma-IS.,approved
+fil/item.pagkain.saging.mp3,Filipino,Teacher Liza,saging,"Say the word once, clearly. Stress: saging: SA-ging.",approved
+fil/item.pagkain.saging.find.mp3,Filipino,Butil,Nasaan ang saging?,Stress: saging: SA-ging.,approved
+fil/item.pagkain.mangga.mp3,Filipino,Teacher Liza,mangga,"Say the word once, clearly. Stress: mangga: MANG-ga.",approved
+fil/item.pagkain.mangga.find.mp3,Filipino,Butil,Nasaan ang mangga?,Stress: mangga: MANG-ga.,approved
+fil/item.pagkain.papaya.mp3,Filipino,Teacher Liza,papaya,"Say the word once, clearly. Stress: papaya: pa-PA-ya.",approved
+fil/item.pagkain.papaya.find.mp3,Filipino,Butil,Nasaan ang papaya?,Stress: papaya: pa-PA-ya.,approved
+fil/item.pagkain.niyog.mp3,Filipino,Teacher Liza,niyog,"Say the word once, clearly. Stress: niyog: ni-YOG.",approved
+fil/item.pagkain.niyog.find.mp3,Filipino,Butil,Nasaan ang niyog?,Stress: niyog: ni-YOG.,approved
+fil/item.pagkain.kamatis.mp3,Filipino,Teacher Liza,kamatis,"Say the word once, clearly. Stress: kamatis: ka-MA-tis.",approved
+fil/item.pagkain.kamatis.find.mp3,Filipino,Butil,Nasaan ang kamatis?,Stress: kamatis: ka-MA-tis.,approved
+fil/item.pagkain.talong.mp3,Filipino,Teacher Liza,talong,"Say the word once, clearly. Stress: talong: ta-LONG.",approved
+fil/item.pagkain.talong.find.mp3,Filipino,Butil,Nasaan ang talong?,Stress: talong: ta-LONG.,approved
+fil/item.pagkain.kalabasa.mp3,Filipino,Teacher Liza,kalabasa,"Say the word once, clearly. Stress: kalabasa: ka-la-BA-sa.",approved
+fil/item.pagkain.kalabasa.find.mp3,Filipino,Butil,Nasaan ang kalabasa?,Stress: kalabasa: ka-la-BA-sa.,approved
+fil/item.damit.kamiseta-pula.mp3,Filipino,Teacher Liza,pulang kamiseta,"Say the word once, clearly. Stress: pula: pu-LA; kamiseta: ka-mi-SE-ta.",approved
+fil/item.damit.kamiseta-pula.find.mp3,Filipino,Butil,Nasaan ang pulang kamiseta?,Stress: pula: pu-LA; kamiseta: ka-mi-SE-ta.,approved
+fil/item.damit.kamiseta-asul.mp3,Filipino,Teacher Liza,asul na kamiseta,"Say the word once, clearly. Stress: kamiseta: ka-mi-SE-ta.",approved
+fil/item.damit.kamiseta-asul.find.mp3,Filipino,Butil,Nasaan ang asul na kamiseta?,Stress: kamiseta: ka-mi-SE-ta.,approved
+fil/item.damit.kamiseta-dilaw.mp3,Filipino,Teacher Liza,dilaw na kamiseta,"Say the word once, clearly. Stress: kamiseta: ka-mi-SE-ta.",approved
+fil/item.damit.kamiseta-dilaw.find.mp3,Filipino,Butil,Nasaan ang dilaw na kamiseta?,Stress: kamiseta: ka-mi-SE-ta.,approved
+fil/item.damit.kamiseta-berde.mp3,Filipino,Teacher Liza,berdeng kamiseta,"Say the word once, clearly. Stress: kamiseta: ka-mi-SE-ta.",approved
+fil/item.damit.kamiseta-berde.find.mp3,Filipino,Butil,Nasaan ang berdeng kamiseta?,Stress: kamiseta: ka-mi-SE-ta.,approved
+fil/sort.malaki.mp3,Filipino,Teacher Liza,malaki,"Say the word once, clearly. Stress: malaki: ma-la-KI.",approved
+fil/sort.maliit.mp3,Filipino,Teacher Liza,maliit,"Say the word once, clearly. Stress: maliit: ma-li-IT.",approved
+fil/sort.pula.mp3,Filipino,Teacher Liza,pula,"Say the word once, clearly. Stress: pula: pu-LA.",approved
+fil/sort.iba.mp3,Filipino,Teacher Liza,ibang kulay,"Say the word once, clearly.",approved
+fil/sort.pangkain.mp3,Filipino,Teacher Liza,gamit sa pagkain,"Say the word once, clearly.",approved
+fil/sort.panlinis.mp3,Filipino,Teacher Liza,gamit sa paglilinis ng katawan,"Say the word once, clearly.",approved
+fil/fb.try-again.mp3,Filipino,Butil,Subukan ulit.,,approved
+fil/fb.look-here.mp3,Filipino,Butil,"Tingnan mo, ito.",,approved
+fil/fb.praise.1.mp3,Filipino,Butil,Magaling!,Stress: magaling: ma-ga-LING.,approved
+fil/fb.praise.2.mp3,Filipino,Butil,Ang husay mo!,,approved
+fil/fb.praise.3.mp3,Filipino,Butil,Tama!,,approved
+fil/fb.effort.mp3,Filipino,Butil,"Sinubukan mo ulit, at nakuha mo!",,approved
+fil/fb.done.mp3,Filipino,Butil,Tapos na! Salamat sa paglalaro.,,approved
+fil/bye.session.mp3,Filipino,Butil,Tapos na ang laro ngayon. Paalam! Maglaro naman tayo nang walang gadyet.,,approved
+fil/bye.daily.mp3,Filipino,Butil,Sapat na ang laro ngayong araw. Bukas ulit!,,approved
+en/instr.tap-and-hear.mp3,English,Butil,Tap a picture and listen.,,approved
+en/instr.find-it.mp3,English,Butil,"Listen, then tap the right picture.",,approved
+en/instr.match-pairs.mp3,English,Butil,Find the two that are the same.,,approved
+en/instr.sort.laki.mp3,English,Butil,"Put the big ones in the big basket, and the small ones in the small basket.",,approved
+en/instr.sort.kulay.mp3,English,Butil,"Now, colours! Put the red ones in the red basket.",,approved
+en/instr.sort.gamit.mp3,English,Butil,Which do we use for eating? Which do we use for washing?,,approved
+en/instr.map.mp3,English,Butil,Where shall we go? Tap a place.,,approved
+en/instr.place.mp3,English,Butil,Choose a game.,,approved
+en/item.pamilya.nanay.mp3,English,Teacher Liza,Mother,"Say the word once, clearly.",approved
+en/item.pamilya.nanay.find.mp3,English,Butil,Where is Mother?,,approved
+en/item.pamilya.tatay.mp3,English,Teacher Liza,Father,"Say the word once, clearly.",approved
+en/item.pamilya.tatay.find.mp3,English,Butil,Where is Father?,,approved
+en/item.pamilya.ate.mp3,English,Teacher Liza,big sister,"Say the word once, clearly.",approved
+en/item.pamilya.ate.find.mp3,English,Butil,Where is big sister?,,approved
+en/item.pamilya.kuya.mp3,English,Teacher Liza,big brother,"Say the word once, clearly.",approved
+en/item.pamilya.kuya.find.mp3,English,Butil,Where is big brother?,,approved
+en/item.pamilya.lola.mp3,English,Teacher Liza,Grandmother,"Say the word once, clearly.",approved
+en/item.pamilya.lola.find.mp3,English,Butil,Where is Grandmother?,,approved
+en/item.pamilya.lolo.mp3,English,Teacher Liza,Grandfather,"Say the word once, clearly.",approved
+en/item.pamilya.lolo.find.mp3,English,Butil,Where is Grandfather?,,approved
+en/item.pamilya.baby.mp3,English,Teacher Liza,baby,"Say the word once, clearly.",approved
+en/item.pamilya.baby.find.mp3,English,Butil,Where is the baby?,,approved
+en/item.pamilya.pamilya.mp3,English,Teacher Liza,family,"Say the word once, clearly.",approved
+en/item.pamilya.pamilya.find.mp3,English,Butil,Where is the family?,,approved
+en/item.pamilya.kainan.mp3,English,Teacher Liza,The family is eating.,"Say the word once, clearly.",approved
+en/item.pamilya.kainan.find.mp3,English,Butil,Where is the family eating together?,,approved
+en/item.damdamin.masaya.mp3,English,Teacher Liza,happy,"Say the word once, clearly.",approved
+en/item.damdamin.masaya.find.mp3,English,Butil,Who is happy?,,approved
+en/item.damdamin.malungkot.mp3,English,Teacher Liza,sad,"Say the word once, clearly.",approved
+en/item.damdamin.malungkot.find.mp3,English,Butil,Who is sad?,,approved
+en/item.damdamin.galit.mp3,English,Teacher Liza,angry,"Say the word once, clearly.",approved
+en/item.damdamin.galit.find.mp3,English,Butil,Who is angry?,,approved
+en/item.damdamin.takot.mp3,English,Teacher Liza,scared,"Say the word once, clearly.",approved
+en/item.damdamin.takot.find.mp3,English,Butil,Who is scared?,,approved
+en/item.damdamin.gulat.mp3,English,Teacher Liza,surprised,"Say the word once, clearly.",approved
+en/item.damdamin.gulat.find.mp3,English,Butil,Who is surprised?,,approved
+en/item.damdamin.inaantok.mp3,English,Teacher Liza,sleepy,"Say the word once, clearly.",approved
+en/item.damdamin.inaantok.find.mp3,English,Butil,Who is sleepy?,,approved
+en/item.damdamin.nahihiya.mp3,English,Teacher Liza,shy,"Say the word once, clearly.",approved
+en/item.damdamin.nahihiya.find.mp3,English,Butil,Who is shy?,,approved
+en/item.gamit.sipilyo.mp3,English,Teacher Liza,toothbrush,"Say the word once, clearly.",approved
+en/item.gamit.sipilyo.find.mp3,English,Butil,Where is the toothbrush?,,approved
+en/item.gamit.sabon.mp3,English,Teacher Liza,soap,"Say the word once, clearly.",approved
+en/item.gamit.sabon.find.mp3,English,Butil,Where is the soap?,,approved
+en/item.gamit.tuwalya.mp3,English,Teacher Liza,towel,"Say the word once, clearly.",approved
+en/item.gamit.tuwalya.find.mp3,English,Butil,Where is the towel?,,approved
+en/item.gamit.suklay.mp3,English,Teacher Liza,comb,"Say the word once, clearly.",approved
+en/item.gamit.suklay.find.mp3,English,Butil,Where is the comb?,,approved
+en/item.gamit.plato.mp3,English,Teacher Liza,"plate, spoon and fork","Say the word once, clearly.",approved
+en/item.gamit.plato.find.mp3,English,Butil,Where is the plate?,,approved
+en/item.gamit.baso.mp3,English,Teacher Liza,glass,"Say the word once, clearly.",approved
+en/item.gamit.baso.find.mp3,English,Butil,Where is the glass?,,approved
+en/item.gamit.banig.mp3,English,Teacher Liza,sleeping mat and pillow,"Say the word once, clearly.",approved
+en/item.gamit.banig.find.mp3,English,Butil,Where are the sleeping mat and pillow?,,approved
+en/item.gamit.tsinelas.mp3,English,Teacher Liza,slippers,"Say the word once, clearly.",approved
+en/item.gamit.tsinelas.find.mp3,English,Butil,Where are the slippers?,,approved
+en/item.pagkain.kanin.mp3,English,Teacher Liza,rice,"Say the word once, clearly.",approved
+en/item.pagkain.kanin.find.mp3,English,Butil,Where is the rice?,,approved
+en/item.pagkain.mais.mp3,English,Teacher Liza,corn,"Say the word once, clearly.",approved
+en/item.pagkain.mais.find.mp3,English,Butil,Where is the corn?,,approved
+en/item.pagkain.saging.mp3,English,Teacher Liza,banana,"Say the word once, clearly.",approved
+en/item.pagkain.saging.find.mp3,English,Butil,Where is the banana?,,approved
+en/item.pagkain.mangga.mp3,English,Teacher Liza,mango,"Say the word once, clearly.",approved
+en/item.pagkain.mangga.find.mp3,English,Butil,Where is the mango?,,approved
+en/item.pagkain.papaya.mp3,English,Teacher Liza,papaya,"Say the word once, clearly.",approved
+en/item.pagkain.papaya.find.mp3,English,Butil,Where is the papaya?,,approved
+en/item.pagkain.niyog.mp3,English,Teacher Liza,coconut,"Say the word once, clearly.",approved
+en/item.pagkain.niyog.find.mp3,English,Butil,Where is the coconut?,,approved
+en/item.pagkain.kamatis.mp3,English,Teacher Liza,tomato,"Say the word once, clearly.",approved
+en/item.pagkain.kamatis.find.mp3,English,Butil,Where is the tomato?,,approved
+en/item.pagkain.talong.mp3,English,Teacher Liza,eggplant,"Say the word once, clearly.",approved
+en/item.pagkain.talong.find.mp3,English,Butil,Where is the eggplant?,,approved
+en/item.pagkain.kalabasa.mp3,English,Teacher Liza,squash,"Say the word once, clearly.",approved
+en/item.pagkain.kalabasa.find.mp3,English,Butil,Where is the squash?,,approved
+en/item.damit.kamiseta-pula.mp3,English,Teacher Liza,red shirt,"Say the word once, clearly.",approved
+en/item.damit.kamiseta-pula.find.mp3,English,Butil,Where is the red shirt?,,approved
+en/item.damit.kamiseta-asul.mp3,English,Teacher Liza,blue shirt,"Say the word once, clearly.",approved
+en/item.damit.kamiseta-asul.find.mp3,English,Butil,Where is the blue shirt?,,approved
+en/item.damit.kamiseta-dilaw.mp3,English,Teacher Liza,yellow shirt,"Say the word once, clearly.",approved
+en/item.damit.kamiseta-dilaw.find.mp3,English,Butil,Where is the yellow shirt?,,approved
+en/item.damit.kamiseta-berde.mp3,English,Teacher Liza,green shirt,"Say the word once, clearly.",approved
+en/item.damit.kamiseta-berde.find.mp3,English,Butil,Where is the green shirt?,,approved
+en/sort.malaki.mp3,English,Teacher Liza,big,"Say the word once, clearly.",approved
+en/sort.maliit.mp3,English,Teacher Liza,small,"Say the word once, clearly.",approved
+en/sort.pula.mp3,English,Teacher Liza,red,"Say the word once, clearly.",approved
+en/sort.iba.mp3,English,Teacher Liza,other colours,"Say the word once, clearly.",approved
+en/sort.pangkain.mp3,English,Teacher Liza,things for eating,"Say the word once, clearly.",approved
+en/sort.panlinis.mp3,English,Teacher Liza,things for washing,"Say the word once, clearly.",approved
+en/fb.try-again.mp3,English,Butil,Try again.,,approved
+en/fb.look-here.mp3,English,Butil,"Look, it is this one.",,approved
+en/fb.praise.1.mp3,English,Butil,Well done!,,approved
+en/fb.praise.2.mp3,English,Butil,Great job!,,approved
+en/fb.praise.3.mp3,English,Butil,That's right!,,approved
+en/fb.effort.mp3,English,Butil,"You tried again, and you got it!",,approved
+en/fb.done.mp3,English,Butil,All done! Thank you for playing.,,approved
+en/bye.session.mp3,English,Butil,Playtime is over for now. Goodbye! Let's play away from the screen.,,approved
+en/bye.daily.mp3,English,Butil,That is enough play for today. See you tomorrow!,,approved
